@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e3a5f"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Decorative circles (representing fusion/acoustic) -->
+  <circle cx="950" cy="315" r="200" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.3"/>
+  <circle cx="950" cy="315" r="150" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.4"/>
+  <circle cx="950" cy="315" r="100" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.5"/>
+  <circle cx="950" cy="315" r="50" fill="#f97316" opacity="0.8"/>
+  
+  <!-- Acoustic waves -->
+  <path d="M750 315 Q 800 265 850 315 Q 900 365 950 315" stroke="#06b6d4" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M720 315 Q 785 235 850 315 Q 915 395 980 315" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Logo area -->
+  <circle cx="120" cy="100" r="50" fill="none" stroke="url(#accentGrad)" stroke-width="3"/>
+  <text x="120" y="110" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#f97316" text-anchor="middle">Li</text>
+  
+  <!-- Title -->
+  <text x="80" y="220" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">L.A.F.R.E.S.</text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="290" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8">Lithium-Acoustic Fusion Research</text>
+  <text x="80" y="330" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8">&amp; Engineering System</text>
+  
+  <!-- Tagline -->
+  <rect x="80" y="380" width="500" height="4" rx="2" fill="url(#accentGrad)"/>
+  <text x="80" y="430" font-family="Arial, sans-serif" font-size="22" fill="#64748b">Compact Micro-Fusion Research Platform</text>
+  <text x="80" y="465" font-family="Arial, sans-serif" font-size="22" fill="#64748b">Acoustic Stabilization • Liquid Lithium • AI Control</text>
+  
+  <!-- URL -->
+  <text x="80" y="580" font-family="Arial, sans-serif" font-size="20" fill="#3b82f6">szemkoff.github.io/LAFRES</text>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="620" width="1200" height="10" fill="url(#accentGrad)"/>
+</svg>
+
