@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.A.F.R.E.S. - Complete Project Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            overflow: visible;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header .subtitle {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+            overflow-x: auto;
+        }
+        
+        .nav-tab {
+            padding: 15px 25px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: #495057;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        
+        .nav-tab:hover {
+            background: #e9ecef;
+        }
+        
+        .nav-tab.active {
+            background: white;
+            color: #1e3c72;
+            border-bottom: 3px solid #1e3c72;
+        }
+        
+        .content {
+            padding: 40px;
+            min-height: 500px;
+            overflow: visible;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .scroll-hint {
+            text-align: right;
+            font-size: 12px;
+            color: #6c757d;
+            font-style: italic;
+            margin-top: 5px;
+        }
+        
+        .tab-content {
+            display: none;
+            width: 100%;
+            min-height: 600px;
+            overflow: visible;
+        }
+        
+        .tab-content.active {
+            display: block !important;
+            animation: fadeIn 0.5s;
+            visibility: visible;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h2 {
+            color: #1e3c72;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-size: 2em;
+        }
+        
+        h3 {
+            color: #2a5298;
+            margin: 25px 0 15px 0;
+            font-size: 1.5em;
+        }
+        
+        h4 {
+            color: #495057;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            table-layout: auto;
+        }
+        
+        th {
+            background: #1e3c72;
+            color: white;
+            padding: 12px 10px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 14px;
+            word-wrap: break-word;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        @media (max-width: 768px) {
+            table {
+                font-size: 12px;
+            }
+            th, td {
+                padding: 8px 5px;
+            }
+        }
+        
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .metric-label {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+        
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        .file-tree {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 10px;
+            font-family: 'Courier New', 'Consolas', monospace;
+            margin: 20px 0;
+            box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 14px;
+            line-height: 1.8;
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+        
+        .tree-root {
+            color: #1e3c72;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .tree-folder {
+            color: #667eea;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        
+        .tree-folder::before {
+            content: "▸ ";
+        }
+        
+        .tree-file {
+            color: #495057;
+            margin-left: 25px;
+            position: relative;
+        }
+        
+        .tree-file::before {
+            content: "📄 ";
+        }
+        
+        .tree-indent {
+            display: inline-block;
+            width: 20px;
+        }
+        
+        .tree-line {
+            color: #adb5bd;
+            font-weight: normal;
+        }
+        
+        .tree-description {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 12px;
+        }
+        
+        .table-wrapper {
+            overflow-x: auto;
+            overflow-y: visible;
+            margin: 20px 0;
+            -webkit-overflow-scrolling: touch;
+            display: block;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            background: white;
+        }
+        
+        .table-wrapper table {
+            margin: 0;
+            width: auto !important;
+            min-width: 100%;
+            box-shadow: none;
+        }
+        
+        .table-wrapper td,
+        .table-wrapper th {
+            white-space: normal;
+            padding: 12px 15px;
+            min-width: 180px;
+            max-width: 350px;
+        }
+        
+        .table-wrapper td:first-child,
+        .table-wrapper th:first-child {
+            min-width: 150px;
+        }
+        
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        .print-button {
+            background: #28a745;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        
+        .print-button:hover {
+            background: #218838;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+            }
+            .nav-tabs, .print-button {
+                display: none;
+            }
+            .tab-content {
+                display: block !important;
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>L.A.F.R.E.S.</h1>
+            <div class="subtitle">Lithium Acoustic Fusion Reactor for Energy Sustainability</div>
+            <p style="font-size: 1.1em; margin-top: 20px;">Complete Project Documentation & Engineering Blueprint</p>
+            <button class="print-button" onclick="window.print()">📄 Print/Save as PDF</button>
+        </header>
+        
+        <nav class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('overview', event)">Overview</button>
+            <button class="nav-tab" onclick="showTab('investor', event)">Investor Summary</button>
+            <button class="nav-tab" onclick="showTab('partners', event)">Partner Presentation</button>
+            <button class="nav-tab" onclick="showTab('architecture', event)">System Architecture</button>
+            <button class="nav-tab" onclick="showTab('specs', event)">Specifications</button>
+            <button class="nav-tab" onclick="showTab('physics', event)">Physics & Theory</button>
+            <button class="nav-tab" onclick="showTab('safety', event)">Safety</button>
+            <button class="nav-tab" onclick="showTab('roadmap', event)">Roadmap & Budget</button>
+            <button class="nav-tab" onclick="showTab('structure', event)">Project Structure</button>
+            <button class="nav-tab" onclick="showTab('team', event)">Team & Expertise</button>
+        </nav>
+        
+        <div class="content">
+            <!-- OVERVIEW TAB -->
+            <div id="overview" class="tab-content active">
+                <h2>Mission Statement</h2>
+                <div class="highlight-box">
+                    <p><strong>L.A.F.R.E.S.</strong> is a research-grade architecture for a compact neutron-generating system combining:</p>
+                    <ul>
+                        <li><strong>Liquid-lithium blanket</strong> for neutron moderation and heat capture</li>
+                        <li><strong>Acoustic stabilization</strong> for surface control and shock damping</li>
+                        <li><strong>Pulsed micro-fusion</strong> (non-break-even) for controlled neutron generation</li>
+                        <li><strong>Thermoelectric heat extraction</strong> for partial energy recovery</li>
+                        <li><strong>AI-based control</strong> for system optimization and safety</li>
+                    </ul>
+                </div>
+                
+                <div class="warning-box">
+                    <h4>Critical Disclaimer</h4>
+                    <p><strong>This project is NOT intended for grid power generation.</strong> It is designed for R&D and materials testing only. L.A.F.R.E.S. operates far below the Lawson criterion and does not claim net-positive energy production.</p>
+                </div>
+                
+                <h2>Key Performance Targets</h2>
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Neutron Output</div>
+                        <div class="metric-value">10⁶-10⁹</div>
+                        <div class="metric-label">neutrons/second</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Operating Temperature</div>
+                        <div class="metric-value">400-500</div>
+                        <div class="metric-label">°C (Lithium)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Thermal Power</div>
+                        <div class="metric-value">10-100</div>
+                        <div class="metric-label">kW (extracted)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Electrical Output</div>
+                        <div class="metric-value">1-10</div>
+                        <div class="metric-label">kW (TE conversion)</div>
+                    </div>
+                </div>
+                
+                <h2>Five Primary Subsystems</h2>
+                
+                <h3>1. Micro-Fusion Core</h3>
+                <p><strong>Type:</strong> Pulsed Inertial Electrostatic Confinement (IEC)</p>
+                <ul>
+                    <li>Neutron yield: 10⁶–10¹⁰ n/s (laboratory scale)</li>
+                    <li>Operating voltage: 30-100 kV</li>
+                    <li>Deuterium-deuterium (D-D) fusion: 2.45 MeV neutrons</li>
+                    <li>Optional D-T mode (Phase 3+): 14.1 MeV neutrons</li>
+                </ul>
+                
+                <h3>2. Liquid Lithium Blanket</h3>
+                <p><strong>Material:</strong> Enriched ⁷Li (>99%)</p>
+                <ul>
+                    <li>Volume: 50-200 liters</li>
+                    <li>Temperature: 300-500°C</li>
+                    <li>Functions: Neutron moderation, heat absorption, radiation shielding</li>
+                    <li>Natural or forced (EM pump) convection</li>
+                </ul>
+                
+                <h3>3. Acoustic Stabilization Matrix</h3>
+                <p><strong>Configuration:</strong> Phased array, 32-72 transducers</p>
+                <ul>
+                    <li>Frequency range: 10-500 kHz</li>
+                    <li>Total power: 1-10 kW</li>
+                    <li>Purpose: Surface stabilization, shock damping, diagnostics</li>
+                    <li>Control: FPGA-based, real-time adaptive</li>
+                </ul>
+                
+                <h3>4. Thermoelectric Conversion</h3>
+                <p><strong>Technology:</strong> Skutterudite-based TE modules</p>
+                <ul>
+                    <li>Hot side: 400-500°C</li>
+                    <li>Cold side: 100-200°C</li>
+                    <li>Efficiency: 10-15% (ΔT = 300-400K)</li>
+                    <li>Modules: 20-50 units</li>
+                </ul>
+                
+                <h3>5. AI Control System</h3>
+                <p><strong>Platform:</strong> Hybrid FPGA + GPU</p>
+                <ul>
+                    <li>Sensors: 100-200 channels (thermal, acoustic, neutron, level)</li>
+                    <li>Control latency: <1 ms (acoustic), <10 ms (thermal)</li>
+                    <li>Machine learning: Anomaly detection, predictive maintenance</li>
+                    <li>Safety: Multi-level interlocks, autonomous shutdown</li>
+                </ul>
+                
+                <h2>✅ What Makes L.A.F.R.E.S. Unique?</h2>
+                <div class="success-box">
+                    <ul>
+                        <li><strong>First Integration:</strong> IEC fusion + lithium blanket + acoustic control + TE conversion in one system</li>
+                        <li><strong>Novel Acoustic Application:</strong> Active stabilization of liquid metal surface at 400-500°C</li>
+                        <li><strong>Multi-Physics Control:</strong> AI managing fusion, thermal, acoustic, and MHD coupling simultaneously</li>
+                        <li><strong>Research Focus:</strong> Honest about limitations, designed for learning and validation</li>
+                        <li><strong>Scalable Approach:</strong> Phased development (simulation → bench testing → integration)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- INVESTOR SUMMARY TAB -->
+            <div id="investor" class="tab-content">
+                <h2>Investor Summary</h2>
+                
+                <div class="highlight-box">
+                    <h3>Investment Opportunity: L.A.F.R.E.S.</h3>
+                    <p><strong>Seeking:</strong> $2.5M - $5.7M over 5-6 years</p>
+                    <p><strong>Current Stage:</strong> Pre-seed / Concept validation</p>
+                    <p><strong>Target:</strong> Proof-of-concept demonstration of integrated neutron-generating system</p>
+                </div>
+                
+                <h2>Market Opportunity</h2>
+                
+                <h3>Addressable Markets</h3>
+                
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Neutron Sources Market</div>
+                        <div class="metric-value">$2.5B</div>
+                        <div class="metric-label">Global annual (2025)</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Materials Testing</div>
+                        <div class="metric-value">$850M</div>
+                        <div class="metric-label">Nuclear materials R&D</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Medical Isotopes</div>
+                        <div class="metric-value">$6B</div>
+                        <div class="metric-label">Production market</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">CAGR</div>
+                        <div class="metric-value">8.5%</div>
+                        <div class="metric-label">Annual growth rate</div>
+                    </div>
+                </div>
+                
+                <h3>Target Applications</h3>
+                
+                <table>
+                    <tr>
+                        <th>Application</th>
+                        <th>Market Size</th>
+                        <th>L.A.F.R.E.S. Fit</th>
+                        <th>Timeline</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Nuclear Materials Testing</strong></td>
+                        <td>$500M+</td>
+                        <td>High - Controlled neutron flux, variable energy</td>
+                        <td>Phase 2-3 (Years 3-5)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Neutron Radiography</strong></td>
+                        <td>$200M+</td>
+                        <td>Medium - Compact size advantage</td>
+                        <td>Phase 3+ (Years 5-7)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Isotope Production</strong></td>
+                        <td>$6B+</td>
+                        <td>Long-term - Requires 10¹²+ n/s</td>
+                        <td>Phase 4+ (Years 7-10)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fusion Research Platform</strong></td>
+                        <td>$300M+</td>
+                        <td>High - Novel multi-physics testbed</td>
+                        <td>Phase 1-3 (Years 2-6)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Waste Transmutation R&D</strong></td>
+                        <td>$150M+</td>
+                        <td>Medium - Neutron spectrum tunable</td>
+                        <td>Phase 3+ (Years 5-8)</td>
+                    </tr>
+                </table>
+                
+                <h2>Competitive Advantages</h2>
+                
+                <div class="success-box">
+                    <h3>Key Differentiators</h3>
+                    <ul>
+                        <li><strong>Multi-Physics Integration:</strong> Only system combining IEC fusion, liquid metal blanket, acoustic control, and AI - creates unique research platform and IP position</li>
+                        <li><strong>Scalable Architecture:</strong> Modular design allows progression from lab-scale (10⁶ n/s) to industrial (10¹⁰+ n/s) without fundamental redesign</li>
+                        <li><strong>Lower Operating Costs:</strong> Partial energy recovery via thermoelectric conversion (10-15% efficiency) reduces net power consumption vs. traditional accelerator-based sources</li>
+                        <li><strong>Compact Footprint:</strong> ~2m diameter system vs. 5-10m for comparable neutron flux from reactors or large accelerators</li>
+                        <li><strong>Safety Profile:</strong> Sub-critical system, no chain reaction risk, automatic shutdown in <1 second</li>
+                        <li><strong>Tunable Output:</strong> Neutron energy and flux rate adjustable in real-time (10-100 kV voltage control)</li>
+                    </ul>
+                </div>
+                
+                <h3>Competitive Landscape</h3>
+                
+                <table>
+                    <tr>
+                        <th>Technology</th>
+                        <th>Neutron Yield</th>
+                        <th>Cost</th>
+                        <th>Size</th>
+                        <th>L.A.F.R.E.S. Advantage</th>
+                    </tr>
+                    <tr>
+                        <td>Research Reactors (TRIGA)</td>
+                        <td>10¹³-10¹⁵ n/s</td>
+                        <td>$50M-$200M</td>
+                        <td>Building-scale</td>
+                        <td>10-100× lower cost, compact, no fuel cycle</td>
+                    </tr>
+                    <tr>
+                        <td>Spallation Sources (SNS)</td>
+                        <td>10¹⁵-10¹⁷ n/s</td>
+                        <td>$1B+</td>
+                        <td>Facility-scale</td>
+                        <td>1000× lower cost, accessible to universities</td>
+                    </tr>
+                    <tr>
+                        <td>D-T Generators (NSD)</td>
+                        <td>10⁹-10¹¹ n/s</td>
+                        <td>$100K-$500K</td>
+                        <td>2-3m</td>
+                        <td>Novel physics platform, energy recovery, AI control</td>
+                    </tr>
+                    <tr>
+                        <td>Accelerator-Based (LENA)</td>
+                        <td>10¹⁰-10¹² n/s</td>
+                        <td>$5M-$50M</td>
+                        <td>Room-scale</td>
+                        <td>Lower CAPEX, integrated thermal management</td>
+                    </tr>
+                    <tr>
+                        <td>IEC Fusors (Academic)</td>
+                        <td>10⁴-10⁸ n/s</td>
+                        <td>$10K-$100K</td>
+                        <td>1-2m</td>
+                        <td>Higher yield, research-grade instrumentation, IP</td>
+                    </tr>
+                </table>
+                
+                <h2>Business Model & Revenue Streams</h2>
+                
+                <h3>Phase-by-Phase Revenue Strategy</h3>
+                
+                <h4>Phase 0-1 (Years 1-3): Grant Funding + Early Partnerships</h4>
+                <ul>
+                    <li><strong>DOE ARPA-E:</strong> $1M-$3M for transformative energy R&D</li>
+                    <li><strong>NSF:</strong> $500K-$1M for fundamental multi-physics research</li>
+                    <li><strong>Strategic partners:</strong> National labs (ORNL, LLNL) for facility access and expertise</li>
+                    <li><strong>University cost-share:</strong> Facilities, equipment, overhead reduction</li>
+                </ul>
+                
+                <h4>Phase 2-3 (Years 3-6): User Facility + IP Licensing</h4>
+                <ul>
+                    <li><strong>User facility fees:</strong> $50K-$200K per project for external researchers (universities, national labs)</li>
+                    <li><strong>Data licensing:</strong> Benchmark data for materials testing and fusion simulations</li>
+                    <li><strong>Patent licensing:</strong> Acoustic stabilization, multi-physics control algorithms</li>
+                    <li><strong>Consulting services:</strong> Liquid metal handling, neutron diagnostics expertise</li>
+                </ul>
+                
+                <h4>Phase 4+ (Years 6-10): Product Sales + Service Contracts</h4>
+                <ul>
+                    <li><strong>Turnkey systems:</strong> $2M-$10M per unit (depending on neutron yield configuration)</li>
+                    <li><strong>Maintenance contracts:</strong> $200K-$500K annually per system</li>
+                    <li><strong>Upgrade packages:</strong> Higher power modules, advanced diagnostics, D-T capability</li>
+                    <li><strong>Training programs:</strong> Operations, safety, maintenance certification</li>
+                </ul>
+                
+                <h3>10-Year Financial Projections (Conservative)</h3>
+                
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>Phase</th>
+                        <th>Revenue</th>
+                        <th>Expenses</th>
+                        <th>Net</th>
+                        <th>Cumulative</th>
+                    </tr>
+                    <tr>
+                        <td>1-2</td>
+                        <td>0-1</td>
+                        <td>$0</td>
+                        <td>$1.5M</td>
+                        <td>-$1.5M</td>
+                        <td>-$1.5M</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>1-2</td>
+                        <td>$200K</td>
+                        <td>$2M</td>
+                        <td>-$1.8M</td>
+                        <td>-$3.3M</td>
+                    </tr>
+                    <tr>
+                        <td>5-6</td>
+                        <td>2-3</td>
+                        <td>$800K</td>
+                        <td>$1.5M</td>
+                        <td>-$700K</td>
+                        <td>-$4M</td>
+                    </tr>
+                    <tr>
+                        <td>7-8</td>
+                        <td>3-4</td>
+                        <td>$3M</td>
+                        <td>$2M</td>
+                        <td>+$1M</td>
+                        <td>-$3M</td>
+                    </tr>
+                    <tr>
+                        <td>9-10</td>
+                        <td>4</td>
+                        <td>$8M</td>
+                        <td>$3M</td>
+                        <td>+$5M</td>
+                        <td>+$2M</td>
+                    </tr>
+                    <tr style="background: #d4edda; font-weight: bold;">
+                        <td colspan="3">Break-even: Year 8</td>
+                        <td colspan="3">Positive Cumulative: Year 10</td>
+                    </tr>
+                </table>
+                
+                <h2>Investment Terms & Milestones</h2>
+                
+                <h3>Funding Rounds</h3>
+                
+                <div class="highlight-box">
+                    <h4>Round 1: Pre-Seed ($500K-$1M) - Phase 0</h4>
+                    <ul>
+                        <li><strong>Use of funds:</strong> Simulation validation, team building, initial partnerships</li>
+                        <li><strong>Milestones:</strong> Validated models, DOE grant application submitted, university partnership secured</li>
+                        <li><strong>Timeline:</strong> 6-12 months</li>
+                        <li><strong>Investors:</strong> Angels, university commercialization offices, early-stage climate tech funds</li>
+                    </ul>
+                    
+                    <h4>Round 2: Seed ($1M-$2M) - Phase 1</h4>
+                    <ul>
+                        <li><strong>Use of funds:</strong> Lithium bench system construction, instrumentation, facility preparation</li>
+                        <li><strong>Milestones:</strong> 1000+ hour lithium operation, acoustic damping >60%, TE efficiency >8%</li>
+                        <li><strong>Timeline:</strong> 18 months</li>
+                        <li><strong>Investors:</strong> Energy tech VCs, strategic corporate (utilities, defense), DOE matching</li>
+                    </ul>
+                    
+                    <h4>Round 3: Series A ($2M-$4M) - Phase 2-3</h4>
+                    <ul>
+                        <li><strong>Use of funds:</strong> Radiation license, neutron source integration, fusion core development</li>
+                        <li><strong>Milestones:</strong> Licensed operation, fusion neutron detection (>10⁶ n/s), 100+ hour integrated operation</li>
+                        <li><strong>Timeline:</strong> 24-36 months</li>
+                        <li><strong>Investors:</strong> Growth equity, strategic corporate, government co-investment (ARPA-E, NNSA)</li>
+                    </ul>
+                </div>
+                
+                <h2>Risks & Mitigation</h2>
+                
+                <table>
+                    <tr>
+                        <th>Risk</th>
+                        <th>Probability</th>
+                        <th>Impact</th>
+                        <th>Mitigation Strategy</th>
+                    </tr>
+                    <tr>
+                        <td>Neutron yield below target</td>
+                        <td>Medium</td>
+                        <td>High</td>
+                        <td>Conservative yield estimates (factor of 3), alternative core designs (DPF backup), external source in Phase 2</td>
+                    </tr>
+                    <tr>
+                        <td>Regulatory delays (>2 years)</td>
+                        <td>Medium</td>
+                        <td>Medium</td>
+                        <td>Early regulator engagement, experienced consulting, D-D only (no tritium), partner with licensed facility</td>
+                    </tr>
+                    <tr>
+                        <td>Lithium corrosion/leaks</td>
+                        <td>Low</td>
+                        <td>High</td>
+                        <td>Proven materials (Mo), temperature limits (<500°C), double containment, extensive Phase 1 testing</td>
+                    </tr>
+                    <tr>
+                        <td>Acoustic control ineffective</td>
+                        <td>Low</td>
+                        <td>Medium</td>
+                        <td>FE simulation validation, bench testing before integration, system functional without acoustic (reduced performance)</td>
+                    </tr>
+                    <tr>
+                        <td>Cost overruns (>50%)</td>
+                        <td>Medium</td>
+                        <td>Medium</td>
+                        <td>20% contingency, phased go/no-go decisions, equipment leasing options, university partnerships for cost-share</td>
+                    </tr>
+                    <tr>
+                        <td>Market adoption slower than expected</td>
+                        <td>Medium</td>
+                        <td>Medium</td>
+                        <td>Early customer engagement (national labs), user facility model (lower barrier), proven need for neutron sources</td>
+                    </tr>
+                </table>
+                
+                <h2>Exit Strategy</h2>
+                
+                <h3>Potential Exits (Years 7-10)</h3>
+                
+                <ol>
+                    <li>
+                        <strong>Acquisition by Nuclear Technology Company</strong>
+                        <ul>
+                            <li>Potential acquirers: BWXT, Framatome, Westinghouse, Rosatom</li>
+                            <li>Rationale: Add neutron source product line, vertical integration for fuel cycle</li>
+                            <li>Valuation: $50M-$200M (depending on commercial traction)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Acquisition by Defense/National Security</strong>
+                        <ul>
+                            <li>Potential acquirers: Lockheed Martin, Northrop Grumman, General Atomics</li>
+                            <li>Rationale: Neutron imaging, materials testing, isotope production for defense applications</li>
+                            <li>Valuation: $75M-$250M (if security/defense use cases validated)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Strategic Partnership with National Lab</strong>
+                        <ul>
+                            <li>Partners: ORNL, LLNL, LANL, INL</li>
+                            <li>Structure: Joint venture, exclusive licensing, facility operation contract</li>
+                            <li>Rationale: User facility model, avoid duplication of capability</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>IPO (Long-term, >Year 10)</strong>
+                        <ul>
+                            <li>Requirements: Multiple operational systems, recurring revenue >$20M, clear path to profitability</li>
+                            <li>Valuation: $200M-$500M (comparable to other nuclear tech companies)</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <h2>Contact & Next Steps</h2>
+                
+                <div class="success-box">
+                    <h3>For Investors:</h3>
+                    <p><strong>Contact:</strong> [Insert contact information]</p>
+                    <p><strong>Materials Available:</strong></p>
+                    <ul>
+                        <li>Extended pitch deck (25 slides)</li>
+                        <li>Technical white paper (40 pages)</li>
+                        <li>Financial model (10-year projections)</li>
+                        <li>Patent landscape analysis</li>
+                        <li>Letters of interest from potential customers</li>
+                    </ul>
+                    
+                    <h3>Current Ask:</h3>
+                    <p><strong>Seeking:</strong> $500K-$1M for Phase 0 (12-month simulation & validation)</p>
+                    <p><strong>Terms:</strong> Convertible note or SAFE, 20% discount to Series A, $8M cap</p>
+                    <p><strong>Use of Funds:</strong></p>
+                    <ul>
+                        <li>Personnel (3-5 researchers): 60%</li>
+                        <li>Software & computing: 15%</li>
+                        <li>Partnership development: 15%</li>
+                        <li>Legal & regulatory prep: 10%</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- PARTNER PRESENTATION TAB -->
+            <div id="partners" class="tab-content">
+                <h2>🤝 Strategic Partnership Opportunities</h2>
+                
+                <div class="highlight-box">
+                    <h3>Why Partner with L.A.F.R.E.S.?</h3>
+                    <p>L.A.F.R.E.S. offers unique capabilities at the intersection of fusion technology, liquid metal engineering, advanced control systems, and neutron science. We seek partners who can contribute expertise, facilities, or market access to accelerate development and commercialization.</p>
+                </div>
+                
+                <h2>Academic & Research Institution Partnerships</h2>
+                
+                <h3>Value Proposition for Universities</h3>
+                
+                <table>
+                    <tr>
+                        <th>Benefit</th>
+                        <th>Description</th>
+                        <th>Examples</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Research Platform</strong></td>
+                        <td>Access to unique multi-physics testbed for graduate research</td>
+                        <td>10+ PhD dissertations, 50+ publications potential</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Facility Upgrades</strong></td>
+                        <td>State-of-art equipment installed at partner institution</td>
+                        <td>Neutron diagnostics, liquid metal lab, acoustic lab</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Grant Competitiveness</strong></td>
+                        <td>Unique capability attracts DOE, NSF, NNSA funding</td>
+                        <td>$5M+ in follow-on grants typical for fusion facilities</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Student Training</strong></td>
+                        <td>Workforce development in fusion, nuclear, advanced manufacturing</td>
+                        <td>20-30 trained engineers/scientists over 5 years</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IP Participation</strong></td>
+                        <td>Co-ownership of patents, licensing revenue share</td>
+                        <td>Typical: 50/50 split university/company</td>
+                    </tr>
+                </table>
+                
+                <h3>Ideal Partner Profile</h3>
+                
+                <ul>
+                    <li><strong>Nuclear Engineering Program:</strong> Faculty expertise in neutron transport, reactor physics</li>
+                    <li><strong>Mechanical Engineering:</strong> Thermal-fluids, materials science, heat transfer specialists</li>
+                    <li><strong>Electrical/Computer Engineering:</strong> Control systems, signal processing, ML/AI</li>
+                    <li><strong>Existing Facilities:</strong> High-bay lab space (500+ m²), radiation license (or willingness to obtain), high-power electrical</li>
+                    <li><strong>Commercialization Office:</strong> Active tech transfer, startup support, industry connections</li>
+                </ul>
+                
+                <div class="success-box">
+                    <h4>Target Universities:</h4>
+                    <p><strong>Tier 1 (Ideal):</strong> MIT, UC Berkeley, U Michigan, U Illinois, Georgia Tech, U Wisconsin, UT Austin, Texas A&M</p>
+                    <p><strong>Tier 2 (Strong fit):</strong> Purdue, Penn State, NC State, U Tennessee, Oregon State, RPI, Virginia Tech</p>
+                </div>
+                
+                <h2>🏢 National Laboratory Partnerships</h2>
+                
+                <h3>Collaboration Models</h3>
+                
+                <h4>1. Facility Partnership (Preferred)</h4>
+                <ul>
+                    <li><strong>Model:</strong> Construct L.A.F.R.E.S. at national lab facility</li>
+                    <li><strong>Benefits:</strong>
+                        <ul>
+                            <li>Existing radiation license (accelerated timeline)</li>
+                            <li>World-class diagnostics and support staff</li>
+                            <li>Access to complementary facilities (supercomputing, materials characterization)</li>
+                            <li>Credibility and visibility</li>
+                        </ul>
+                    </li>
+                    <li><strong>Partner obligations:</strong> Facility space, safety oversight, shared equipment time</li>
+                    <li><strong>L.A.F.R.E.S. obligations:</strong> Equipment procurement, operations, data sharing</li>
+                </ul>
+                
+                <h4>2. User Facility Agreement</h4>
+                <ul>
+                    <li><strong>Model:</strong> Once operational, national lab researchers get priority access</li>
+                    <li><strong>Fee structure:</strong> Subsidized rates for DOE-funded research, cost recovery for others</li>
+                    <li><strong>Data rights:</strong> Publications require 30-day review, no restrictions on fundamental science</li>
+                </ul>
+                
+                <h4>3. CRADA (Cooperative Research and Development Agreement)</h4>
+                <ul>
+                    <li><strong>Model:</strong> Joint R&D projects on specific technical challenges</li>
+                    <li><strong>Examples:</strong>
+                        <ul>
+                            <li>Liquid metal MHD modeling (ORNL expertise)</li>
+                            <li>Neutron transport validation (LANL, LLNL)</li>
+                            <li>Materials corrosion testing (INL)</li>
+                            <li>Control algorithms development (Argonne)</li>
+                        </ul>
+                    </li>
+                    <li><strong>IP sharing:</strong> Negotiated case-by-case, typically joint ownership</li>
+                </ul>
+                
+                <h3>Target National Labs</h3>
+                
+                <table>
+                    <tr>
+                        <th>Lab</th>
+                        <th>Relevant Expertise</th>
+                        <th>Partnership Opportunity</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Oak Ridge (ORNL)</strong></td>
+                        <td>Liquid metal technology, neutron science (SNS)</td>
+                        <td>Primary facility partner, MHD modeling collaboration</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Los Alamos (LANL)</strong></td>
+                        <td>Neutron transport, MCNP development, IEC fusion history</td>
+                        <td>Simulation validation, neutron diagnostics</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lawrence Livermore (LLNL)</strong></td>
+                        <td>Fusion ignition (NIF), high-energy-density physics</td>
+                        <td>Plasma modeling, benchmarking against larger facilities</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Idaho National Lab (INL)</strong></td>
+                        <td>Nuclear materials, reactor safety, advanced reactors</td>
+                        <td>Materials testing user, corrosion studies</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Argonne (ANL)</strong></td>
+                        <td>Advanced control systems, AI/ML, supercomputing</td>
+                        <td>Control algorithms, digital twin development</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pacific Northwest (PNNL)</strong></td>
+                        <td>Nonproliferation, neutron detection, nuclear forensics</td>
+                        <td>Neutron imaging applications, detector calibration</td>
+                    </tr>
+                </table>
+                
+                <h2>🏭 Industry Partnerships</h2>
+                
+                <h3>Nuclear Energy Sector</h3>
+                
+                <h4>Value Proposition</h4>
+                <p>L.A.F.R.E.S. provides neutron irradiation testing for advanced reactor materials without reactor access (long wait times, high costs, regulatory complexity).</p>
+                
+                <h4>Target Partners</h4>
+                <ul>
+                    <li><strong>Advanced Reactor Developers:</strong> TerraPower, X-energy, Kairos Power, NuScale
+                        <ul>
+                            <li>Need: Materials qualification for high-temperature, corrosive environments</li>
+                            <li>Partnership: Pay-per-use testing, sponsored research agreements</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fuel Cycle Companies:</strong> BWXT, Centrus, Framatome
+                        <ul>
+                            <li>Need: Neutron source for fuel assay, transmutation research</li>
+                            <li>Partnership: Technology licensing, joint development</li>
+                        </ul>
+                    </li>
+                    <li><strong>Nuclear Services:</strong> AREVA, Westinghouse
+                        <ul>
+                            <li>Need: Portable neutron sources for on-site diagnostics</li>
+                            <li>Partnership: Product development, commercialization rights</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h3>Defense & National Security</h3>
+                
+                <h4>Applications</h4>
+                <ul>
+                    <li><strong>Neutron Imaging:</strong> Explosives detection, special nuclear material (SNM) detection</li>
+                    <li><strong>Materials Testing:</strong> Radiation hardening of electronics, spacecraft components</li>
+                    <li><strong>Isotope Production:</strong> Medical isotopes for defense applications, calibration sources</li>
+                    <li><strong>Nuclear Forensics:</strong> Training and validation for neutron activation analysis</li>
+                </ul>
+                
+                <h4>Target Partners</h4>
+                <ul>
+                    <li><strong>Prime Contractors:</strong> Lockheed Martin, Northrop Grumman, General Dynamics, Raytheon
+                        <ul>
+                            <li>Partnership model: SBIR/STTR Phase II-III, direct procurement</li>
+                        </ul>
+                    </li>
+                    <li><strong>Government Agencies:</strong> NNSA, DTRA, NGA
+                        <ul>
+                            <li>Partnership model: Other Transaction Authority (OTA), facility use agreements</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h3>Materials Science & Manufacturing</h3>
+                
+                <h4>Applications</h4>
+                <ul>
+                    <li><strong>Neutron Scattering:</strong> Crystal structure analysis, stress/strain measurement</li>
+                    <li><strong>Neutron Activation Analysis:</strong> Trace element detection, quality control</li>
+                    <li><strong>Neutron Transmutation:</strong> Doping semiconductors, modifying material properties</li>
+                </ul>
+                
+                <h4>Target Partners</h4>
+                <ul>
+                    <li><strong>Semiconductor:</strong> Intel, TSMC, Samsung (neutron doping of silicon)</li>
+                    <li><strong>Aerospace:</strong> Boeing, Airbus, SpaceX (materials characterization)</li>
+                    <li><strong>Automotive:</strong> Tesla, GM, Ford (battery materials, lightweight alloys)</li>
+                </ul>
+                
+                <h2>Equipment & Technology Partners</h2>
+                
+                <h3>Key Suppliers & Collaboration Opportunities</h3>
+                
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Potential Partners</th>
+                        <th>Collaboration Model</th>
+                    </tr>
+                    <tr>
+                        <td><strong>High Voltage Power</strong></td>
+                        <td>Glassman, Spellman, EMCO</td>
+                        <td>Co-development of pulsed HV supplies, beta testing, case study</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vacuum Technology</strong></td>
+                        <td>Pfeiffer, Edwards, Agilent</td>
+                        <td>Equipment discounts, technical support, lithium compatibility testing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Thermoelectric Modules</strong></td>
+                        <td>Ferrotec, Laird Thermal, Evident Thermoelectrics</td>
+                        <td>Custom module development, performance validation, co-marketing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acoustic Transducers</strong></td>
+                        <td>Olympus, Panametrics, APC International</td>
+                        <td>High-temp transducer R&D, exclusive supply agreement</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Control Systems</strong></td>
+                        <td>National Instruments, Siemens, Allen-Bradley</td>
+                        <td>Application showcase, white paper co-authorship, trade show demos</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Neutron Detectors</strong></td>
+                        <td>Ludlum, Mirion (Canberra), Arktis</td>
+                        <td>Detector calibration facility, new product testing</td>
+                    </tr>
+                </table>
+                
+                <h2>🌍 International Partnerships</h2>
+                
+                <h3>European Collaboration</h3>
+                <ul>
+                    <li><strong>ITER Organization:</strong> Data sharing on liquid lithium blanket behavior, neutron diagnostics</li>
+                    <li><strong>EUROfusion:</strong> Access to materials database, collaborative publications</li>
+                    <li><strong>KIT (Karlsruhe):</strong> Liquid metal expertise (ALEX facility), potential exchange program</li>
+                    <li><strong>UKAEA (Culham):</strong> Fusion materials program, MAST-U tritium breeding research</li>
+                </ul>
+                
+                <h3>Asian Collaboration</h3>
+                <ul>
+                    <li><strong>JAEA (Japan):</strong> Liquid lithium loop experience, materials compatibility data</li>
+                    <li><strong>NIFS (Japan):</strong> Plasma diagnostics, stellarator research synergies</li>
+                    <li><strong>ASIPP (China):</strong> EAST tokamak lithium wall experiments (if export controls allow)</li>
+                    <li><strong>KAIST (S. Korea):</strong> Thermoelectric materials development, control systems</li>
+                </ul>
+                
+                <h2>📋 Partnership Terms & Structure</h2>
+                
+                <h3>Typical Agreement Types</h3>
+                
+                <div class="highlight-box">
+                    <h4>1. Sponsored Research Agreement (SRA)</h4>
+                    <ul>
+                        <li><strong>Structure:</strong> Partner funds specific research tasks ($50K-$500K)</li>
+                        <li><strong>Deliverables:</strong> Technical reports, data, publications</li>
+                        <li><strong>IP Rights:</strong> Partner gets exclusive license in field of use, L.A.F.R.E.S. retains for other fields</li>
+                        <li><strong>Timeline:</strong> 1-3 years typical</li>
+                    </ul>
+                    
+                    <h4>2. Joint Development Agreement (JDA)</h4>
+                    <ul>
+                        <li><strong>Structure:</strong> Both parties contribute resources (cash, equipment, personnel)</li>
+                        <li><strong>Deliverables:</strong> Co-developed technology, joint IP</li>
+                        <li><strong>IP Rights:</strong> Joint ownership, cross-licensing, royalty sharing</li>
+                        <li><strong>Timeline:</strong> 2-5 years typical</li>
+                    </ul>
+                    
+                    <h4>3. Strategic Investment</h4>
+                    <ul>
+                        <li><strong>Structure:</strong> Corporate venture investment ($500K-$5M)</li>
+                        <li><strong>Benefits:</strong> Board seat or observer rights, preferred customer status, technology preview</li>
+                        <li><strong>Exit:</strong> Buy-back option, acquisition rights, IPO participation</li>
+                    </ul>
+                    
+                    <h4>4. Facility Use Agreement</h4>
+                    <ul>
+                        <li><strong>Structure:</strong> Partner provides facility space, utilities, safety oversight</li>
+                        <li><strong>L.A.F.R.E.S. provides:</strong> Equipment, operations, data sharing</li>
+                        <li><strong>Fee structure:</strong> Cost recovery or subsidized (for universities/national labs)</li>
+                        <li><strong>Duration:</strong> 5-10 years with renewal options</li>
+                    </ul>
+                </div>
+                
+                <h2>Contact for Partnership Inquiries</h2>
+                
+                <div class="success-box">
+                    <h3>Partnership Contact Information</h3>
+                    <p><strong>Email:</strong> partnerships@lafres.org</p>
+                    <p><strong>Phone:</strong> [Insert phone number]</p>
+                    <p><strong>Address:</strong> [Insert address]</p>
+                    
+                    <h4>Initial Conversation Topics</h4>
+                    <ul>
+                        <li>Your organization's neutron source needs or research interests</li>
+                        <li>Potential contribution (funding, facilities, expertise, market access)</li>
+                        <li>Preferred partnership structure (SRA, JDA, investment, facility)</li>
+                        <li>Timeline and budget constraints</li>
+                        <li>IP and publication expectations</li>
+                    </ul>
+                    
+                    <h4>Next Steps</h4>
+                    <ol>
+                        <li><strong>Initial call:</strong> 30-minute discussion of mutual interests (no NDA required)</li>
+                        <li><strong>NDA execution:</strong> Bilateral confidentiality agreement</li>
+                        <li><strong>Detailed presentation:</strong> Technical deep-dive, facility tour (virtual or in-person)</li>
+                        <li><strong>Term sheet:</strong> Outline key terms (2-4 weeks negotiation typical)</li>
+                        <li><strong>Full agreement:</strong> Legal drafting and execution (4-12 weeks)</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <!-- ARCHITECTURE TAB -->
+            <div id="architecture" class="tab-content">
+                <h2>System Architecture</h2>
+                
+                <h3>Hierarchical System Block Diagram</h3>
+                <pre>
+┌─────────────────────────────────────────────────────────────┐
+│                     AI Control System                        │
+│  (Real-time monitoring, control, safety interlocks)         │
+└─────────────────────────────────────────────────────────────┘
+           │         │         │         │         │
+    ┌──────┴─────┬───┴────┬────┴────┬────┴─────┬───┴──────┐
+    ▼            ▼        ▼         ▼          ▼          ▼
+┌────────┐  ┌─────────┐ ┌──────┐ ┌──────┐ ┌──────┐  ┌────────┐
+│Fusion  │  │Lithium  │ │Acous-│ │Therm-│ │Sensor│  │Safety  │
+│Core    │→→│Blanket  │←│tic   │ │al    │ │Suite │  │Systems │
+│        │  │         │ │Matrix│ │Conv. │ │      │  │        │
+└────────┘  └─────────┘ └──────┘ └──────┘ └──────┘  └────────┘
+                </pre>
+                
+                <h3>Physical Layout</h3>
+                <p><strong>Concentric Shell Design:</strong></p>
+                <ol>
+                    <li><strong>Center:</strong> Fusion core chamber (vacuum, 30-50 cm diameter)</li>
+                    <li><strong>Vacuum gap:</strong> 5 cm (thermal/electrical isolation)</li>
+                    <li><strong>Inner acoustic boundary:</strong> Thin metal (1-2 mm)</li>
+                    <li><strong>Lithium volume:</strong> 10-20 cm thickness annulus</li>
+                    <li><strong>Acoustic transducers:</strong> Mounted on outer lithium boundary</li>
+                    <li><strong>Thermal insulation:</strong> Ceramic (2-5 cm)</li>
+                    <li><strong>Containment vessel:</strong> Stainless steel with Mo liner (5-10 mm)</li>
+                    <li><strong>Shielding:</strong> Polyethylene + borated materials (50-100 cm)</li>
+                </ol>
+                
+                <h3>Control Hierarchy</h3>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Update Rate</th>
+                        <th>Functions</th>
+                        <th>Hardware</th>
+                    </tr>
+                    <tr>
+                        <td>Level 1: Safety</td>
+                        <td>10 kHz</td>
+                        <td>Hardware interlocks, SCRAM</td>
+                        <td>Safety PLC, FPGA</td>
+                    </tr>
+                    <tr>
+                        <td>Level 2: Regulatory</td>
+                        <td>100 Hz</td>
+                        <td>PID loops (T, P, neutron rate)</td>
+                        <td>Real-time Linux PC</td>
+                    </tr>
+                    <tr>
+                        <td>Level 3: Supervisory</td>
+                        <td>1-10 Hz</td>
+                        <td>Optimization, ML, coordination</td>
+                        <td>GPU, Python</td>
+                    </tr>
+                    <tr>
+                        <td>Level 4: User Interface</td>
+                        <td>1 Hz</td>
+                        <td>HMI, visualization, manual control</td>
+                        <td>Web browser or Qt</td>
+                    </tr>
+                </table>
+                
+                <h3>Energy Flow (Sankey Concept)</h3>
+                <div class="highlight-box">
+                    <p><strong>Input:</strong> Electrical power (1-10 kW average) → Fusion core</p>
+                    <p><strong>Process:</strong></p>
+                    <ul>
+                        <li>Fusion reactions → Neutrons (2.45 MeV kinetic energy)</li>
+                        <li>Neutrons → Lithium heating (thermalization + capture)</li>
+                        <li>Lithium → Heat extractors (10-100 kW thermal)</li>
+                        <li>Heat → TE modules (10-15% efficiency)</li>
+                    </ul>
+                    <p><strong>Output:</strong> Electricity (1-10 kW) + Waste heat (85-90%)</p>
+                </div>
+            </div>
+            
+            <!-- SPECIFICATIONS TAB -->
+            <div id="specs" class="tab-content">
+                <h2>Technical Specifications</h2>
+                
+                <h3>Plasma Core Specification</h3>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                        <th>Units</th>
+                    </tr>
+                    <tr>
+                        <td>Operating Voltage</td>
+                        <td>30 - 100</td>
+                        <td>kV (negative polarity)</td>
+                    </tr>
+                    <tr>
+                        <td>Peak Current</td>
+                        <td>0.1 - 1</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Pulse Duration</td>
+                        <td>10 - 100</td>
+                        <td>μs</td>
+                    </tr>
+                    <tr>
+                        <td>Pulse Repetition Rate</td>
+                        <td>1 - 100</td>
+                        <td>Hz</td>
+                    </tr>
+                    <tr>
+                        <td>Neutron Rate (average)</td>
+                        <td>10⁶ - 10⁹</td>
+                        <td>n/s</td>
+                    </tr>
+                    <tr>
+                        <td>Chamber Diameter</td>
+                        <td>300 - 500</td>
+                        <td>mm</td>
+                    </tr>
+                    <tr>
+                        <td>Cathode Material</td>
+                        <td colspan="2">Tungsten or Molybdenum</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Pressure</td>
+                        <td>10⁻⁴ - 10⁻²</td>
+                        <td>Torr (D₂)</td>
+                    </tr>
+                </table>
+                
+                <h3>Lithium System Specification</h3>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                        <th>Units</th>
+                    </tr>
+                    <tr>
+                        <td>Lithium Isotope</td>
+                        <td colspan="2">Enriched ⁷Li (>99%)</td>
+                    </tr>
+                    <tr>
+                        <td>Quantity</td>
+                        <td>25 - 100</td>
+                        <td>kg (50-200 L liquid)</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Temperature</td>
+                        <td>300 - 500</td>
+                        <td>°C</td>
+                    </tr>
+                    <tr>
+                        <td>Containment Material</td>
+                        <td colspan="2">316L SS + Mo liner</td>
+                    </tr>
+                    <tr>
+                        <td>Cover Gas</td>
+                        <td colspan="2">Argon (>99.99% purity)</td>
+                    </tr>
+                    <tr>
+                        <td>Pressure Rating</td>
+                        <td>0 - 2</td>
+                        <td>bar</td>
+                    </tr>
+                </table>
+                
+                <h3>Acoustic Transducer Array</h3>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                        <th>Units</th>
+                    </tr>
+                    <tr>
+                        <td>Number of Transducers</td>
+                        <td>32 - 72</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Frequency Range</td>
+                        <td>10 - 500</td>
+                        <td>kHz</td>
+                    </tr>
+                    <tr>
+                        <td>Power per Transducer</td>
+                        <td>10 - 200</td>
+                        <td>W (electrical)</td>
+                    </tr>
+                    <tr>
+                        <td>Total System Power</td>
+                        <td>1 - 10</td>
+                        <td>kW</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td colspan="2">PZT (Lead Zirconate Titanate)</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Temperature</td>
+                        <td>&lt; 200</td>
+                        <td>°C (with cooling)</td>
+                    </tr>
+                </table>
+                
+                <h3>Thermoelectric System</h3>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Value</th>
+                        <th>Units</th>
+                    </tr>
+                    <tr>
+                        <td>Module Material</td>
+                        <td colspan="2">Skutterudite (CoSb₃-based)</td>
+                    </tr>
+                    <tr>
+                        <td>Figure of Merit (ZT)</td>
+                        <td>1.0 - 1.3 @ 500°C</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Side Temperature</td>
+                        <td>400 - 500</td>
+                        <td>°C</td>
+                    </tr>
+                    <tr>
+                        <td>Cold Side Temperature</td>
+                        <td>80 - 150</td>
+                        <td>°C</td>
+                    </tr>
+                    <tr>
+                        <td>Number of Modules</td>
+                        <td>20 - 50</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>Power Output (total)</td>
+                        <td>0.5 - 7.5</td>
+                        <td>kW</td>
+                    </tr>
+                    <tr>
+                        <td>Efficiency</td>
+                        <td>8 - 15</td>
+                        <td>%</td>
+                    </tr>
+                </table>
+                
+                <h3>Instrumentation & Sensors</h3>
+                <table>
+                    <tr>
+                        <th>Sensor Type</th>
+                        <th>Quantity</th>
+                        <th>Sampling Rate</th>
+                    </tr>
+                    <tr>
+                        <td>Thermocouples (Type K)</td>
+                        <td>30-60</td>
+                        <td>1-10 Hz</td>
+                    </tr>
+                    <tr>
+                        <td>Neutron Detectors</td>
+                        <td>5-10</td>
+                        <td>100 Hz - 1 MHz</td>
+                    </tr>
+                    <tr>
+                        <td>Acoustic Pressure Sensors</td>
+                        <td>20-40</td>
+                        <td>1-10 MHz</td>
+                    </tr>
+                    <tr>
+                        <td>Level Sensors (capacitive)</td>
+                        <td>2-5</td>
+                        <td>10 Hz</td>
+                    </tr>
+                    <tr>
+                        <td>Accelerometers</td>
+                        <td>5-10</td>
+                        <td>10 kHz</td>
+                    </tr>
+                    <tr>
+                        <td>Pressure Gauges (gas)</td>
+                        <td>2-5</td>
+                        <td>10 Hz</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- PHYSICS TAB -->
+            <div id="physics" class="tab-content">
+                <h2>Physics & Theory</h2>
+                
+                <h3>Fusion Reactions</h3>
+                
+                <h4>Deuterium-Deuterium (D-D) Fusion</h4>
+                <pre>
+²H + ²H → ³He (0.82 MeV) + n (2.45 MeV)   [50% branching ratio]
+²H + ²H → ³H (1.01 MeV) + p (3.02 MeV)    [50% branching ratio]
+                </pre>
+                
+                <h4>Deuterium-Tritium (D-T) Fusion (Optional)</h4>
+                <pre>
+²H + ³H → ⁴He (3.5 MeV) + n (14.1 MeV)    [σ ~ 100× higher than D-D]
+                </pre>
+                
+                <div class="warning-box">
+                    <h4>Lawson Criterion</h4>
+                    <p><strong>For net energy gain (break-even):</strong></p>
+                    <code>n τ T > 3 × 10²¹ keV·s·m⁻³</code> (D-T fusion)
+                    <p><strong>L.A.F.R.E.S. operates at:</strong> n·τ·T ~ 10¹⁵ - 10¹⁸ keV·s·m⁻³</p>
+                    <p>This is <strong>3-6 orders of magnitude below break-even</strong>. No net energy gain is expected or claimed.</p>
+                </div>
+                
+                <h3>Neutron Physics</h3>
+                
+                <h4>Neutron Moderation in Lithium</h4>
+                <p>Fast neutrons (2.45 MeV) slow down via elastic scattering with ⁷Li nuclei:</p>
+                <ul>
+                    <li><strong>Speed of sound:</strong> c ≈ 4500 m/s</li>
+                    <li><strong>Thermalization distance:</strong> ~10-20 cm</li>
+                    <li><strong>Energy after collision:</strong> E' ≈ E × 0.55 (for ⁷Li)</li>
+                </ul>
+                
+                <h4>Lithium Reactions</h4>
+                <table>
+                    <tr>
+                        <th>Isotope</th>
+                        <th>Reaction</th>
+                        <th>Cross-Section</th>
+                        <th>Notes</th>
+                    </tr>
+                    <tr>
+                        <td>⁷Li (92.5%)</td>
+                        <td>⁷Li(n,n')⁷Li + γ</td>
+                        <td>Low</td>
+                        <td>Inelastic scattering</td>
+                    </tr>
+                    <tr>
+                        <td>⁶Li (7.5%)</td>
+                        <td>⁶Li(n,α)³H + 4.78 MeV</td>
+                        <td>940 barns (thermal)</td>
+                        <td>Tritium production</td>
+                    </tr>
+                </table>
+                
+                <p><strong>L.A.F.R.E.S. uses enriched ⁷Li (&gt;99%)</strong> to minimize tritium production and simplify regulatory requirements.</p>
+                
+                <h3>Acoustic Physics</h3>
+                
+                <h4>Wave Equation in Lithium</h4>
+                <pre>
+∇²p - (1/c²) ∂²p/∂t² = 0
+
+Where:
+  p = acoustic pressure (Pa)
+  c = speed of sound ≈ 4500 m/s (in lithium at 400°C)
+                </pre>
+                
+                <h4>Acoustic Radiation Pressure</h4>
+                <pre>
+P_rad = &lt;p²&gt; / (ρc²)
+
+For 1 MPa acoustic pressure:
+  P_rad ≈ 50 kPa (can counteract surface perturbations)
+                </pre>
+                
+                <h4>Wavelengths at Key Frequencies</h4>
+                <table>
+                    <tr>
+                        <th>Frequency</th>
+                        <th>Wavelength (λ = c/f)</th>
+                    </tr>
+                    <tr>
+                        <td>10 kHz</td>
+                        <td>45 cm</td>
+                    </tr>
+                    <tr>
+                        <td>50 kHz</td>
+                        <td>9 cm</td>
+                    </tr>
+                    <tr>
+                        <td>100 kHz</td>
+                        <td>4.5 cm</td>
+                    </tr>
+                    <tr>
+                        <td>500 kHz</td>
+                        <td>0.9 cm</td>
+                    </tr>
+                </table>
+                
+                <h3>Thermoelectric Physics</h3>
+                
+                <h4>Seebeck Effect</h4>
+                <pre>
+V = α ΔT
+
+Where:
+  V = voltage generated (V)
+  α = Seebeck coefficient (μV/K)
+  ΔT = temperature difference (K)
+                </pre>
+                
+                <h4>Figure of Merit (ZT)</h4>
+                <pre>
+ZT = (α² σ T) / κ
+
+Where:
+  α = Seebeck coefficient
+  σ = electrical conductivity
+  T = absolute temperature
+  κ = thermal conductivity
+  
+Higher ZT = Better thermoelectric performance
+                </pre>
+                
+                <h4>Conversion Efficiency</h4>
+                <p>For T_h = 500°C (773K), T_c = 200°C (473K), ZT = 1.0:</p>
+                <ul>
+                    <li><strong>Carnot limit:</strong> η = (773-473)/773 = 38.8%</li>
+                    <li><strong>Actual TE efficiency:</strong> η ≈ 12-15%</li>
+                </ul>
+            </div>
+            
+            <!-- SAFETY TAB -->
+            <div id="safety" class="tab-content">
+                <h2>Safety Protocols</h2>
+                
+                <div class="warning-box">
+                    <h3>Primary Hazards</h3>
+                    <ol>
+                        <li><strong>Radiation:</strong> Neutron and gamma rays (10⁶-10⁹ n/s)</li>
+                        <li><strong>Chemical Reactivity:</strong> Lithium reacts violently with water/air</li>
+                        <li><strong>Electrical:</strong> High voltage (30-100 kV)</li>
+                        <li><strong>Thermal:</strong> High temperature (400-500°C)</li>
+                        <li><strong>Pressure:</strong> Vacuum and over-pressure scenarios</li>
+                        <li><strong>Radioactive Materials:</strong> Tritium (if D-T operation)</li>
+                    </ol>
+                </div>
+                
+                <h3>Radiation Safety</h3>
+                
+                <h4>Dose Limits</h4>
+                <table>
+                    <tr>
+                        <th>Category</th>
+                        <th>Limit</th>
+                        <th>Authority</th>
+                    </tr>
+                    <tr>
+                        <td>Occupational (annual)</td>
+                        <td>20 mSv/year</td>
+                        <td>ICRP</td>
+                    </tr>
+                    <tr>
+                        <td>Public (annual)</td>
+                        <td>1 mSv/year</td>
+                        <td>ICRP</td>
+                    </tr>
+                    <tr>
+                        <td>L.A.F.R.E.S. Target</td>
+                        <td>&lt;5 mSv/year (workers)</td>
+                        <td>ALARA</td>
+                    </tr>
+                </table>
+                
+                <h4>Shielding Strategy</h4>
+                <ul>
+                    <li><strong>Primary:</strong> Liquid lithium blanket (10-20 cm) → factor of 10-100 reduction</li>
+                    <li><strong>Secondary:</strong> Polyethylene (50-100 cm) → neutron thermalization</li>
+                    <li><strong>Tertiary:</strong> Borated materials → neutron capture</li>
+                    <li><strong>Gamma/X-ray:</strong> Lead sheet (5-10 mm) around high-voltage areas</li>
+                </ul>
+                
+                <h3>Lithium Safety</h3>
+                
+                <h4>Fire Prevention & Response</h4>
+                <div class="highlight-box">
+                    <p><strong>DO NOT USE:</strong> Water, CO₂, or standard ABC extinguishers on lithium fires</p>
+                    <p><strong>APPROVED:</strong> Class D extinguisher (copper powder, Lith-X™, dry sand)</p>
+                    
+                    <h4>Fire Response Procedure:</h4>
+                    <ol>
+                        <li>Evacuate personnel if fire is large</li>
+                        <li>Alert emergency responders (inform of metal fire)</li>
+                        <li>Activate inert gas flood (argon, if available)</li>
+                        <li>Apply Class D agent if safe to approach</li>
+                        <li>Allow to cool before cleanup</li>
+                    </ol>
+                </div>
+                
+                <h3>Emergency Shutdown (SCRAM)</h3>
+                
+                <h4>Automatic Triggers:</h4>
+                <ul>
+                    <li>Lithium temperature >550°C</li>
+                    <li>Vacuum loss (P > 10⁻³ Torr)</li>
+                    <li>Coolant flow failure (<50% nominal)</li>
+                    <li>Neutron rate >110% setpoint</li>
+                    <li>Radiation monitor >10 mSv/hr</li>
+                    <li>Fire/smoke detection</li>
+                    <li>Manual SCRAM button</li>
+                </ul>
+                
+                <h4>Shutdown Sequence (&lt;1 second):</h4>
+                <ol>
+                    <li><strong>Disable fusion core high voltage</strong> (immediate, &lt;10 ms)</li>
+                    <li><strong>Close deuterium valve</strong> (pneumatic, &lt;100 ms)</li>
+                    <li><strong>Activate inert gas purge</strong> (if lithium leak detected)</li>
+                    <li><strong>Ramp down acoustic power</strong> (5 seconds)</li>
+                    <li><strong>Activate emergency cooling</strong> (if over-temperature)</li>
+                    <li><strong>Sound alarms</strong> (horn + visual)</li>
+                    <li><strong>Log event</strong> (timestamp, trigger, all sensor data)</li>
+                </ol>
+                
+                <h3>Personal Protective Equipment (PPE)</h3>
+                
+                <table>
+                    <tr>
+                        <th>Task</th>
+                        <th>Required PPE</th>
+                    </tr>
+                    <tr>
+                        <td>Handling solid lithium (&lt;180°C)</td>
+                        <td>Safety glasses, nitrile gloves, lab coat</td>
+                    </tr>
+                    <tr>
+                        <td>Handling molten lithium (>180°C)</td>
+                        <td>Face shield, heat-resistant gloves, fire-resistant clothing</td>
+                    </tr>
+                    <tr>
+                        <td>Working near operating system</td>
+                        <td>Electronic dosimeter, safety glasses, closed-toe shoes</td>
+                    </tr>
+                    <tr>
+                        <td>High voltage work</td>
+                        <td>Arc-rated clothing, insulated gloves (if energized)</td>
+                    </tr>
+                </table>
+                
+                <h3>Training Requirements</h3>
+                
+                <table>
+                    <tr>
+                        <th>Course</th>
+                        <th>Duration</th>
+                        <th>Frequency</th>
+                    </tr>
+                    <tr>
+                        <td>Radiation Safety</td>
+                        <td>4 hours</td>
+                        <td>Initial + Annual</td>
+                    </tr>
+                    <tr>
+                        <td>Lithium Hazards</td>
+                        <td>2 hours</td>
+                        <td>Initial + Annual</td>
+                    </tr>
+                    <tr>
+                        <td>Electrical Safety</td>
+                        <td>2-8 hours</td>
+                        <td>Initial + Biennial</td>
+                    </tr>
+                    <tr>
+                        <td>Emergency Procedures</td>
+                        <td>1 hour</td>
+                        <td>Annual</td>
+                    </tr>
+                    <tr>
+                        <td>System-Specific (Operators)</td>
+                        <td>40 hours</td>
+                        <td>Initial + Refresher as needed</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- ROADMAP TAB -->
+            <div id="roadmap" class="tab-content">
+                <h2>Development Roadmap</h2>
+                
+                <h3>Phased Approach</h3>
+                
+                <div class="metric-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Phase 0</div>
+                        <div class="metric-value">6-12</div>
+                        <div class="metric-label">months: Simulation</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Phase 1</div>
+                        <div class="metric-value">12-18</div>
+                        <div class="metric-label">months: Lithium Bench</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Phase 2</div>
+                        <div class="metric-value">12-18</div>
+                        <div class="metric-label">months: Neutron Coupling</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Phase 3</div>
+                        <div class="metric-value">18-24</div>
+                        <div class="metric-label">months: Micro-Fusion</div>
+                    </div>
+                </div>
+                
+                <h3>Phase 0: Simulation & Modeling</h3>
+                <p><strong>Duration:</strong> 6-12 months | <strong>Budget:</strong> $125K-$250K</p>
+                
+                <h4>Key Tasks:</h4>
+                <ul>
+                    <li><strong>Neutron Transport:</strong> MCNP6 or OpenMC simulation</li>
+                    <li><strong>Lithium CFD:</strong> OpenFOAM or ANSYS Fluent (natural convection, heat transfer)</li>
+                    <li><strong>Acoustic FE Analysis:</strong> COMSOL (mode shapes, transducer optimization)</li>
+                    <li><strong>Thermal-Electric Model:</strong> Integrated heat transfer and TE performance</li>
+                    <li><strong>Plasma PIC Simulation:</strong> Ion dynamics and neutron yield prediction</li>
+                </ul>
+                
+                <h4>Success Criteria:</h4>
+                <ul>
+                    <li>✓ All models converged and validated (error &lt;20%)</li>
+                    <li>✓ Predicted T_max &lt;550°C</li>
+                    <li>✓ Neutron yield estimate: 10⁶-10⁹ n/s</li>
+                    <li>✓ TE output: 0.5-5 kW</li>
+                </ul>
+                
+                <h3>Phase 1: Lithium Bench System (No Plasma)</h3>
+                <p><strong>Duration:</strong> 12-18 months | <strong>Budget:</strong> $730K-$1.84M</p>
+                
+                <h4>Major Components:</h4>
+                <ul>
+                    <li>Lithium containment vessel (Mo-lined SS)</li>
+                    <li>25-100 kg enriched ⁷Li</li>
+                    <li>Acoustic transducer array (32-72 elements)</li>
+                    <li>Thermoelectric modules (20-50 units)</li>
+                    <li>Instrumentation suite (100-200 channels)</li>
+                    <li>Control system (FPGA + PC + PLC)</li>
+                </ul>
+                
+                <h4>Success Criteria:</h4>
+                <ul>
+                    <li>✓ Stable operation at 400-500°C for &gt;1000 hours</li>
+                    <li>✓ Acoustic surface damping &gt;60%</li>
+                    <li>✓ TE efficiency &gt;8%</li>
+                    <li>✓ Zero lithium leaks or fires</li>
+                    <li>✓ Temperature within ±10% of CFD prediction</li>
+                </ul>
+                
+                <h3>Phase 2: Neutron Coupling</h3>
+                <p><strong>Duration:</strong> 12-18 months | <strong>Budget:</strong> $550K-$1.4M</p>
+                
+                <h4>Approach:</h4>
+                <p>Test lithium blanket response using <strong>external neutron source</strong> (commercial D-T generator or radioisotope source)</p>
+                
+                <h4>Key Tests:</h4>
+                <ul>
+                    <li>Neutron thermalization (measure flux spectrum)</li>
+                    <li>Heating rate vs. neutron flux</li>
+                    <li>Tritium breeding validation (if ⁶Li present)</li>
+                    <li>Acoustic response to neutron pulses</li>
+                    <li>TE performance with neutron-induced heating</li>
+                </ul>
+                
+                <h4>Success Criteria:</h4>
+                <ul>
+                    <li>✓ Radiation license approved</li>
+                    <li>✓ Neutron flux within ±30% of MCNP</li>
+                    <li>✓ Heating rate within ±20% of calculation</li>
+                    <li>✓ Dose rates &lt;0.1 mSv/hr at facility boundary</li>
+                </ul>
+                
+                <h3>Phase 3: Integrated Micro-Fusion Device</h3>
+                <p><strong>Duration:</strong> 18-24 months | <strong>Budget:</strong> $700K-$1.27M</p>
+                
+                <h4>Major Addition:</h4>
+                <p>Pulsed IEC fusion core integrated with Phase 1 lithium system</p>
+                
+                <h4>Components:</h4>
+                <ul>
+                    <li>Vacuum chamber (spherical, 30-50 cm ID)</li>
+                    <li>Cathode grid (tungsten, 5-10 cm)</li>
+                    <li>High voltage supply (30-100 kV, pulsed)</li>
+                    <li>Vacuum system (turbo + backing pump)</li>
+                    <li>Deuterium gas handling</li>
+                </ul>
+                
+                <h4>Success Criteria:</h4>
+                <ul>
+                    <li>✓ Detectable fusion neutrons (&gt;10⁶ n/s)</li>
+                    <li>✓ Neutron yield within factor of 3 of prediction</li>
+                    <li>✓ Stable integrated operation &gt;100 hours</li>
+                    <li>✓ All safety systems validated</li>
+                </ul>
+                
+                <h3>Budget Summary</h3>
+                
+                <table>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Low Estimate</th>
+                        <th>High Estimate</th>
+                    </tr>
+                    <tr>
+                        <td>Phase 0: Simulation</td>
+                        <td>$125K</td>
+                        <td>$250K</td>
+                    </tr>
+                    <tr>
+                        <td>Phase 1: Lithium Bench</td>
+                        <td>$730K</td>
+                        <td>$1.84M</td>
+                    </tr>
+                    <tr>
+                        <td>Phase 2: Neutron Coupling</td>
+                        <td>$550K</td>
+                        <td>$1.4M</td>
+                    </tr>
+                    <tr>
+                        <td>Phase 3: Micro-Fusion</td>
+                        <td>$700K</td>
+                        <td>$1.27M</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Contingency (20%)</strong></td>
+                        <td><strong>$400K</strong></td>
+                        <td><strong>$950K</strong></td>
+                    </tr>
+                    <tr style="background: #1e3c72; color: white; font-weight: bold;">
+                        <td>TOTAL</td>
+                        <td>$2.5M</td>
+                        <td>$5.7M</td>
+                    </tr>
+                </table>
+                
+                <p><strong>Midpoint Estimate:</strong> ~$4M over 5-6 years</p>
+                
+                <h3>Funding Strategies</h3>
+                
+                <h4>Government Grants</h4>
+                <ul>
+                    <li><strong>DOE ARPA-E:</strong> Transformative energy technologies ($1M-$10M)</li>
+                    <li><strong>NSF:</strong> Fundamental research ($300K-$1M/year, 3-year projects)</li>
+                    <li><strong>DOE SBIR/STTR:</strong> Small business innovation ($150K-$1.5M)</li>
+                </ul>
+                
+                <h4>Private/Industry</h4>
+                <ul>
+                    <li><strong>Venture Capital:</strong> If commercialization path identified</li>
+                    <li><strong>Strategic Partners:</strong> National labs, defense contractors, utilities</li>
+                    <li><strong>Philanthropic:</strong> Breakthrough Energy, Schmidt Futures</li>
+                </ul>
+                
+                <h4>Academic</h4>
+                <ul>
+                    <li><strong>University cost-sharing:</strong> Facilities, overhead reduction</li>
+                    <li><strong>Student labor:</strong> Ph.D./postdoc (lower cost, longer timeline)</li>
+                </ul>
+            </div>
+            
+            <!-- TEAM & EXPERTISE TAB -->
+            <div id="team" class="tab-content">
+                <h2>Team Structure and Expertise Requirements</h2>
+                
+                <p style="margin-bottom: 30px; line-height: 1.6;">L.A.F.R.E.S. requires a multidisciplinary team with expertise spanning nuclear engineering, plasma physics, materials science, thermal-fluid systems, and regulatory compliance. This section outlines the required personnel, qualifications, and organizational structure.</p>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Core Leadership Team</h3>
+                
+                <table style="width: 100%; margin-top: 20px;">
+                    <thead>
+                    <tr>
+                        <th style="width: 20%;">Role</th>
+                        <th style="width: 35%;">Responsibilities</th>
+                        <th style="width: 30%;">Required Qualifications</th>
+                        <th style="width: 15%;">Commitment</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>Principal Investigator</strong></td>
+                        <td>Overall project vision, funding strategy, stakeholder management, regulatory oversight</td>
+                        <td>PhD in Nuclear/Plasma Physics, 10+ years experience, track record in fusion research</td>
+                        <td>Full-time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Technical Director</strong></td>
+                        <td>System integration, technical roadmap, simulation oversight, safety protocols</td>
+                        <td>PhD in Nuclear/Mechanical Engineering, multiphysics expertise, 8+ years</td>
+                        <td>Full-time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Project Manager</strong></td>
+                        <td>Schedule coordination, budget tracking, milestone management, team communication</td>
+                        <td>PMP certification or equivalent, R&D project management experience</td>
+                        <td>Part-time to Full-time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Safety Officer (RSO)</strong></td>
+                        <td>Radiation protection, license applications, regulatory compliance, staff training</td>
+                        <td>Certified Health Physicist (CHP), NRC licensing experience</td>
+                        <td>Part-time (consultant acceptable Phase 0-1)</td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Technical Staff</h3>
+                
+                <table style="width: 100%; margin-top: 20px;">
+                    <thead>
+                    <tr>
+                        <th style="width: 22%;">Discipline</th>
+                        <th style="width: 10%;">Count</th>
+                        <th style="width: 48%;">Key Skills and Expertise</th>
+                        <th style="width: 20%;">Project Phase</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>Nuclear Engineer</strong></td>
+                        <td>1-2</td>
+                        <td>Neutron transport modeling (MCNP/OpenMC), radiation shielding design, dosimetry</td>
+                        <td>All phases</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plasma Physicist</strong></td>
+                        <td>1</td>
+                        <td>IEC fusor design, PIC simulation, high-voltage systems, vacuum technology</td>
+                        <td>Phase 0, Phase 3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mechanical Engineer</strong></td>
+                        <td>1-2</td>
+                        <td>Thermal-fluids, CFD (OpenFOAM), pressure vessel design, CAD (SolidWorks/CATIA)</td>
+                        <td>All phases</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Materials Scientist</strong></td>
+                        <td>1</td>
+                        <td>Liquid metal corrosion, high-temperature materials, metallurgy, failure analysis</td>
+                        <td>Phase 1+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Electrical Engineer</strong></td>
+                        <td>1-2</td>
+                        <td>Power electronics, high-voltage systems, signal processing, instrumentation</td>
+                        <td>Phase 1+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Control Systems Engineer</strong></td>
+                        <td>1</td>
+                        <td>FPGA programming, real-time systems, PID/MPC control, safety interlocks</td>
+                        <td>Phase 1+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Acoustic Engineer</strong></td>
+                        <td>1</td>
+                        <td>Finite element analysis (COMSOL), transducer design, modal analysis</td>
+                        <td>Phase 0-2</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Software Engineer</strong></td>
+                        <td>1</td>
+                        <td>Python/C++, machine learning frameworks, data acquisition, HPC systems</td>
+                        <td>Phase 0+</td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Support Personnel</h3>
+                
+                <table style="width: 100%; margin-top: 20px;">
+                    <thead>
+                    <tr>
+                        <th style="width: 22%;">Role</th>
+                        <th style="width: 10%;">Count</th>
+                        <th style="width: 48%;">Key Skills and Expertise</th>
+                        <th style="width: 20%;">Project Phase</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>Lab Technician</strong></td>
+                        <td>2-3</td>
+                        <td>Instrumentation setup, data acquisition systems, equipment maintenance</td>
+                        <td>Phase 1+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Machinist/Fabricator</strong></td>
+                        <td>1</td>
+                        <td>TIG welding, CNC machining, sheet metal fabrication (contract acceptable)</td>
+                        <td>Phase 1+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Electronics Technician</strong></td>
+                        <td>1</td>
+                        <td>PCB assembly, cable harnessing, circuit debugging, soldering</td>
+                        <td>Phase 1+</td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Required Academic Background</h3>
+                
+                <div style="margin-top: 20px;">
+                    <h4>Advanced Degrees (PhD or Master's level)</h4>
+                    <table style="width: 100%; margin-top: 15px;">
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">Degree Field</th>
+                                <th style="width: 70%;">Relevant Specializations</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Nuclear Engineering</strong></td>
+                                <td>Neutron transport, radiation protection, reactor physics, monte carlo simulation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mechanical Engineering</strong></td>
+                                <td>Thermal-fluids, heat transfer, computational fluid dynamics, finite element analysis</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Electrical Engineering</strong></td>
+                                <td>Power systems, control theory, signal processing, embedded systems</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Physics</strong></td>
+                                <td>Plasma physics, fusion energy, high-energy-density physics, particle beam dynamics</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Materials Science</strong></td>
+                                <td>Corrosion mechanisms, high-temperature materials, metallurgy, materials characterization</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Computer Science</strong></td>
+                                <td>Machine learning, real-time systems, scientific computing, embedded programming</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <h4 style="margin-top: 30px;">Professional Certifications</h4>
+                    <ul style="margin-top: 15px;">
+                        <li><strong>Certified Health Physicist (CHP)</strong> - Required for Radiation Safety Officer role</li>
+                        <li><strong>Professional Engineer (PE)</strong> - Preferred for pressure vessel design and facility approval</li>
+                        <li><strong>PMP (Project Management Professional)</strong> - Preferred for project management role</li>
+                        <li><strong>Radiation Safety Training</strong> - Required for all personnel (4-8 hours initial training)</li>
+                        <li><strong>Hazmat/OSHA Training</strong> - Required for lithium handling personnel</li>
+                    </ul>
+                </div>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Relevant Industry Experience</h3>
+                
+                <table style="width: 100%; margin-top: 20px;">
+                    <thead>
+                    <tr>
+                        <th style="width: 25%;">Experience Domain</th>
+                        <th style="width: 38%;">Value to L.A.F.R.E.S.</th>
+                        <th style="width: 37%;">Talent Sources</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Nuclear Reactor Operations</td>
+                        <td>Regulatory compliance expertise, safety culture, operational procedures</td>
+                        <td>National laboratories, utilities, Navy nuclear program</td>
+                    </tr>
+                    <tr>
+                        <td>Fusion Research</td>
+                        <td>Plasma diagnostics, high-voltage systems, vacuum technology</td>
+                        <td>PPPL, MIT PSFC, TAE, Commonwealth Fusion, General Atomics</td>
+                    </tr>
+                    <tr>
+                        <td>Liquid Metal Systems</td>
+                        <td>Sodium/lithium handling, MHD effects, corrosion mitigation strategies</td>
+                        <td>ORNL, KAPL, fast reactor programs, EBR-II legacy personnel</td>
+                    </tr>
+                    <tr>
+                        <td>Neutron Sources</td>
+                        <td>Beam dynamics, target design, radiation shielding</td>
+                        <td>SNS (ORNL), LANSCE (LANL), university accelerator facilities</td>
+                    </tr>
+                    <tr>
+                        <td>Thermoelectric R&D</td>
+                        <td>Materials selection, module testing, thermal interface optimization</td>
+                        <td>JPL, Caltech, Northwestern, Evident Thermoelectrics</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Manufacturing</td>
+                        <td>Precision machining, specialized welding, non-destructive testing</td>
+                        <td>Contract manufacturers, aerospace sector, semiconductor equipment</td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Compensation Structure</h3>
+                
+                <p style="margin-top: 20px;"><strong>Salary Ranges (USD, 2025 estimates)</strong></p>
+                <table style="width: 100%; margin-top: 15px;">
+                    <thead>
+                    <tr>
+                        <th style="width: 35%;">Role</th>
+                        <th style="width: 25%;">Annual Salary</th>
+                        <th style="width: 40%;">Equity (Typical)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Principal Investigator</td>
+                        <td>$120,000 - $180,000</td>
+                        <td>15-30% (founder equity)</td>
+                    </tr>
+                    <tr>
+                        <td>Technical Director</td>
+                        <td>$110,000 - $160,000</td>
+                        <td>5-15% (early hire)</td>
+                    </tr>
+                    <tr>
+                        <td>Senior Engineer (PhD + 5 years)</td>
+                        <td>$90,000 - $140,000</td>
+                        <td>0.5-2%</td>
+                    </tr>
+                    <tr>
+                        <td>Engineer (MS/PhD, early career)</td>
+                        <td>$70,000 - $110,000</td>
+                        <td>0.25-1%</td>
+                    </tr>
+                    <tr>
+                        <td>Postdoc / Research Scientist</td>
+                        <td>$60,000 - $80,000</td>
+                        <td>0.1-0.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Lab Technician</td>
+                        <td>$50,000 - $75,000</td>
+                        <td>0.05-0.25%</td>
+                    </tr>
+                    <tr>
+                        <td>RSO (Part-time Consultant)</td>
+                        <td>$50,000 - $80,000/year</td>
+                        <td>N/A (consultant basis)</td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <div style="margin: 25px 0; padding: 15px; background: #f8f9fa; border-left: 3px solid #1e3c72; border-radius: 3px;">
+                    <p style="margin: 0;"><strong>Note:</strong> University-affiliated projects typically offer salaries 20-30% lower, compensated by academic benefits (healthcare, retirement, facilities access). Graduate students and postdocs further reduce costs ($30,000-$60,000/year).</p>
+                </div>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Talent Acquisition Strategy</h3>
+                
+                <div style="margin-top: 20px;">
+                    <h4>1. University Partnerships</h4>
+                    <ul style="margin: 10px 0 20px 20px; line-height: 1.8;">
+                        <li><strong>Faculty:</strong> Part-time consulting or sabbatical assignments</li>
+                        <li><strong>Postdocs:</strong> 2-3 year appointments with pathway to permanent positions</li>
+                        <li><strong>Graduate Students:</strong> Ph.D./M.S. research projects aligned with project milestones</li>
+                        <li><strong>Advantages:</strong> Lower cost, facility access, publication motivation</li>
+                    </ul>
+                    
+                    <h4>2. National Laboratory Transitions</h4>
+                    <ul style="margin: 10px 0 20px 20px; line-height: 1.8;">
+                        <li><strong>Staff Scientists:</strong> Mid-career researchers seeking entrepreneurial opportunities</li>
+                        <li><strong>Retired Personnel:</strong> Experienced staff on short-term or consulting contracts</li>
+                        <li><strong>Joint Appointments:</strong> Shared arrangements preserving lab affiliation</li>
+                    </ul>
+                    
+                    <h4>3. Industry and Private Sector</h4>
+                    <ul style="margin: 10px 0 20px 20px; line-height: 1.8;">
+                        <li><strong>Nuclear Utilities:</strong> Transitioning operators and engineers</li>
+                        <li><strong>Fusion Startups:</strong> Personnel from TAE, Commonwealth Fusion, Helion, General Fusion</li>
+                        <li><strong>Defense Sector:</strong> Engineers with clearances (valuable for NNSA/DoD collaborations)</li>
+                    </ul>
+                    
+                    <h4>4. International Recruitment</h4>
+                    <ul style="margin: 10px 0 20px 20px; line-height: 1.8;">
+                        <li><strong>European Programs:</strong> EUROfusion, KIT (Germany), CEA (France)</li>
+                        <li><strong>Asia-Pacific:</strong> ITER participants, Japanese and Korean fusion research programs</li>
+                        <li><strong>Visa Pathways:</strong> H-1B for specialized roles, EB-1/EB-2 for advanced degree holders</li>
+                    </ul>
+                </div>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Advisory Board Structure</h3>
+                
+                <p style="margin-top: 20px;">Target 5-8 strategic advisors with complementary expertise to provide guidance and industry connections.</p>
+                
+                <table style="width: 100%; margin-top: 15px;">
+                    <thead>
+                    <tr>
+                        <th style="width: 22%;">Expertise Domain</th>
+                        <th style="width: 30%;">Advisory Role</th>
+                        <th style="width: 18%;">Time Commitment</th>
+                        <th style="width: 30%;">Compensation Model</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Fusion Science</td>
+                        <td>Technical validation, community credibility</td>
+                        <td>Quarterly meetings</td>
+                        <td>Equity (0.25-1%) or $5,000-$15,000/year</td>
+                    </tr>
+                    <tr>
+                        <td>Nuclear Regulatory</td>
+                        <td>License applications, NRC liaison</td>
+                        <td>As-needed + quarterly</td>
+                        <td>Hourly consulting ($200-$400/hour)</td>
+                    </tr>
+                    <tr>
+                        <td>Liquid Metal Systems</td>
+                        <td>Corrosion mitigation, safety review</td>
+                        <td>Quarterly meetings</td>
+                        <td>Equity or $5,000-$10,000/year</td>
+                    </tr>
+                    <tr>
+                        <td>Business Development</td>
+                        <td>Customer introductions, partnerships</td>
+                        <td>Quarterly + ad-hoc</td>
+                        <td>Equity (0.5-2%) plus success fees</td>
+                    </tr>
+                    <tr>
+                        <td>Fundraising / Finance</td>
+                        <td>Investment strategy, investor network</td>
+                        <td>Quarterly meetings</td>
+                        <td>Equity (0.25-0.5%)</td>
+                    </tr>
+                    </tbody>
+                </table>
+                
+                <div style="margin: 20px 0; padding: 15px; background: #f8f9fa; border-left: 3px solid #1e3c72; border-radius: 3px;">
+                    <p style="margin: 0;"><strong>Ideal Advisor Profiles:</strong> Retired national lab directors, fusion program leaders (ITER, NIF, tokamak projects), nuclear industry executives, successful deep-tech entrepreneurs, regulatory experts.</p>
+                </div>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Current Opportunities</h3>
+                
+                <div style="margin-top: 20px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 5px;">
+                    <p><strong>Current Status (Phase 0):</strong> Pre-funding stage, assembling founding team</p>
+                    
+                    <h4 style="margin-top: 20px;">Immediate Hiring Needs</h4>
+                    <ul style="line-height: 1.8;">
+                        <li><strong>Co-Founder / Technical Director:</strong> Technical leadership across multiple physics domains, 2+ year commitment</li>
+                        <li><strong>Nuclear Engineer:</strong> MCNP expertise, radiation safety background, part-time to start</li>
+                        <li><strong>Technical Advisors:</strong> Fusion/nuclear community connections, regulatory expertise</li>
+                    </ul>
+                    
+                    <h4 style="margin-top: 20px;">Future Positions (Phase 1+)</h4>
+                    <ul style="line-height: 1.8;">
+                        <li>Mechanical Engineer (thermal-fluids, CAD modeling)</li>
+                        <li>Control Systems Engineer (FPGA, real-time systems)</li>
+                        <li>Lab Technicians (2-3 positions)</li>
+                        <li>Software Engineer (ML/AI, Python/C++)</li>
+                    </ul>
+                    
+                    <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #dee2e6;">
+                        <p style="margin-bottom: 10px;"><strong>To Apply:</strong></p>
+                        <p style="margin: 5px 0;"><strong>Email:</strong> careers@lafres.org</p>
+                        <p style="margin: 5px 0;"><strong>Include:</strong> CV/resume, statement of interest, relevant publications or project portfolio</p>
+                        <p style="margin: 5px 0;"><strong>Timeline:</strong> Rolling basis, priority consideration for early applicants</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PROJECT STRUCTURE TAB -->
+            <div id="structure" class="tab-content">
+                <h2>Project File Structure and Documentation</h2>
+                
+                <p style="margin-bottom: 30px; line-height: 1.6;">The L.A.F.R.E.S. project is organized into a comprehensive directory structure containing over 50 documentation files totaling approximately 15,000 lines. All files use standard formats (Markdown, Jupyter Notebooks) optimized for version control, AI parsing, and human readability.</p>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Directory Organization</h3>
+                
+                <table style="width: 100%; margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Directory</th>
+                            <th style="width: 15%;">File Count</th>
+                            <th style="width: 65%;">Contents and Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>docs/</strong></td>
+                            <td>11 files</td>
+                            <td>Core technical documentation covering physics fundamentals, system architecture, subsystem designs, safety protocols, and regulatory requirements</td>
+                        </tr>
+                        <tr>
+                            <td><strong>specs/</strong></td>
+                            <td>7 files</td>
+                            <td>Detailed component specifications for plasma core, acoustic transducers, lithium handling systems, thermal extraction, control hardware, sensors, and communication protocols</td>
+                        </tr>
+                        <tr>
+                            <td><strong>design/</strong></td>
+                            <td>6 files</td>
+                            <td>Engineering design documentation including CAD requirements, pressure vessel calculations, lithium loop design, acoustic shell geometry, thermal converter layout, and electrical wiring</td>
+                        </tr>
+                        <tr>
+                            <td><strong>simulations/</strong></td>
+                            <td>5 files</td>
+                            <td>Computational models for neutron transport (MCNP), CFD analysis (OpenFOAM), acoustic FEA (COMSOL), thermal networks, and plasma PIC simulations</td>
+                        </tr>
+                        <tr>
+                            <td><strong>research/</strong></td>
+                            <td>5 files</td>
+                            <td>Literature review, known physical limitations, benchmark comparisons, acoustic-liquid metal coupling studies, tritium breeding calculations</td>
+                        </tr>
+                        <tr>
+                            <td><strong>safety/</strong></td>
+                            <td>4 files</td>
+                            <td>Safety protocols for lithium handling, radiation protection (ALARA), tritium containment, emergency shutdown procedures</td>
+                        </tr>
+                        <tr>
+                            <td><strong>roadmap/</strong></td>
+                            <td>5 files</td>
+                            <td>Phase-by-phase development plans (Phase 0-3), timeline estimates, budget breakdowns, cost estimates, and funding strategies</td>
+                        </tr>
+                        <tr>
+                            <td><strong>diagrams/</strong></td>
+                            <td>Placeholder</td>
+                            <td>Visual documentation directory for system diagrams, CAD renders, and technical illustrations (to be populated)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Key Documentation Files</h3>
+                
+                <table style="width: 100%; margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 35%;">File Name</th>
+                            <th style="width: 65%;">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>README.md</strong></td>
+                            <td>Project overview, mission statement, quick start guide, and navigation index</td>
+                        </tr>
+                        <tr>
+                            <td><strong>00_overview.md</strong></td>
+                            <td>Executive summary describing system concept, goals, and high-level architecture</td>
+                        </tr>
+                        <tr>
+                            <td><strong>02_system_architecture.md</strong></td>
+                            <td>Complete system integration showing how micro-fusion core, lithium blanket, acoustic control, and thermal conversion interconnect</td>
+                        </tr>
+                        <tr>
+                            <td><strong>08_safety_protocols.md</strong></td>
+                            <td>Comprehensive safety procedures covering lithium handling, radiation protection, and emergency response</td>
+                        </tr>
+                        <tr>
+                            <td><strong>09_regulatory_constraints.md</strong></td>
+                            <td>Licensing requirements, regulatory timeline, NRC/state interface procedures</td>
+                        </tr>
+                        <tr>
+                            <td><strong>neutron_flux_model.ipynb</strong></td>
+                            <td>Jupyter notebook with Monte Carlo neutron transport simulation (MCNP/OpenMC)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>phase_0_simulation.md</strong></td>
+                            <td>Initial modeling phase plan (6-12 months, $125K-$250K budget)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>cost_estimates.md</strong></td>
+                            <td>Detailed budget breakdown across all project phases with funding strategy options</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Documentation Standards</h3>
+                
+                <div style="margin-top: 20px;">
+                    <h4>File Formats</h4>
+                    <ul style="line-height: 1.8;">
+                        <li><strong>Markdown (.md):</strong> All documentation files for maximum readability and version control compatibility</li>
+                        <li><strong>Jupyter Notebooks (.ipynb):</strong> Computational models with embedded code, equations, and visualizations</li>
+                        <li><strong>Future formats:</strong> CAD files (.stp, .igs), technical diagrams (.png, .svg)</li>
+                    </ul>
+                    
+                    <h4 style="margin-top: 20px;">Naming Conventions</h4>
+                    <ul style="line-height: 1.8;">
+                        <li><strong>Sequential numbering:</strong> Documentation folder uses 00-09 prefix for logical reading order</li>
+                        <li><strong>Descriptive naming:</strong> File names clearly indicate content (e.g., phase_1_lithium_bench.md)</li>
+                        <li><strong>Lowercase with underscores:</strong> Consistent, URL-friendly, cross-platform compatible</li>
+                    </ul>
+                    
+                    <h4 style="margin-top: 20px;">Document Structure</h4>
+                    <p>Each technical document follows a standardized template:</p>
+                    <ol style="line-height: 1.8;">
+                        <li><strong>Title and Overview:</strong> Clear heading with purpose statement</li>
+                        <li><strong>Hierarchical Sections:</strong> Numbered organization (1. → 1.1 → 1.1.1)</li>
+                        <li><strong>Tables and Lists:</strong> Specifications, comparisons, enumerations</li>
+                        <li><strong>Code Blocks:</strong> Equations, configurations, example implementations</li>
+                        <li><strong>References:</strong> Citations to literature, standards, related documents</li>
+                        <li><strong>Metadata Footer:</strong> Version number, revision date, author/team</li>
+                    </ol>
+                </div>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Navigation Guide by Role</h3>
+                
+                <table style="width: 100%; margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">User Type</th>
+                            <th style="width: 75%;">Recommended Reading Path</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Engineers & Scientists</strong></td>
+                            <td>Start with README.md → docs/ folder for technical details → specs/ for component requirements → safety/ before any hands-on work</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Project Managers</strong></td>
+                            <td>roadmap/ folder for timeline and milestones → cost_estimates.md for budget → known_limitations.md for risk assessment</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Safety & Regulatory</strong></td>
+                            <td>safety/ folder for all protocols → 09_regulatory_constraints.md for licensing → radiation_protocols.md and lithium_safety.md</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Investors & Stakeholders</strong></td>
+                            <td>This HTML file for executive overview → phase roadmaps for deliverables → cost_estimates.md for financial transparency</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Version Control Recommendations</h3>
+                
+                <p style="margin-top: 20px;">All project documentation should be managed using Git version control for complete traceability and team collaboration.</p>
+                
+                <div style="margin: 20px 0; padding: 20px; background: #f8f9fa; border-left: 3px solid #1e3c72; border-radius: 3px; font-family: 'Courier New', monospace; font-size: 14px;">
+                    <strong>Recommended Git Workflow:</strong><br><br>
+                    git init<br>
+                    git add .<br>
+                    git commit -m "Initial L.A.F.R.E.S. project structure"<br>
+                    git branch phase-0-simulation<br>
+                    git branch phase-1-hardware<br>
+                    git branch documentation-updates
+                </div>
+                
+                <p style="margin-top: 20px;"><strong>Benefits:</strong> Regular commits ensure all documentation changes are tracked, reversible, and auditable throughout the entire project lifecycle.</p>
+                
+                <h3 style="margin-top: 40px; padding-bottom: 10px; border-bottom: 2px solid #1e3c72;">Getting Started</h3>
+                
+                <div style="margin-top: 25px; padding: 25px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 5px;">
+                    <p><strong>Recommended onboarding sequence:</strong></p>
+                    <ol style="line-height: 2; margin-top: 15px;">
+                        <li><strong>Review this HTML file</strong> with your team for complete project overview</li>
+                        <li><strong>Navigate to LAFRES/ directory</strong> and explore the markdown documentation</li>
+                        <li><strong>Read safety documentation</strong> thoroughly before any experimental or hands-on work</li>
+                        <li><strong>Begin Phase 0 simulations</strong> as outlined in roadmap/phase_0_simulation.md</li>
+                        <li><strong>Establish version control</strong> and begin iterative documentation refinement</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <h3>L.A.F.R.E.S. Project</h3>
+            <p>Lithium Acoustic Fusion Reactor for Energy Sustainability</p>
+            <p style="margin-top: 20px; opacity: 0.8;">Complete documentation package generated November 2025</p>
+            <p style="margin-top: 10px; opacity: 0.8;"><strong>Status:</strong> Initial Documentation Phase | <strong>Version:</strong> 0.1.0</p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">
+                This is a research-grade blueprint for a neutron-generating system.
+                <br>Not intended for commercial power generation.
+                <br>Extensive validation, regulatory approval, and qualified personnel required for implementation.
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        function showTab(tabName, event) {
+            // Hide all tab contents
+            const contents = document.getElementsByClassName('tab-content');
+            for (let content of contents) {
+                content.classList.remove('active');
+            }
+            
+            // Remove active class from all tabs
+            const tabs = document.getElementsByClassName('nav-tab');
+            for (let tab of tabs) {
+                tab.classList.remove('active');
+            }
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked tab
+            if (event && event.target) {
+                event.target.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
+

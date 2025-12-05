@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="600" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b" text-anchor="middle">L.A.F.R.E.S. System Architecture</text>
+  
+  <!-- AI Control System (Top) -->
+  <rect x="250" y="70" width="400" height="60" rx="8" fill="url(#blueGrad)" filter="url(#shadow)"/>
+  <text x="450" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">AI Control System</text>
+  <text x="450" y="118" font-family="Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.8)" text-anchor="middle">Real-time Monitoring • ML Optimization • Safety Interlocks</text>
+  
+  <!-- Connection lines from AI to subsystems -->
+  <line x1="350" y1="130" x2="150" y2="200" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="400" y1="130" x2="350" y2="200" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="450" y1="130" x2="450" y2="200" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="500" y1="130" x2="550" y2="200" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="550" y1="130" x2="750" y2="200" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+  
+  <!-- Micro-Fusion Core -->
+  <rect x="50" y="200" width="200" height="120" rx="8" fill="url(#redGrad)" filter="url(#shadow)"/>
+  <text x="150" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Micro-Fusion Core</text>
+  <text x="150" y="260" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Pulsed IEC Device</text>
+  <text x="150" y="280" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">10⁶-10¹⁰ n/s</text>
+  <text x="150" y="300" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">30-100 kV, 1-100 Hz</text>
+  
+  <!-- Lithium Blanket -->
+  <rect x="300" y="200" width="200" height="120" rx="8" fill="url(#orangeGrad)" filter="url(#shadow)"/>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Liquid Lithium Blanket</text>
+  <text x="400" y="260" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Neutron Moderator</text>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">300-500°C, 50-200 L</text>
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Heat Transfer Medium</text>
+  
+  <!-- Acoustic Stabilization -->
+  <rect x="550" y="200" width="200" height="120" rx="8" fill="url(#cyanGrad)" filter="url(#shadow)"/>
+  <text x="650" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Acoustic Stabilization</text>
+  <text x="650" y="260" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Phased Array</text>
+  <text x="650" y="280" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">10-500 kHz, 32-64 units</text>
+  <text x="650" y="300" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">MHD Damping</text>
+  
+  <!-- Arrows between subsystems -->
+  <path d="M250 260 L300 260" stroke="#1e293b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M500 260 L550 260" stroke="#1e293b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1e293b"/>
+    </marker>
+  </defs>
+  
+  <!-- Labels on arrows -->
+  <text x="275" y="250" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Neutrons</text>
+  <text x="525" y="250" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Coupling</text>
+  
+  <!-- Second Row -->
+  <!-- Thermal Conversion -->
+  <rect x="175" y="380" width="200" height="120" rx="8" fill="url(#purpleGrad)" filter="url(#shadow)"/>
+  <text x="275" y="420" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Thermal Conversion</text>
+  <text x="275" y="440" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Thermoelectric Modules</text>
+  <text x="275" y="460" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">10-20% Efficiency</text>
+  <text x="275" y="480" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">1-10 kW Output</text>
+  
+  <!-- Sensor Suite -->
+  <rect x="425" y="380" width="200" height="120" rx="8" fill="url(#greenGrad)" filter="url(#shadow)"/>
+  <text x="525" y="420" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Sensor Suite</text>
+  <text x="525" y="440" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">50+ Channels</text>
+  <text x="525" y="460" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Thermal, Neutron, Acoustic</text>
+  <text x="525" y="480" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">1-10 kHz Sampling</text>
+  
+  <!-- Vertical arrows -->
+  <path d="M400 320 L325 380" stroke="#1e293b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="350" y="355" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Heat</text>
+  
+  <path d="M525 320 L525 380" stroke="#1e293b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="545" y="355" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Data</text>
+  
+  <!-- Safety Systems Box -->
+  <rect x="700" y="380" width="160" height="120" rx="8" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="8,4"/>
+  <text x="780" y="420" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626" text-anchor="middle">Safety Systems</text>
+  <text x="780" y="445" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Hardware Interlocks</text>
+  <text x="780" y="465" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Emergency Shutdown</text>
+  <text x="780" y="485" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Redundant Sensors</text>
+  
+  <!-- Feedback loop arrow -->
+  <path d="M525 500 Q 525 550 450 550 Q 100 550 100 260 Q 100 200 150 180" stroke="#3b82f6" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
+  <text x="300" y="565" font-family="Arial, sans-serif" font-size="10" fill="#3b82f6" text-anchor="middle">Feedback Control Loop</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="520" width="150" height="70" rx="4" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="105" y="540" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle">Legend</text>
+  <line x1="40" y1="555" x2="70" y2="555" stroke="#1e293b" stroke-width="2"/>
+  <text x="130" y="559" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="end">Data/Energy Flow</text>
+  <line x1="40" y1="575" x2="70" y2="575" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="130" y="579" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="end">Control Signal</text>
+</svg>
+

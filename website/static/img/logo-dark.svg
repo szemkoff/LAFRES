@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- Gradient for the core -->
+    <radialGradient id="coreGradientDark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#93c5fd"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </radialGradient>
+    
+    <!-- Gradient for outer glow -->
+    <radialGradient id="glowGradientDark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0"/>
+    </radialGradient>
+    
+    <!-- Gradient for acoustic waves -->
+    <linearGradient id="waveGradientDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background glow -->
+  <circle cx="100" cy="100" r="90" fill="url(#glowGradientDark)"/>
+  
+  <!-- Outer acoustic wave rings -->
+  <circle cx="100" cy="100" r="75" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-opacity="0.4"/>
+  <circle cx="100" cy="100" r="60" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-opacity="0.6"/>
+  <circle cx="100" cy="100" r="45" fill="none" stroke="#60a5fa" stroke-width="2" stroke-opacity="0.8"/>
+  
+  <!-- Electron orbits -->
+  <ellipse cx="100" cy="100" rx="70" ry="25" fill="none" stroke="url(#waveGradientDark)" stroke-width="2.5" transform="rotate(-30 100 100)"/>
+  <ellipse cx="100" cy="100" rx="70" ry="25" fill="none" stroke="url(#waveGradientDark)" stroke-width="2.5" transform="rotate(30 100 100)"/>
+  <ellipse cx="100" cy="100" rx="70" ry="25" fill="none" stroke="url(#waveGradientDark)" stroke-width="2.5" transform="rotate(90 100 100)"/>
+  
+  <!-- Electrons on orbits -->
+  <circle cx="170" cy="100" r="6" fill="#22d3ee" transform="rotate(-30 100 100)"/>
+  <circle cx="30" cy="100" r="6" fill="#22d3ee" transform="rotate(30 100 100)"/>
+  <circle cx="100" cy="30" r="6" fill="#22d3ee"/>
+  
+  <!-- Central fusion core -->
+  <circle cx="100" cy="100" r="22" fill="url(#coreGradientDark)"/>
+  
+  <!-- Inner core highlight -->
+  <circle cx="94" cy="94" r="8" fill="#bfdbfe" fill-opacity="0.7"/>
+  
+  <!-- Lithium symbol "Li" in center -->
+  <text x="100" y="108" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0f172a" text-anchor="middle">Li</text>
+</svg>
+

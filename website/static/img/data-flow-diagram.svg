@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sensorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="actuatorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <linearGradient id="safetyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Control System Data Flow</text>
+  
+  <!-- SENSORS Section -->
+  <rect x="30" y="70" width="180" height="350" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="120" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#065f46" text-anchor="middle">SENSORS</text>
+  
+  <!-- Sensor boxes -->
+  <rect x="45" y="115" width="150" height="40" rx="4" fill="url(#sensorGrad)"/>
+  <text x="120" y="140" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Thermocouples (20-50)</text>
+  
+  <rect x="45" y="165" width="150" height="40" rx="4" fill="url(#sensorGrad)"/>
+  <text x="120" y="190" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Neutron Detectors (3-10)</text>
+  
+  <rect x="45" y="215" width="150" height="40" rx="4" fill="url(#sensorGrad)"/>
+  <text x="120" y="240" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Pressure Transducers</text>
+  
+  <rect x="45" y="265" width="150" height="40" rx="4" fill="url(#sensorGrad)"/>
+  <text x="120" y="290" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Acoustic Sensors (10-30)</text>
+  
+  <rect x="45" y="315" width="150" height="40" rx="4" fill="url(#sensorGrad)"/>
+  <text x="120" y="340" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Level Sensors</text>
+  
+  <rect x="45" y="365" width="150" height="40" rx="4" fill="url(#sensorGrad)"/>
+  <text x="120" y="390" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Radiation Monitors</text>
+  
+  <!-- PROCESSING Section -->
+  <rect x="260" y="70" width="280" height="350" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="400" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af" text-anchor="middle">PROCESSING</text>
+  
+  <!-- Processing layers -->
+  <rect x="275" y="115" width="250" height="55" rx="4" fill="url(#processGrad)"/>
+  <text x="400" y="138" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Data Acquisition</text>
+  <text x="400" y="155" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Signal Conditioning • A/D Conversion</text>
+  
+  <rect x="275" y="185" width="250" height="55" rx="4" fill="url(#processGrad)"/>
+  <text x="400" y="208" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">FPGA Layer (&lt;1ms)</text>
+  <text x="400" y="225" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Acoustic Control • Safety Interlocks</text>
+  
+  <rect x="275" y="255" width="250" height="55" rx="4" fill="url(#processGrad)"/>
+  <text x="400" y="278" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">RT-Linux Layer (~10ms)</text>
+  <text x="400" y="295" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Thermal Control • State Machine</text>
+  
+  <rect x="275" y="325" width="250" height="55" rx="4" fill="url(#processGrad)"/>
+  <text x="400" y="348" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">GPU/ML Layer (~100ms)</text>
+  <text x="400" y="365" font-family="Arial, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)" text-anchor="middle">Optimization • Anomaly Detection</text>
+  
+  <!-- ACTUATORS Section -->
+  <rect x="590" y="70" width="180" height="260" rx="8" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="680" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9a3412" text-anchor="middle">ACTUATORS</text>
+  
+  <!-- Actuator boxes -->
+  <rect x="605" y="115" width="150" height="40" rx="4" fill="url(#actuatorGrad)"/>
+  <text x="680" y="140" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Acoustic Drivers</text>
+  
+  <rect x="605" y="165" width="150" height="40" rx="4" fill="url(#actuatorGrad)"/>
+  <text x="680" y="190" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">HV Power Supply</text>
+  
+  <rect x="605" y="215" width="150" height="40" rx="4" fill="url(#actuatorGrad)"/>
+  <text x="680" y="240" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Gas Valves</text>
+  
+  <rect x="605" y="265" width="150" height="40" rx="4" fill="url(#actuatorGrad)"/>
+  <text x="680" y="290" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Heater Elements</text>
+  
+  <!-- SAFETY Section -->
+  <rect x="590" y="345" width="180" height="75" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="680" y="370" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#991b1b" text-anchor="middle">SAFETY</text>
+  
+  <rect x="605" y="385" width="150" height="25" rx="4" fill="url(#safetyGrad)"/>
+  <text x="680" y="403" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Emergency Shutdown</text>
+  
+  <!-- Data flow arrows -->
+  <!-- Sensors to DAQ -->
+  <path d="M210 135 L265 142" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M210 185 L265 142" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M210 235 L265 142" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M210 285 L265 142" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M210 335 L265 142" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M210 385 L265 142" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Processing to Actuators -->
+  <path d="M535 212 L595 160" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M535 212 L595 205" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M535 282 L595 235" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M535 282 L595 285" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Safety path -->
+  <path d="M535 212 L595 395" stroke="#ef4444" stroke-width="3" marker-end="url(#arrowRed)" stroke-dasharray="5,3"/>
+  
+  <!-- Feedback loop -->
+  <path d="M680 315 Q 760 400 680 425 Q 400 480 120 425 Q 40 400 120 350" stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arrowBlue)" stroke-dasharray="8,4"/>
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="10" fill="#3b82f6" text-anchor="middle">Feedback Loop</text>
+  
+  <!-- Data rates -->
+  <text x="240" y="250" font-family="Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle" transform="rotate(-45 240 250)">1-10 MB/s</text>
+  <text x="560" y="180" font-family="Arial, sans-serif" font-size="8" fill="#64748b" text-anchor="middle" transform="rotate(-25 560 180)">1-10 kHz</text>
+  
+  <!-- Legend -->
+  <rect x="30" y="440" width="200" height="50" rx="4" fill="white" stroke="#e2e8f0"/>
+  <text x="130" y="458" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#374151" text-anchor="middle">Sampling Rates</text>
+  <text x="130" y="475" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Safety: 10kHz | Acoustic: 1-10kHz | Thermal: 1-10Hz</text>
+</svg>
+

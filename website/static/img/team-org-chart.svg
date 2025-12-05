@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+  <style>
+    .title { font: bold 22px Arial, sans-serif; fill: #1e293b; }
+    .subtitle { font: 11px Arial, sans-serif; fill: #64748b; }
+    .dept-label { font: bold 11px Arial, sans-serif; fill: white; }
+    .box-title { font: bold 11px Arial, sans-serif; fill: white; }
+    .box-name { font: 10px Arial, sans-serif; fill: rgba(255,255,255,0.9); }
+    .box-detail { font: 8px Arial, sans-serif; fill: rgba(255,255,255,0.7); }
+    .legend-text { font: 9px Arial, sans-serif; fill: #374151; }
+    .initials { font: bold 14px Arial, sans-serif; fill: white; }
+    .small-text { font: 7px Arial, sans-serif; fill: white; }
+    .connector { stroke: #94a3b8; stroke-width: 2; fill: none; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="1000" height="650" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="500" y="32" text-anchor="middle" class="title">L.A.F.R.E.S. Team Organization</text>
+  <text x="500" y="48" text-anchor="middle" class="subtitle">Phase 0 - Building Founding Team</text>
+  
+  <!-- Board of Directors -->
+  <rect x="375" y="65" width="250" height="40" rx="6" fill="#7c3aed"/>
+  <text x="500" y="87" text-anchor="middle" class="dept-label">BOARD OF DIRECTORS</text>
+  <text x="500" y="99" text-anchor="middle" class="box-detail">To Be Formed</text>
+  
+  <!-- Connector: Board to C-Suite horizontal bar -->
+  <path d="M500 105 L500 125 M200 125 L800 125" class="connector"/>
+  
+  <!-- Connectors: Down to each C-level -->
+  <path d="M200 125 L200 145" class="connector"/>
+  <path d="M500 125 L500 145" class="connector"/>
+  <path d="M800 125 L800 145" class="connector"/>
+  
+  <!-- CSO - Max -->
+  <rect x="75" y="145" width="250" height="75" rx="8" fill="#2563eb"/>
+  <circle cx="115" cy="177" r="18" fill="rgba(255,255,255,0.2)"/>
+  <text x="115" y="182" text-anchor="middle" class="initials">MF</text>
+  <text x="210" y="172" text-anchor="middle" class="box-title">Chief Science Officer</text>
+  <text x="210" y="187" text-anchor="middle" class="box-name">Max Fomitchev-Zamilov</text>
+  <text x="210" y="202" text-anchor="middle" class="box-detail">PhD - Research and Technical Vision</text>
+  <circle cx="300" cy="160" r="8" fill="#22c55e"/>
+  <text x="300" y="163" text-anchor="middle" class="small-text">A</text>
+  
+  <!-- COO - Stan -->
+  <rect x="375" y="145" width="250" height="75" rx="8" fill="#2563eb"/>
+  <circle cx="415" cy="177" r="18" fill="rgba(255,255,255,0.2)"/>
+  <text x="415" y="182" text-anchor="middle" class="initials">SZ</text>
+  <text x="510" y="172" text-anchor="middle" class="box-title">Chief Operating Officer</text>
+  <text x="510" y="187" text-anchor="middle" class="box-name">Stan Zemskoff</text>
+  <text x="510" y="202" text-anchor="middle" class="box-detail">PMP - Operations and Partnerships</text>
+  <circle cx="600" cy="160" r="8" fill="#22c55e"/>
+  <text x="600" y="163" text-anchor="middle" class="small-text">A</text>
+  
+  <!-- CFO - To Be Hired -->
+  <rect x="675" y="145" width="250" height="75" rx="8" fill="#64748b" stroke="#f97316" stroke-width="2" stroke-dasharray="5,3"/>
+  <circle cx="715" cy="177" r="18" fill="rgba(255,255,255,0.2)"/>
+  <text x="715" y="182" text-anchor="middle" class="initials">?</text>
+  <text x="810" y="172" text-anchor="middle" class="box-title">Chief Financial Officer</text>
+  <text x="810" y="187" text-anchor="middle" class="box-name">To Be Hired</text>
+  <text x="810" y="202" text-anchor="middle" class="box-detail">Finance and Investor Relations</text>
+  <circle cx="900" cy="160" r="8" fill="#f97316"/>
+  <text x="900" y="163" text-anchor="middle" class="small-text">H</text>
+  
+  <!-- Connector: CSO to Research Dept -->
+  <path d="M200 220 L200 248" class="connector"/>
+  
+  <!-- Connector: COO to Operations Dept -->
+  <path d="M500 220 L500 248" class="connector"/>
+  
+  <!-- Department Headers -->
+  <rect x="50" y="250" width="300" height="25" rx="4" fill="#1e40af"/>
+  <text x="200" y="267" text-anchor="middle" class="dept-label">RESEARCH AND ENGINEERING</text>
+  
+  <rect x="400" y="250" width="300" height="25" rx="4" fill="#1e40af"/>
+  <text x="550" y="267" text-anchor="middle" class="dept-label">OPERATIONS AND SUPPORT</text>
+  
+  <rect x="750" y="250" width="150" height="25" rx="4" fill="#dc2626"/>
+  <text x="825" y="267" text-anchor="middle" class="dept-label">SAFETY</text>
+  
+  <!-- Research Team Boxes - Row 1 -->
+  <rect x="50" y="290" width="140" height="50" rx="5" fill="#64748b" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="120" y="310" text-anchor="middle" class="box-title">Nuclear Engineer</text>
+  <text x="120" y="325" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <rect x="205" y="290" width="140" height="50" rx="5" fill="#64748b" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="275" y="310" text-anchor="middle" class="box-title">Plasma Physicist</text>
+  <text x="275" y="325" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <!-- Research Team Boxes - Row 2 -->
+  <rect x="50" y="350" width="140" height="50" rx="5" fill="#64748b" stroke="#f97316" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="120" y="370" text-anchor="middle" class="box-title">Controls Engineer</text>
+  <text x="120" y="385" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <rect x="205" y="350" width="140" height="50" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="275" y="370" text-anchor="middle" class="box-title">Mechanical Eng</text>
+  <text x="275" y="385" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <!-- Research Team Boxes - Row 3 -->
+  <rect x="50" y="410" width="140" height="50" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="120" y="430" text-anchor="middle" class="box-title">Materials Scientist</text>
+  <text x="120" y="445" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <rect x="205" y="410" width="140" height="50" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="275" y="430" text-anchor="middle" class="box-title">Software Engineer</text>
+  <text x="275" y="445" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <!-- Operations Team Boxes - Row 1 -->
+  <rect x="405" y="290" width="140" height="50" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="475" y="310" text-anchor="middle" class="box-title">Project Manager</text>
+  <text x="475" y="325" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <rect x="560" y="290" width="140" height="50" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="630" y="310" text-anchor="middle" class="box-title">Electrical Engineer</text>
+  <text x="630" y="325" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <!-- Operations Team Boxes - Row 2 (Lab Techs) -->
+  <rect x="405" y="350" width="90" height="45" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="450" y="370" text-anchor="middle" class="box-title">Lab Tech 1</text>
+  <text x="450" y="383" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <rect x="505" y="350" width="90" height="45" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="550" y="370" text-anchor="middle" class="box-title">Lab Tech 2</text>
+  <text x="550" y="383" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <rect x="605" y="350" width="90" height="45" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="650" y="370" text-anchor="middle" class="box-title">Lab Tech 3</text>
+  <text x="650" y="383" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <!-- Operations Team - Machinist -->
+  <rect x="455" y="405" width="140" height="45" rx="5" fill="#64748b" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="525" y="425" text-anchor="middle" class="box-title">Machinist</text>
+  <text x="525" y="438" text-anchor="middle" class="box-name">Contract</text>
+  
+  <!-- Safety Officer -->
+  <rect x="755" y="290" width="140" height="50" rx="5" fill="#64748b" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="825" y="310" text-anchor="middle" class="box-title">Safety Officer</text>
+  <text x="825" y="325" text-anchor="middle" class="box-name">To Be Hired</text>
+  
+  <!-- Advisory Board -->
+  <rect x="750" y="360" width="200" height="90" rx="6" fill="white" stroke="#0891b2" stroke-width="2"/>
+  <text x="850" y="382" text-anchor="middle" class="box-title" style="fill:#0e7490">ADVISORY BOARD</text>
+  <text x="850" y="397" text-anchor="middle" class="box-detail" style="fill:#64748b">5-8 Members - To Be Recruited</text>
+  
+  <rect x="760" y="410" width="55" height="30" rx="3" fill="#0891b2" opacity="0.7"/>
+  <text x="787" y="428" text-anchor="middle" class="small-text">Fusion</text>
+  
+  <rect x="822" y="410" width="55" height="30" rx="3" fill="#0891b2" opacity="0.7"/>
+  <text x="849" y="428" text-anchor="middle" class="small-text">Regulatory</text>
+  
+  <rect x="884" y="410" width="55" height="30" rx="3" fill="#0891b2" opacity="0.7"/>
+  <text x="911" y="428" text-anchor="middle" class="small-text">Finance</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="480" width="280" height="75" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="190" y="500" text-anchor="middle" class="box-title" style="fill:#374151">LEGEND</text>
+  
+  <rect x="65" y="515" width="16" height="12" rx="2" fill="#2563eb"/>
+  <circle cx="86" cy="521" r="5" fill="#22c55e"/>
+  <text x="86" y="524" text-anchor="middle" class="small-text">A</text>
+  <text x="100" y="524" class="legend-text">Active Founder</text>
+  
+  <rect x="190" y="515" width="16" height="12" rx="2" fill="#64748b" stroke="#f97316" stroke-width="1"/>
+  <circle cx="211" cy="521" r="5" fill="#f97316"/>
+  <text x="211" y="524" text-anchor="middle" class="small-text">H</text>
+  <text x="225" y="524" class="legend-text">Priority Hire</text>
+  
+  <rect x="65" y="535" width="16" height="12" rx="2" fill="#64748b" stroke="#94a3b8" stroke-width="1"/>
+  <text x="100" y="544" class="legend-text">Future Position</text>
+  
+  <rect x="190" y="535" width="16" height="12" rx="2" fill="#0891b2" opacity="0.7"/>
+  <text x="225" y="544" class="legend-text">Advisory Role</text>
+  
+  <!-- Team Status -->
+  <rect x="370" y="480" width="320" height="75" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="530" y="502" text-anchor="middle" class="box-title" style="fill:#374151">TEAM STATUS</text>
+  
+  <text x="400" y="528" class="legend-text">Founders:</text>
+  <text x="455" y="528" class="legend-text" style="fill:#22c55e; font-weight:bold">2 Active</text>
+  
+  <text x="520" y="528" class="legend-text">Open Positions:</text>
+  <text x="610" y="528" class="legend-text" style="fill:#f97316; font-weight:bold">16 To Hire</text>
+  
+  <rect x="400" y="540" width="260" height="10" rx="2" fill="#e2e8f0"/>
+  <rect x="400" y="540" width="29" height="10" rx="2" fill="#22c55e"/>
+  <text x="530" y="560" text-anchor="middle" class="legend-text">11% Complete</text>
+</svg>

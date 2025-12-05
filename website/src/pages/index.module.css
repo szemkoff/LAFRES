@@ -1,0 +1,711 @@
+/**
+ * L.A.F.R.E.S. Homepage Styles
+ * A modern, professional design for fusion research documentation
+ */
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+  position: relative;
+  padding: 6rem 2rem;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0a1628 0%, #1a365d 50%, #0d2847 100%);
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.heroGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+  50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 900px;
+}
+
+.logoContainer {
+  margin-bottom: 2rem;
+}
+
+.logoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.atomSvg {
+  width: 100%;
+  height: 100%;
+  color: #60a5fa;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+.heroTagline {
+  font-size: 1.5rem;
+  color: #93c5fd;
+  margin: 0 0 1.5rem;
+  font-weight: 500;
+}
+
+.heroDescription {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  margin: 0 0 2.5rem;
+}
+
+.heroStats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statValue {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #60a5fa;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.heroCta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+}
+
+.ctaPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(59, 130, 246, 0.5);
+  color: #fff;
+  text-decoration: none;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaSecondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ========================================
+   AUDIENCE SECTION WITH TABS
+   ======================================== */
+
+.audienceSection {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+}
+
+[data-theme='dark'] .audienceSection {
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme='dark'] .sectionTitle {
+  color: #f1f5f9;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+[data-theme='dark'] .sectionSubtitle {
+  color: #94a3b8;
+}
+
+.tabContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tabButtons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tabButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #475569;
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .tabButton {
+  background: #1e293b;
+  border-color: #334155;
+  color: #94a3b8;
+}
+
+.tabButton:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.tabButtonActive {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  border-color: transparent;
+  color: #fff;
+}
+
+.tabButtonActive:hover {
+  color: #fff;
+}
+
+.tabIcon {
+  font-size: 1.2rem;
+}
+
+.tabLabel {
+  font-weight: 600;
+}
+
+.tabContent {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+[data-theme='dark'] .tabContent {
+  background: #1e293b;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tabPanel {
+  padding: 2.5rem;
+}
+
+.panelGrid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .panelGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panelMain h3 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+[data-theme='dark'] .panelMain h3 {
+  color: #f1f5f9;
+}
+
+.panelMain h4 {
+  font-size: 1.1rem;
+  color: #334155;
+  margin: 1.5rem 0 0.75rem;
+}
+
+[data-theme='dark'] .panelMain h4 {
+  color: #cbd5e1;
+}
+
+.panelMain p {
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+[data-theme='dark'] .panelMain p {
+  color: #94a3b8;
+}
+
+.panelMain ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.panelMain li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #475569;
+  line-height: 1.6;
+}
+
+[data-theme='dark'] .panelMain li {
+  color: #94a3b8;
+}
+
+.panelMain li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+}
+
+.panelSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quickLinks {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+[data-theme='dark'] .quickLinks {
+  background: #0f172a;
+}
+
+.quickLinks h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.quickLinks a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.quickLinks a:hover {
+  color: #1d4ed8;
+}
+
+.contactBox {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.contactBox h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.contactBox p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.investmentTable {
+  margin-top: 1rem;
+}
+
+.investmentRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+}
+
+[data-theme='dark'] .investmentRow {
+  border-color: #334155;
+  color: #94a3b8;
+}
+
+.investmentTotal {
+  font-weight: 700;
+  color: #1e293b;
+  border-bottom: none;
+  padding-top: 1rem;
+}
+
+[data-theme='dark'] .investmentTotal {
+  color: #f1f5f9;
+}
+
+/* ========================================
+   TECHNOLOGY SECTION
+   ======================================== */
+
+.techSection {
+  padding: 5rem 0;
+  background: #fff;
+}
+
+[data-theme='dark'] .techSection {
+  background: #0f172a;
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.techCard {
+  position: relative;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+[data-theme='dark'] .techCard {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.techCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+[data-theme='dark'] .techCard:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.techIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.techCard h3 {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme='dark'] .techCard h3 {
+  color: #f1f5f9;
+}
+
+.techCard p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+[data-theme='dark'] .techCard p {
+  color: #94a3b8;
+}
+
+.techArrow {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: #3b82f6;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.techCard:hover .techArrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ========================================
+   ROADMAP SECTION
+   ======================================== */
+
+.roadmapSection {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.roadmapSection .sectionTitle,
+.roadmapSection .sectionSubtitle {
+  color: #fff;
+}
+
+.roadmapSection .sectionSubtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.roadmapTimeline {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.roadmapPhase {
+  flex: 1;
+  min-width: 180px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.phasecurrent {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: #3b82f6;
+}
+
+.phaseNumber {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #60a5fa;
+  margin-bottom: 0.5rem;
+}
+
+.phaseTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.phaseDuration {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.roadmapCta {
+  text-align: center;
+}
+
+.roadmapSection .ctaSecondary {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   FINAL CTA SECTION
+   ======================================== */
+
+.ctaSection {
+  padding: 5rem 0;
+  background: #fff;
+  text-align: center;
+}
+
+[data-theme='dark'] .ctaSection {
+  background: #1e293b;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+[data-theme='dark'] .ctaTitle {
+  color: #f1f5f9;
+}
+
+.ctaText {
+  font-size: 1.2rem;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+[data-theme='dark'] .ctaText {
+  color: #94a3b8;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ctaSection .ctaSecondary {
+  color: #475569;
+  border-color: #cbd5e1;
+}
+
+[data-theme='dark'] .ctaSection .ctaSecondary {
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+.ctaSection .ctaSecondary:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+[data-theme='dark'] .ctaSection .ctaSecondary:hover {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS
+   ======================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.5rem;
+    min-height: auto;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroTagline {
+    font-size: 1.2rem;
+  }
+
+  .heroStats {
+    gap: 1.5rem;
+  }
+
+  .statValue {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .tabButton {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .tabLabel {
+    display: none;
+  }
+
+  .tabIcon {
+    font-size: 1.4rem;
+  }
+
+  .tabPanel {
+    padding: 1.5rem;
+  }
+
+  .ctaTitle {
+    font-size: 1.8rem;
+  }
+}
