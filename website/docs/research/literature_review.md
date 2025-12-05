@@ -130,7 +130,7 @@ sidebar_position: 4
 ---
 
 **Document Version**: 1.0  
-**Last Updated**: November 2025  
+**Last Updated**: December 2025  
 **Compiled by**: L.A.F.R.E.S. Research Team
 
 

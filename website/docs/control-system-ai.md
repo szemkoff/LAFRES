@@ -544,7 +544,7 @@ Where A_if, φ_if are amplitude and phase for frequency f, calculated by:
 ---
 
 **Document Version**: 1.0  
-**Last Updated**: November 2025  
+**Last Updated**: December 2025  
 **Author**: L.A.F.R.E.S. Control Systems Team
 
 

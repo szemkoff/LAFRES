@@ -192,7 +192,7 @@ sidebar_position: 3
 ---
 
 **Document Version**: 1.0  
-**Last Updated**: November 2025  
+**Last Updated**: December 2025  
 **Author**: L.A.F.R.E.S. Project Leadership
 
 

@@ -41,7 +41,7 @@ function HomepageHeader() {
             <span className={styles.statLabel}>Subsystems</span>
           </div>
           <div className={styles.stat}>
-            <span className={styles.statValue}>35+</span>
+            <span className={styles.statValue}>60+</span>
             <span className={styles.statLabel}>Technical Docs</span>
           </div>
           <div className={styles.stat}>
