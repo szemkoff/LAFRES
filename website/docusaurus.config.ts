@@ -71,8 +71,8 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Social card for link previews
-    image: 'img/lafres-social-card.svg',
+    // Social card for link previews (1536x1024)
+    image: 'img/LAFRES_Logo.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
