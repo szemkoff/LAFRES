@@ -123,11 +123,11 @@ const config: Config = {
             },
             {
               label: 'Safety Protocols',
-              to: '/docs/safety/overview',
+              to: '/docs/safety/safety-overview',
             },
             {
               label: 'Simulations',
-              to: '/docs/simulations',
+              to: '/docs/simulations/lithium-cfd',
             },
           ],
         },
@@ -136,15 +136,15 @@ const config: Config = {
           items: [
             {
               label: 'Roadmap',
-              to: '/docs/roadmap/overview',
+              to: '/docs/roadmap/roadmap-overview',
             },
             {
               label: 'Team',
               to: '/docs/team',
             },
             {
-              label: 'Contact',
-              to: '/docs/contact',
+              label: 'FAQ',
+              to: '/docs/faq',
             },
           ],
         },
