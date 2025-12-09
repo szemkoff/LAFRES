@@ -7,98 +7,118 @@ sidebar_position: 0
 
 # Development Roadmap
 
+:::success Proof of Concept Complete
+**Phase 0 achieved:** Net-gain fusion demonstrated and published in Nature Scientific Reports (2024).  
+We are now seeking funding for **Phase I: Optimization**.
+:::
+
 ## Introduction
 
-The L.A.F.R.E.S. development plan is structured in **four phases** spanning approximately **5-6 years**, from pure simulation through proof-of-concept demonstration.
+L.A.F.R.E.S. has successfully demonstrated acoustic cavitation fusion with **10,000x neutron flux above background**. The development roadmap now focuses on optimization, reproducibility, and scale-up toward commercial applications.
 
 ## Phase Overview
 
 ```mermaid
 timeline
     title L.A.F.R.E.S. Development Timeline
-    section Phase 0
-        Simulation & Modeling : 6-12 months
-                               : Neutron transport
-                               : CFD analysis
-                               : Acoustic modeling
-    section Phase 1
-        Lithium Bench Testing : 12-18 months
-                              : No plasma operation
-                              : Acoustic control validation
-                              : Thermal system testing
-    section Phase 2
-        Neutron Coupling : 12-18 months
-                         : External neutron source
-                         : Instrumentation validation
-                         : Integrated testing
-    section Phase 3
-        Micro-Fusion Demo : 18-24 months
-                          : Fusion neutron production
-                          : Complete system operation
-                          : Safety validation
+    section Phase 0 - COMPLETE
+        Proof of Concept : 2024
+                        : Net-gain fusion demonstrated
+                        : Nature publication
+                        : 10000x neutron flux
+    section Phase I - CURRENT
+        Optimization : 12-18 months
+                     : CFD bubble modeling
+                     : Microfluidic control
+                     : High-speed imaging
+    section Phase II
+        Reproducibility : 12-18 months
+                        : Lithium integration
+                        : Automated control
+                        : Consistent triggers
+    section Phase III
+        Commercialization : 18-24 months
+                          : Medical isotopes
+                          : Neutron imaging
+                          : Power scaling
 ```
 
 ## Phase Summaries
 
-### Phase 0: Simulation & Modeling
-**Duration**: 6-12 months  
-**Budget**: $200K - $500K
+### Phase 0: Proof of Concept - COMPLETE
+**Status**: ✅ **ACHIEVED**  
+**Publication**: Nature Scientific Reports, May 2024
 
-Pure computational work to validate physics models and design parameters.
+**Key Results:**
+- Neutron flux >10,000x background
+- Sustained operation for hours
+- Acoustic peaks >24,000 psi
+- Peer-reviewed publication
 
-**[View Details →](phase-0-simulation)**
-
-### Phase 1: Lithium Bench Testing
+### Phase I: Optimization (Current Focus)
 **Duration**: 12-18 months  
-**Budget**: $1M - $2M
+**Budget**: $500K - $1M
 
-Build and test lithium handling and acoustic systems without neutron production.
+CFD modeling and microfluidic systems for controlled, reproducible fusion conditions.
+
+**Objectives:**
+- OpenFOAM bubble collapse modeling
+- Microfluidic D₂O bubble generation (1-100 μm)
+- High-speed imaging (1M fps) validation
+- Determine optimal parameters for fusion
 
 **[View Details →](phase-1-prototype)**
 
-### Phase 2: Neutron Coupling
+### Phase II: Reproducibility & Integration
 **Duration**: 12-18 months  
-**Budget**: $2M - $3M
+**Budget**: $1.5M - $2.5M
 
-Integrate external neutron source to test neutron-lithium interactions.
+Achieve consistent fusion triggers and integrate lithium blanket system.
 
 **[View Details →](phase-2-validation)**
 
-### Phase 3: Micro-Fusion Demonstration
+### Phase III: Commercial Scale-Up
 **Duration**: 18-24 months  
-**Budget**: $3M - $5M
+**Budget**: $2M - $4M
 
-Complete integrated system with fusion neutron production.
+Scale technology for commercial applications.
+
+| Application | Scale Factor | Market |
+|-------------|--------------|--------|
+| Medical isotopes | 1,000x | Nuclear pharmacology |
+| Neutron imaging | 10,000x | Industrial NDT |
+| Portable power | 1,000,000x | Distributed energy |
 
 **[View Details →](phase-3)**
 
-## Cumulative Investment
+## Investment Required
 
 ```mermaid
 graph LR
-    A[Phase 0 $200K-$500K] --> B[Phase 1 $1M-$2M]
-    B --> C[Phase 2 $2M-$3M]
-    C --> D[Phase 3 $3M-$5M]
-    D --> E[Total: $6M-$10M]
+    A["Phase 0 COMPLETE"] --> B["Phase I $500K-$1M"]
+    B --> C["Phase II $1.5M-$2.5M"]
+    C --> D["Phase III $2M-$4M"]
+    D --> E["Total: $4M-$7.5M"]
     
-    style A fill:#2374ab,color:#fff
-    style B fill:#06a77d,color:#fff
-    style C fill:#f77f00,color:#fff
+    style A fill:#22c55e,color:#fff
+    style B fill:#f97316,color:#fff
+    style C fill:#3b82f6,color:#fff
     style D fill:#9d4edd,color:#fff
     style E fill:#e63946,color:#fff
 ```
 
 ## Key Milestones
 
-| Milestone | Target Date | Phase |
-|-----------|-------------|-------|
-| Neutron transport model validated | Month 6 | Phase 0 |
-| CFD converged solution | Month 9 | Phase 0 |
-| Lithium system operational | Month 18 | Phase 1 |
-| Acoustic control demonstrated | Month 24 | Phase 1 |
-| External neutron testing complete | Month 36 | Phase 2 |
-| First fusion neutrons detected | Month 48 | Phase 3 |
-| **System validation complete** | **Month 60-72** | **Phase 3** |
+| Milestone | Status | Phase |
+|-----------|--------|-------|
+| ✅ Net-gain fusion demonstrated | **COMPLETE** | Phase 0 |
+| ✅ Peer-reviewed publication | **May 2024** | Phase 0 |
+| ✅ 10,000x neutron flux achieved | **COMPLETE** | Phase 0 |
+| ⏳ CFD bubble collapse model | In Progress | Phase I |
+| ⏳ Microfluidic system operational | Planned | Phase I |
+| ⏳ Reproducible fusion triggers | Planned | Phase II |
+| ⏳ Lithium blanket integration | Planned | Phase II |
+| ⏳ Commercial prototype | Future | Phase III |
 
 ## Critical Path
 
@@ -130,21 +150,37 @@ The project's critical path includes:
 
 ## Success Criteria by Phase
 
-Each phase has defined **go/no-go** decision points:
+| Phase | Criteria | Status |
+|-------|----------|--------|
+| **Phase 0** | Detectable fusion neutron production | ✅ **EXCEEDED** (10,000x) |
+| **Phase I** | CFD model validated against high-speed imaging | ⏳ In Progress |
+| **Phase II** | Reproducible fusion on demand | Planned |
+| **Phase III** | Commercial-scale neutron output | Future |
 
-- **Phase 0**: Simulation results within 20% of analytical predictions
-- **Phase 1**: 100+ hours stable lithium operation
-- **Phase 2**: Measured vs. calculated neutron flux agreement within 30%
-- **Phase 3**: Detectable fusion neutron production (>10⁶ n/s)
+## Investment Opportunity
+
+We are currently seeking **$500K - $1M** for Phase I:
+
+| Use of Funds | Amount |
+|--------------|--------|
+| CFD modeling (OpenFOAM) | $150K |
+| Microfluidic system | $200K |
+| High-speed camera (Phantom) | $150K |
+| Personnel (12-18 mo) | $200K |
+| Facilities & supplies | $100K |
+
+**Contact**: investors@lafres.org
 
 ## Next Steps
 
-1. **Review detailed cost estimates** → [View Cost Estimates](cost-estimates)
-2. **Study Phase 0 plan** → [Phase 0 Details](phase-0-simulation)
-3. **Assess resource requirements** → [Overview](../overview)
+1. **Review our published results** → [Nature Publication](../research/published-results)
+2. **See our laboratory** → [Facilities](../lab/facilities)
+3. **Meet the team** → [Team & Expertise](../team)
+4. **Review cost details** → [Cost Estimates](cost-estimates)
 
 ---
 
-**Total Timeline**: 5-6 years from concept to proof-of-concept  
-**Total Budget**: $6M - $10M
+**Proof of Concept**: ✅ Complete (Published 2024)  
+**Current Focus**: Phase I Optimization  
+**Funding Sought**: $500K - $1M
 

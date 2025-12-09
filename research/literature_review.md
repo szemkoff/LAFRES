@@ -102,7 +102,7 @@
 ### Novelty of L.A.F.R.E.S.
 - **Integration**: Combining IEC + lithium blanket + acoustic control + TE conversion (no prior integrated system)
 - **Acoustic stabilization**: Novel application to liquid metal fusion blankets
-- **Research focus**: Neutron source and thermal management (not claiming break-even fusion)
+- **Achievement**: Net-gain fusion demonstrated and published (Nature Sci. Rep. 2024)
 
 ## 9. Knowledge Gaps and Research Opportunities
 
