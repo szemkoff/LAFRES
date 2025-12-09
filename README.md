@@ -24,6 +24,21 @@ Develop a research-grade architecture for a compact neutron-generating system us
 
 ---
 
+## Peer-Reviewed Publication
+
+Our acoustic cavitation fusion results have been **published in Nature Scientific Reports** (May 2024):
+
+> **DOI:** [10.1038/s41598-024-62055-6](https://doi.org/10.1038/s41598-024-62055-6)
+
+**Key Results:**
+- Neutron flux >10,000× background
+- Sustained operation for hours
+- Acoustic peaks >24,000 psi
+
+See [Published Results](https://szemkoff.github.io/LAFRES/docs/research/published-results) for full details.
+
+---
+
 ## Laboratory
 
 **Maximus Energy Corporation** operates a fully equipped fusion research laboratory in Naples, FL, featuring:

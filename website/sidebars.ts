@@ -107,6 +107,7 @@ const sidebars: SidebarsConfig = {
       label: 'Research',
       collapsed: false,
       items: [
+        'research/published-results',
         'research/discoveries',
         'research/literature-review',
         'research/known-limitations',
