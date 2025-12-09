@@ -105,8 +105,9 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Research',
-      collapsed: true,
+      collapsed: false,
       items: [
+        'research/discoveries',
         'research/literature-review',
         'research/known-limitations',
         'research/acoustic-studies',

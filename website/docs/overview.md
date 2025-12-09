@@ -11,6 +11,19 @@ sidebar_position: 1
 
 The **Lithium Acoustic Fusion Reactor for Energy Sustainability (L.A.F.R.E.S.)** is a research-grade conceptual design combining multiple advanced technologies to create a controlled neutron source with integrated thermal management. This document provides a high-level overview of the system architecture, objectives, and scope.
 
+:::tip Research Foundation
+This project builds upon experimental discoveries at Maximus Energy Corporation demonstrating acoustic cavitation-induced fusion in titanium deuteride systems. See [Key Discoveries](/docs/research/discoveries) for details on the foundational research.
+:::
+
+## Experimental Foundation
+
+L.A.F.R.E.S. is grounded in demonstrated experimental results:
+
+- **Acoustic Cavitation Fusion**: Neutron production observed when D₂O bubbles collapse near titanium deuteride particles
+- **Sustained Operation**: Neutron emission maintained for hours of continuous operation
+- **Extreme Pressures**: Acoustic peaks exceeding 24,000 psi achieved through bubble dynamics
+- **Operating Laboratory**: Fully equipped research facility in Naples, FL ([see facilities](/docs/lab/facilities))
+
 ## Project Scope
 
 ### What This Project IS
