@@ -41,6 +41,11 @@ The experimental reactor consists of a 6" conflat vacuum tee with a viewport, fi
 ![Experimental Fusion Reactor](/img/lab/fusion-reactor-setup.jpg)
 *Figure 1: The experimental fusion reactor at Maximus Energy lab.*
 
+### Reactor Block Diagram
+
+![Reactor Block Diagram](/img/experiments/fig2-block-diagram.png)
+*Figure 2: The experimental reactor block diagram showing all system components.*
+
 ### System Components
 
 ```mermaid
@@ -91,6 +96,16 @@ flowchart TB
 | **Particle Analyzer** | SympaTEC HELOS/Sucell | Inline laser diffraction |
 | **Software** | PulseCounter Pro | Real-time acquisition & statistics |
 
+### Neutron Detector Assembly
+
+![Neutron Detector Assembly](/img/experiments/fig3-neutron-detector-assembly.jpg)
+*Figure 3: The neutron detector assembly of six LND 251106 ³He proportional counters.*
+
+### Automated Nuclear Lab System
+
+![ANL System](/img/experiments/fig4-anl-system.png)
+*Figure 4: The Automated Nuclear Lab (ANL) system for real-time data acquisition and analysis.*
+
 ---
 
 ## Experimental Protocol
@@ -111,13 +126,11 @@ flowchart TB
 
 When the TiD + D₂O suspension is deposited in the reactor and the acoustic driver is activated, **significant neutron flux is registered coincident with the acoustic influence**.
 
-```mermaid
-xychart-beta
-    title "Neutron Count Rate Comparison"
-    x-axis ["Background", "Reactor Operating"]
-    y-axis "Counts per Minute (CPM)" 0 --> 7000
-    bar [0.6, 6000]
-```
+![Neutron Counts Comparison](/img/experiments/fig5-neutron-counts.png)
+*Figure 5: Neutron counts due to background (blue) and with reactor operating (red). Note the dramatic increase during operation.*
+
+![Raw Neutron Signal](/img/experiments/fig6-raw-signal.png)
+*Figure 6: Raw neutron detector signal. Each vertical line is a neutron event. The periodic nature of neutron events is clearly coincident with the acoustic driver being active.*
 
 **Key Observations:**
 - Neutron events are clearly periodic, coincident with acoustic driver activation
@@ -125,6 +138,9 @@ xychart-beta
 - Statistical significance confirmed via Student's T-test and P-value calculation
 
 ### Acoustic Measurements
+
+![Acoustic Signal](/img/experiments/fig7-acoustic-signal.jpg)
+*Figure 7: The acoustic signal from the reactor showing massive (clipping) acoustic spikes exceeding 24,000 psi.*
 
 Massive acoustic spikes are observed during operation:
 - Peak pressures occasionally exceeding **24,000 psi** (165 MPa)
