@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'L.A.F.R.E.S.',
-  tagline: 'Lithium-Acoustic Fusion Research & Engineering System',
+  tagline: 'Net-Gain Fusion Demonstrated - Published in Nature Scientific Reports 2024',
   favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

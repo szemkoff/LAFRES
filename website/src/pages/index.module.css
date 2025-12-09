@@ -567,6 +567,20 @@
   border-color: #3b82f6;
 }
 
+.phasecompleted {
+  background: rgba(34, 197, 94, 0.2);
+  border-color: #22c55e;
+}
+
+.phasecompleted .phaseNumber {
+  color: #22c55e;
+}
+
+.phasecompleted .phaseDuration {
+  color: #22c55e;
+  font-weight: 600;
+}
+
 .phaseNumber {
   font-size: 0.8rem;
   text-transform: uppercase;
