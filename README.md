@@ -24,6 +24,19 @@ Develop a research-grade architecture for a compact neutron-generating system us
 
 ---
 
+## Laboratory
+
+**Maximus Energy Corporation** operates a fully equipped fusion research laboratory in Naples, FL, featuring:
+- Experimental fusion reactor
+- Radiation detection systems (NaI, HPGe, 3He neutron counters)
+- Vacuum systems (Varian, Leybold, Pfeiffer turbomolecular pumps)
+- Acoustic/ultrasonic equipment (Branson sonicators)
+- Analytical instruments (SEM, particle analyzers)
+
+See [Laboratory Facilities](https://szemkoff.github.io/LAFRES/docs/lab/facilities) for complete equipment list.
+
+---
+
 ## Founding Team
 
 | Role | Name | Background |

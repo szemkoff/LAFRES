@@ -18,6 +18,14 @@ const sidebars: SidebarsConfig = {
     'system-architecture',
     {
       type: 'category',
+      label: 'Laboratory',
+      collapsed: false,
+      items: [
+        'lab/facilities',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Technical Documentation',
       collapsed: false,
       items: [
