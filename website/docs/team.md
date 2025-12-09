@@ -75,6 +75,18 @@ L.A.F.R.E.S. requires a multidisciplinary team with expertise spanning nuclear e
 
 ---
 
+## Phase I Research Team
+
+The following team members are engaged for the Phase I research program:
+
+| Role | Name | Focus Area | Duration |
+|------|------|------------|----------|
+| **Microfluidics Engineer** | Arnold Hill | D₂O bubble/droplet generation system | 6 months |
+| **Imaging Engineer** | Patrick Clark | High-speed camera / bubble imaging | 6 months |
+| **CFD Consultant** | Ryan Raubenheimer | OpenFOAM modeling & software development | Contract |
+
+---
+
 ## Positions to Fill
 
 ### Immediate Hiring Needs (Phase 0-1)

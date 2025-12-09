@@ -7,6 +7,56 @@ sidebar_position: 5
 
 # Cost Estimates Summary
 
+## Phase I Detailed Budget (Approved)
+
+:::info Funded Research
+The following budget represents the approved Phase I research program focusing on CFD modeling and microfluidic bubble generation systems.
+:::
+
+**Total Phase I Budget: $304,059**
+
+### Personnel Costs ($155,000)
+
+| Role | Duration | Rate | Total |
+|------|----------|------|-------|
+| **Principal Investigator** | 2 months | $5,000/mo | $60,000 |
+| **Microfluidics Engineer** (Arnold Hill) | 6 months | $5,000/mo | $30,000 |
+| **High-Speed Imaging Engineer** (Patrick Clark) | 6 months | $5,000/mo | $30,000 |
+| **OpenFOAM Consultant** (Ryan Raubenheimer) | Contract | — | $35,000 |
+| **Personnel Subtotal** | | | **$155,000** |
+
+### Equipment & Materials ($99,059)
+
+| Item | Purpose | Cost |
+|------|---------|------|
+| **Phantom TMX-510 High-Speed Camera** | 1M fps bubble imaging | $57,910 |
+| **Elveflow OB1 / Droplet Pack** | Microfluidic bubble generation | $11,149 |
+| **Custom Microfluidic Chips** | Precision bubble sizing | $10,000 |
+| **Parts Machining** | Custom reactor components | $10,000 |
+| **Chemicals** | D₂O, deuterated oils, D₂ gas | $10,000 |
+| **Equipment Subtotal** | | **$99,059** |
+
+### Other Costs ($50,000)
+
+| Item | Cost |
+|------|------|
+| **Domestic Travel** | $2,000 |
+| **Publication Charges** | $10,000 |
+| **Software Development** (OpenFOAM) | Included in consulting |
+| **Other Subtotal** | **$12,000** |
+
+### Phase I Budget Summary
+
+```
+Personnel:        $155,000  (51%)
+Equipment:         $99,059  (33%)
+Other:             $50,000  (16%)
+─────────────────────────────
+TOTAL:           $304,059
+```
+
+---
+
 ## Phase-by-Phase Breakdown
 
 | Phase | Duration | Equipment | Personnel | Other | Total (Low) | Total (High) |
