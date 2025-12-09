@@ -11,7 +11,48 @@ sidebar_position: 3
 
 This document provides the fundamental physics principles underlying the L.A.F.R.E.S. concept, including fusion reactions, neutron transport, liquid metal physics, acoustics, and thermal-electric conversion.
 
+:::info Experimental Foundation
+L.A.F.R.E.S. builds upon demonstrated acoustic cavitation fusion in TiD/D₂O systems. See [Key Discoveries](/docs/research/discoveries) for experimental results.
+:::
+
 ## 1. Fusion Reactions
+
+### 1.0 Acoustic Cavitation Fusion (Experimental Basis)
+
+The L.A.F.R.E.S. project is grounded in experimental observations of fusion in solid-state titanium deuteride under acoustic cavitation:
+
+```mermaid
+flowchart LR
+    subgraph System["Experimental System"]
+        A[TiD Particles] --> B[Mineral Oil Suspension]
+        C[D₂O Bubbles] --> B
+    end
+    
+    subgraph Process["Cavitation Process"]
+        B --> D[Acoustic Waves]
+        D --> E[Bubble Collapse]
+        E --> F[Cavitation Jets]
+    end
+    
+    subgraph Fusion["Fusion Event"]
+        F --> G[Jets Impact TiD]
+        G --> H[Lattice Compression]
+        H --> I[D-D Fusion in Ti Lattice]
+    end
+    
+    subgraph Output["Measured Output"]
+        I --> J[2.45 MeV Neutrons]
+    end
+    
+    style I fill:#f97316,color:#fff
+    style J fill:#22c55e,color:#fff
+```
+
+**Key Observations:**
+- Neutron emission coincides with acoustic wave application
+- Sustained operation demonstrated for hours
+- Acoustic peaks exceeding 24,000 psi achieved
+- Fusion occurs in titanium lattice under mechanical impact
 
 ### 1.1 D-D Fusion
 

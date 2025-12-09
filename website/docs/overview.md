@@ -24,6 +24,36 @@ L.A.F.R.E.S. is grounded in demonstrated experimental results:
 - **Extreme Pressures**: Acoustic peaks exceeding 24,000 psi achieved through bubble dynamics
 - **Operating Laboratory**: Fully equipped research facility in Naples, FL ([see facilities](/docs/lab/facilities))
 
+### Development Pathway
+
+```mermaid
+flowchart LR
+    subgraph Current["Current: Proof of Concept"]
+        A[TiD + D₂O<br/>Acoustic Cavitation] --> B[Neutron<br/>Detection]
+    end
+    
+    subgraph Phase1["Phase I: Optimization"]
+        B --> C[CFD Modeling<br/>OpenFOAM]
+        B --> D[Microfluidic<br/>Bubble Control]
+        C --> E[Optimized<br/>Parameters]
+        D --> E
+    end
+    
+    subgraph Phase2["Phase II: Scale-Up"]
+        E --> F[Liquid Lithium<br/>Integration]
+        F --> G[Acoustic<br/>Stabilization]
+    end
+    
+    subgraph Future["Future: L.A.F.R.E.S."]
+        G --> H[Full System<br/>Integration]
+        H --> I[Sustained<br/>Neutron Source]
+    end
+    
+    style A fill:#22c55e,color:#fff
+    style B fill:#22c55e,color:#fff
+    style I fill:#3b82f6,color:#fff
+```
+
 ## Project Scope
 
 ### What This Project IS

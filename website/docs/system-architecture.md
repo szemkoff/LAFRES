@@ -7,6 +7,10 @@ sidebar_position: 2
 
 # System Architecture
 
+:::info From Experiment to System
+This architecture represents the full L.A.F.R.E.S. vision. Current experimental work focuses on acoustic cavitation fusion validation. See [Key Discoveries](/docs/research/discoveries) for foundational research and [Laboratory Facilities](/docs/lab/facilities) for current capabilities.
+:::
+
 ## 1. High-Level Architecture
 
 L.A.F.R.E.S. is organized as a multi-layered system integrating five primary subsystems with a centralized AI control system.

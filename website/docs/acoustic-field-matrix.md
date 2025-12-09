@@ -11,6 +11,35 @@ sidebar_position: 5
 
 The Acoustic Field Matrix is a phased array of ultrasonic transducers designed to actively control the liquid lithium surface, damp vibrations, and provide diagnostic information about the internal state of the blanket.
 
+:::info Acoustic Cavitation Fusion
+Our experimental work has demonstrated that acoustic waves can induce nuclear fusion through cavitation in deuterium-loaded systems. See [Key Discoveries](/docs/research/discoveries) for experimental results showing neutron production with acoustic peaks exceeding 24,000 psi.
+:::
+
+### Acoustic System Roles
+
+```mermaid
+flowchart TB
+    subgraph Experimental["Current Experimental System"]
+        A1[Branson Sonicator] --> A2[Acoustic Waves<br/>in Oil/D₂O]
+        A2 --> A3[Bubble Cavitation]
+        A3 --> A4[Fusion in TiD]
+    end
+    
+    subgraph LAFRES["Future L.A.F.R.E.S. System"]
+        B1[Phased Array<br/>Transducers] --> B2[Acoustic Field<br/>in Liquid Li]
+        B2 --> B3[Surface<br/>Stabilization]
+        B2 --> B4[MHD<br/>Damping]
+        B2 --> B5[Shock<br/>Absorption]
+    end
+    
+    A4 -.->|"Lessons Learned"| B1
+    
+    style A4 fill:#22c55e,color:#fff
+    style B3 fill:#3b82f6,color:#fff
+    style B4 fill:#3b82f6,color:#fff
+    style B5 fill:#3b82f6,color:#fff
+```
+
 ## 2. Functions and Objectives
 
 ### 2.1 Primary Functions

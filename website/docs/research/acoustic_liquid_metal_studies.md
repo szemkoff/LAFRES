@@ -9,7 +9,43 @@ sidebar_position: 1
 
 ## 1. Introduction
 
-Application of acoustic fields to liquid metals is relatively unexplored, especially at high temperatures relevant to fusion blankets.
+Application of acoustic fields to liquid metals is relatively unexplored, especially at high temperatures relevant to fusion blankets. However, Maximus Energy Corporation has demonstrated that acoustic cavitation can induce nuclear fusion in deuterium-loaded systems.
+
+:::tip Experimental Results
+Our laboratory has achieved sustained neutron production through acoustic cavitation in TiD/D₂O systems. See [Key Discoveries](/docs/research/discoveries) for details.
+:::
+
+## 1.1 Acoustic Cavitation Fusion Mechanism
+
+```mermaid
+flowchart TD
+    subgraph Acoustic["Acoustic Input"]
+        A[Ultrasonic Transducer<br/>10-500 kHz] --> B[Acoustic Waves<br/>in Fluid Medium]
+    end
+    
+    subgraph Bubble["Bubble Dynamics"]
+        B --> C[Bubble Oscillation]
+        C --> D[Bubble Collapse]
+        D --> E[Cavitation Jet<br/>~100 m/s]
+        D --> F[Shockwave<br/>>24,000 psi]
+    end
+    
+    subgraph Impact["Impact on TiD"]
+        E --> G[Jet Impingement]
+        F --> G
+        G --> H[Lattice Compression]
+        H --> I[D-D Distance Reduced]
+    end
+    
+    subgraph Fusion["Fusion"]
+        I --> J[Coulomb Barrier<br/>Tunneling Enhanced]
+        J --> K[D + D Fusion]
+        K --> L[n + ³He]
+    end
+    
+    style K fill:#f97316,color:#fff
+    style L fill:#22c55e,color:#fff
+```
 
 ## 2. Relevant Literature
 
