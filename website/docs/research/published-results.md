@@ -51,26 +51,26 @@ The experimental reactor consists of a 6" conflat vacuum tee with a viewport, fi
 ```mermaid
 flowchart TB
     subgraph Reactor["Reactor System"]
-        R[6" Conflat Vacuum Tee<br/>with Viewport]
-        WF[Working Fluid:<br/>Oil + D₂O + TiD]
+        R["6in Conflat Vacuum Tee"]
+        WF["Oil + D2O + TiD"]
     end
     
     subgraph Acoustic["Acoustic System"]
-        FD[Fisher SFX 500W<br/>20 kHz Transducer]
-        PCB[PCB 113B23<br/>Piezo Sensor]
-        SCOPE[Digital<br/>Oscilloscope]
+        FD["Fisher SFX 500W"]
+        PCB["PCB 113B23 Sensor"]
+        SCOPE["Oscilloscope"]
     end
     
     subgraph Detection["Detection System"]
-        He3[6× LND 251106<br/>³He Counters]
-        ANL[Automated<br/>Nuclear Lab]
-        PC[PulseCounter Pro<br/>Software]
+        He3["6x LND 251106 He3"]
+        ANL["Automated Nuclear Lab"]
+        PC["PulseCounter Pro"]
     end
     
     subgraph Support["Support Systems"]
-        VAC[Vacuum Pump<br/>System]
-        CIRC[Circulation Pump<br/>+ Venturi]
-        HELOS[SympaTEC HELOS<br/>Particle Analyzer]
+        VAC["Vacuum Pump"]
+        CIRC["Circulation + Venturi"]
+        HELOS["SympaTEC HELOS"]
     end
     
     FD --> R
@@ -154,24 +154,24 @@ Massive acoustic spikes are observed during operation:
 ```mermaid
 flowchart LR
     subgraph Input["Acoustic Input"]
-        A[20 kHz<br/>500W Driver] --> B[Acoustic Waves<br/>in Oil]
+        A["20kHz 500W Driver"] --> B["Acoustic Waves"]
     end
     
     subgraph Cavitation["Bubble Dynamics"]
-        B --> C[D₂O Bubble<br/>Oscillation]
-        C --> D[Bubble Collapse]
-        D --> E[Cavitation Jets<br/>+ Shockwaves]
+        B --> C["D2O Bubble Oscillation"]
+        C --> D["Bubble Collapse"]
+        D --> E["Cavitation Jets"]
     end
     
     subgraph Fusion["Fusion Event"]
-        E --> F[Jets Impact<br/>TiD Particles]
-        F --> G[Lattice<br/>Compression]
-        G --> H[D-D Fusion<br/>in Ti Lattice]
+        E --> F["Jets Impact TiD"]
+        F --> G["Lattice Compression"]
+        G --> H["D-D Fusion"]
     end
     
     subgraph Output["Output"]
-        H --> I[2.45 MeV<br/>Neutrons]
-        D --> J[Rebound<br/>>24,000 psi]
+        H --> I["2.45 MeV Neutrons"]
+        D --> J["Rebound 24000 psi"]
     end
     
     style H fill:#f97316,color:#fff

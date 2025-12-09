@@ -90,22 +90,22 @@ stateDiagram-v2
 ```mermaid
 flowchart LR
     subgraph Core["Fusion Core"]
-        N[Neutrons<br/>2.45 MeV]
+        N["Neutrons 2.45 MeV"]
     end
     
     subgraph Lithium["Lithium Blanket"]
-        M[Moderation<br/>& Heating]
-        C[Convection<br/>Cells]
+        M["Moderation + Heating"]
+        C["Convection Cells"]
     end
     
     subgraph Thermal["Thermal System"]
-        HX[Heat<br/>Exchanger]
-        TE[Thermoelectric<br/>Modules]
+        HX["Heat Exchanger"]
+        TE["Thermoelectric Modules"]
     end
     
     subgraph Output["Output"]
-        E[Electricity<br/>1-10 kW]
-        W[Waste Heat<br/>Rejection]
+        E["Electricity 1-10 kW"]
+        W["Waste Heat Rejection"]
     end
     
     N -->|Energy Deposition| M
@@ -129,21 +129,21 @@ flowchart LR
 ```mermaid
 flowchart TD
     subgraph Sensors["Safety Sensors"]
-        T[Temperature<br/>> 550°C]
-        P[Pressure<br/>Loss]
-        R[Radiation<br/>> Limit]
-        F[Flow<br/>Failure]
+        T["Temperature > 550C"]
+        P["Pressure Loss"]
+        R["Radiation > Limit"]
+        F["Flow Failure"]
     end
     
     subgraph Logic["2-of-3 Voting"]
-        V{Any 2<br/>Triggered?}
+        V{"Any 2 Triggered?"}
     end
     
     subgraph Actions["SCRAM Actions"]
-        HV[Disable HV<br/>< 100ms]
-        GAS[Close Gas<br/>< 200ms]
-        COOL[Emergency<br/>Cooling]
-        ALARM[Alarms &<br/>Notification]
+        HV["Disable HV 100ms"]
+        GAS["Close Gas 200ms"]
+        COOL["Emergency Cooling"]
+        ALARM["Alarms + Notification"]
     end
     
     T --> V

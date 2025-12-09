@@ -50,10 +50,10 @@ L.A.F.R.E.S. employs a **defense-in-depth** approach:
 
 ```mermaid
 graph TB
-    A[Layer 1: Inherent Safety<br/>Design Features] --> B[Layer 2: Engineered<br/>Safety Systems]
-    B --> C[Layer 3: Automated<br/>Interlocks]
-    C --> D[Layer 4: Operator<br/>Response]
-    D --> E[Layer 5: Emergency<br/>Response]
+    A[Layer 1: Inherent Safety Design Features] --> B[Layer 2: Engineered Safety Systems]
+    B --> C[Layer 3: Automated Interlocks]
+    C --> D[Layer 4: Operator Response]
+    D --> E[Layer 5: Emergency Response]
     
     style A fill:#06a77d,color:#fff
     style B fill:#2374ab,color:#fff

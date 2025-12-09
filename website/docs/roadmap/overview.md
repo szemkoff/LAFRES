@@ -76,10 +76,10 @@ Complete integrated system with fusion neutron production.
 
 ```mermaid
 graph LR
-    A[Phase 0<br/>$200K-$500K] --> B[Phase 1<br/>$1M-$2M]
-    B --> C[Phase 2<br/>$2M-$3M]
-    C --> D[Phase 3<br/>$3M-$5M]
-    D --> E[Total:<br/>$6M-$10M]
+    A[Phase 0 $200K-$500K] --> B[Phase 1 $1M-$2M]
+    B --> C[Phase 2 $2M-$3M]
+    C --> D[Phase 3 $3M-$5M]
+    D --> E[Total: $6M-$10M]
     
     style A fill:#2374ab,color:#fff
     style B fill:#06a77d,color:#fff

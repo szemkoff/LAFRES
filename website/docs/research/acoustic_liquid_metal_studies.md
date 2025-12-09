@@ -20,27 +20,27 @@ Our laboratory has achieved sustained neutron production through acoustic cavita
 ```mermaid
 flowchart TD
     subgraph Acoustic["Acoustic Input"]
-        A[Ultrasonic Transducer<br/>10-500 kHz] --> B[Acoustic Waves<br/>in Fluid Medium]
+        A["Ultrasonic Transducer 10-500 kHz"] --> B["Acoustic Waves in Fluid"]
     end
     
     subgraph Bubble["Bubble Dynamics"]
-        B --> C[Bubble Oscillation]
-        C --> D[Bubble Collapse]
-        D --> E[Cavitation Jet<br/>~100 m/s]
-        D --> F[Shockwave<br/>>24,000 psi]
+        B --> C["Bubble Oscillation"]
+        C --> D["Bubble Collapse"]
+        D --> E["Cavitation Jet 100 m/s"]
+        D --> F["Shockwave 24000 psi"]
     end
     
     subgraph Impact["Impact on TiD"]
-        E --> G[Jet Impingement]
+        E --> G["Jet Impingement"]
         F --> G
-        G --> H[Lattice Compression]
-        H --> I[D-D Distance Reduced]
+        G --> H["Lattice Compression"]
+        H --> I["D-D Distance Reduced"]
     end
     
     subgraph Fusion["Fusion"]
-        I --> J[Coulomb Barrier<br/>Tunneling Enhanced]
-        J --> K[D + D Fusion]
-        K --> L[n + ³He]
+        I --> J["Coulomb Barrier Tunneling"]
+        J --> K["D + D Fusion"]
+        K --> L["n + 3He"]
     end
     
     style K fill:#f97316,color:#fff

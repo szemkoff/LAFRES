@@ -31,24 +31,24 @@ L.A.F.R.E.S. is grounded in demonstrated experimental results:
 ```mermaid
 flowchart LR
     subgraph Current["Current: Proof of Concept"]
-        A[TiD + D₂O<br/>Acoustic Cavitation] --> B[Neutron<br/>Detection]
+        A[TiD + D₂O Acoustic Cavitation] --> B[Neutron Detection]
     end
     
     subgraph Phase1["Phase I: Optimization"]
-        B --> C[CFD Modeling<br/>OpenFOAM]
-        B --> D[Microfluidic<br/>Bubble Control]
-        C --> E[Optimized<br/>Parameters]
+        B --> C[CFD Modeling OpenFOAM]
+        B --> D[Microfluidic Bubble Control]
+        C --> E[Optimized Parameters]
         D --> E
     end
     
     subgraph Phase2["Phase II: Scale-Up"]
-        E --> F[Liquid Lithium<br/>Integration]
-        F --> G[Acoustic<br/>Stabilization]
+        E --> F[Liquid Lithium Integration]
+        F --> G[Acoustic Stabilization]
     end
     
     subgraph Future["Future: L.A.F.R.E.S."]
-        G --> H[Full System<br/>Integration]
-        H --> I[Sustained<br/>Neutron Source]
+        G --> H[Full System Integration]
+        H --> I[Sustained Neutron Source]
     end
     
     style A fill:#22c55e,color:#fff

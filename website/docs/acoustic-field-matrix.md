@@ -20,16 +20,16 @@ Our experimental work has demonstrated that acoustic waves can induce nuclear fu
 ```mermaid
 flowchart TB
     subgraph Experimental["Current Experimental System"]
-        A1[Branson Sonicator] --> A2[Acoustic Waves<br/>in Oil/D₂O]
+        A1[Branson Sonicator] --> A2[Acoustic Waves in Oil/D₂O]
         A2 --> A3[Bubble Cavitation]
         A3 --> A4[Fusion in TiD]
     end
     
     subgraph LAFRES["Future L.A.F.R.E.S. System"]
-        B1[Phased Array<br/>Transducers] --> B2[Acoustic Field<br/>in Liquid Li]
-        B2 --> B3[Surface<br/>Stabilization]
-        B2 --> B4[MHD<br/>Damping]
-        B2 --> B5[Shock<br/>Absorption]
+        B1[Phased Array Transducers] --> B2[Acoustic Field in Liquid Li]
+        B2 --> B3[Surface Stabilization]
+        B2 --> B4[MHD Damping]
+        B2 --> B5[Shock Absorption]
     end
     
     A4 -.->|"Lessons Learned"| B1

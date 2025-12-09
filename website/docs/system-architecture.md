@@ -19,14 +19,14 @@ L.A.F.R.E.S. is organized as a multi-layered system integrating five primary sub
 
 ```mermaid
 graph TB
-    AI[AI Control System<br/>Real-time monitoring, control, safety interlocks]
+    AI[AI Control System Real-time monitoring, control, safety interlocks]
     
-    FC[Fusion Core<br/>Neutron Source]
-    LB[Lithium Blanket<br/>Moderator & Heat Sink]
-    AM[Acoustic Matrix<br/>Stabilization]
-    TC[Thermal Conversion<br/>Energy Recovery]
-    SS[Sensor Suite<br/>Monitoring]
-    SF[Safety Systems<br/>Protection]
+    FC[Fusion Core Neutron Source]
+    LB[Lithium Blanket Moderator & Heat Sink]
+    AM[Acoustic Matrix Stabilization]
+    TC[Thermal Conversion Energy Recovery]
+    SS[Sensor Suite Monitoring]
+    SF[Safety Systems Protection]
     
     AI --> FC
     AI --> LB
@@ -142,11 +142,11 @@ sequenceDiagram
 ```mermaid
 graph LR
     subgraph "Radial Layout (Center to Outside)"
-    A[Fusion Core<br/>Chamber] --> B[Vacuum Gap<br/>1-5 cm]
-    B --> C[Inner Boundary<br/>1-2 mm metal]
-    C --> D[Lithium Volume<br/>10-20 cm thick]
-    D --> E[Thermal Insulation<br/>2-5 cm ceramic]
-    E --> F[Outer Vessel<br/>5-10 mm steel]
+    A[Fusion Core Chamber] --> B[Vacuum Gap 1-5 cm]
+    B --> C[Inner Boundary 1-2 mm metal]
+    C --> D[Lithium Volume 10-20 cm thick]
+    D --> E[Thermal Insulation 2-5 cm ceramic]
+    E --> F[Outer Vessel 5-10 mm steel]
     end
     
     style A fill:#e63946,color:#fff
@@ -277,13 +277,13 @@ stateDiagram-v2
 
 ```mermaid
 graph TB
-    A[Lithium Hot Side<br/>400-500°C] --> B[Heat Exchanger]
-    B --> C[TE Module Hot Side<br/>400-500°C]
-    C --> D[Thermoelectric Module<br/>Multiple Stages]
-    D --> E[TE Module Cold Side<br/>100-200°C]
-    E --> F[Cooling System<br/>Water/Air]
+    A[Lithium Hot Side 400-500°C] --> B[Heat Exchanger]
+    B --> C[TE Module Hot Side 400-500°C]
+    C --> D[Thermoelectric Module Multiple Stages]
+    D --> E[TE Module Cold Side 100-200°C]
+    E --> F[Cooling System Water/Air]
     
-    D --> G[Electrical Output<br/>1-10 kW]
+    D --> G[Electrical Output 1-10 kW]
     
     style A fill:#f77f00,color:#fff
     style D fill:#9d4edd,color:#fff
@@ -400,25 +400,25 @@ flowchart LR
 ```mermaid
 graph TB
     subgraph L4[Layer 4: User Interface - Standard OS]
-        UI[Visualization<br/>Manual Overrides<br/>Data Analysis]
+        UI[Visualization Manual Overrides Data Analysis]
     end
     
     subgraph L3[Layer 3: Optimization - GPU ~100ms-1s]
-        OPT[Model-Predictive Control<br/>Machine Learning<br/>Anomaly Detection]
+        OPT[Model-Predictive Control Machine Learning Anomaly Detection]
     end
     
     subgraph L2[Layer 2: Supervisory - RT-Linux ~10ms]
-        SUP[Thermal Regulation<br/>Neutron Rate Control<br/>State Machine]
+        SUP[Thermal Regulation Neutron Rate Control State Machine]
     end
     
     subgraph L1[Layer 1: Real-time - FPGA &lt;1ms]
-        RT[Acoustic Control<br/>Safety Interlocks]
+        RT[Acoustic Control Safety Interlocks]
     end
     
     UI --> OPT
     OPT --> SUP
     SUP --> RT
-    RT --> HW[Hardware<br/>Sensors & Actuators]
+    RT --> HW[Hardware Sensors & Actuators]
     HW --> RT
     
     style L1 fill:#c1121f,color:#fff
@@ -482,13 +482,13 @@ graph TB
 
 ```mermaid
 flowchart TD
-    A[Trigger Event] --> B{Safety System<br/>Evaluation}
+    A[Trigger Event] --> B{Safety System Evaluation}
     B -->|Critical| C[SCRAM Initiated]
-    C --> D[Disable High Voltage<br/>< 100ms]
-    C --> E[Close Gas Valve<br/>< 200ms]
-    C --> F[Inert Gas Purge<br/>< 500ms]
-    C --> G[Ramp Down Acoustics<br/>< 1s]
-    C --> H[Activate Emergency Cooling<br/>< 1s]
+    C --> D[Disable High Voltage < 100ms]
+    C --> E[Close Gas Valve < 200ms]
+    C --> F[Inert Gas Purge < 500ms]
+    C --> G[Ramp Down Acoustics < 1s]
+    C --> H[Activate Emergency Cooling < 1s]
     D & E & F & G & H --> I[Safe State Achieved]
     I --> J[Alarm & Notification]
     
