@@ -43,47 +43,76 @@ The experimental reactor consists of a 6" conflat vacuum tee with a viewport, fi
 
 ### Reactor Block Diagram
 
-![Reactor Block Diagram](/img/experiments/fig2-block-diagram.png)
-*Figure 2: The experimental reactor block diagram showing all system components.*
+![Reactor Block Diagram - Original](/img/experiments/ReactorBlockDiagram.png)
+*Figure 2: The experimental reactor block diagram from the publication.*
 
-### System Components
+### System Components (Diagram Recreation)
+
+The diagram below recreates the system layout showing all interconnected components:
 
 ```mermaid
-flowchart TB
-    subgraph Reactor["Reactor System"]
-        R["6in Conflat Vacuum Tee"]
-        WF["Oil + D2O + TiD"]
+flowchart LR
+    subgraph Detection["Neutron Detection"]
+        He3["3He Detectors"]
+        ANL["ANL"]
+        PC["PC"]
+        He3 --> ANL --> PC
     end
-    
-    subgraph Acoustic["Acoustic System"]
-        FD["Fisher SFX 500W"]
-        PCB["PCB 113B23 Sensor"]
+
+    subgraph MainReactor["Main Reactor Vessel"]
+        direction TB
+        FCD["FCD"]
+        PCB["PCB"]
+        VESSEL["OIL + D2O + TiD"]
+        FCD --- VESSEL
+        PCB --- VESSEL
+    end
+
+    subgraph Recirculation["Recirculation Loop"]
+        direction TB
+        PUMP["Pump"]
+        SEC["Secondary Cavitation Chamber"]
+        SON["Sonicator"]
+        FILTER["Oil Filter"]
+        HELOS["HELOS"]
+        PUMP --> SEC
+        SON --- SEC
+        SEC --> FILTER
+        FILTER --> HELOS
+    end
+
+    subgraph BottomSystems["Gas & Vacuum"]
+        VAC["Vacuum Pump"]
+        D2["D2 Cylinder"]
+    end
+
+    subgraph Monitoring["Acoustic Monitoring"]
         SCOPE["Oscilloscope"]
     end
-    
-    subgraph Detection["Detection System"]
-        He3["6x LND 251106 He3"]
-        ANL["Automated Nuclear Lab"]
-        PC["PulseCounter Pro"]
-    end
-    
-    subgraph Support["Support Systems"]
-        VAC["Vacuum Pump"]
-        CIRC["Circulation + Venturi"]
-        HELOS["SympaTEC HELOS"]
-    end
-    
-    FD --> R
-    R --> PCB --> SCOPE
-    R --> He3 --> ANL --> PC
-    VAC --> R
-    CIRC --> R
-    HELOS --> R
-    
-    style R fill:#f97316,color:#fff
-    style He3 fill:#22c55e,color:#fff
-    style ANL fill:#3b82f6,color:#fff
+
+    VESSEL --> He3
+    PCB --> SCOPE
+    VESSEL <--> PUMP
+    HELOS --> VESSEL
+    VAC --> VESSEL
+    D2 --> VESSEL
+
+    style VESSEL fill:#add8e6,stroke:#333
+    style FCD fill:#ffcc00,stroke:#333
+    style He3 fill:#90EE90,stroke:#333
+    style ANL fill:#87CEEB,stroke:#333
 ```
+
+**Key Components:**
+
+| Symbol | Component | Function |
+|--------|-----------|----------|
+| **FCD** | Fisher Cavitation Driver | 500W, 20 kHz acoustic driver |
+| **PCB** | PCB Piezotronics 113B23 | Acoustic pressure sensor |
+| **3He** | LND 251106 Detectors | Neutron detection (×6) |
+| **ANL** | Automated Nuclear Lab | 8-channel MCA/pulse processor |
+| **HELOS** | SympaTEC HELOS | Inline particle size analyzer |
+| **D₂** | Deuterium Cylinder | Deuterium gas supply |
 
 ### Equipment Specifications
 
