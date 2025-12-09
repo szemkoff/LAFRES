@@ -9,6 +9,9 @@ sidebar_position: 1
 
 Maximus Energy Corporation operates a fully equipped research laboratory dedicated to fusion energy research and experimental validation.
 
+![Laboratory Overview](/img/lab/facilities-overview.png)
+*Complete laboratory setup at Maximus Energy Corporation, Naples, FL.*
+
 ## Location
 
 **Address:** 6528 Trail Blvd, Naples, FL 34108
