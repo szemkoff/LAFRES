@@ -220,7 +220,16 @@ gantt
 
 ## Publications & References
 
-*[To be added as research is published]*
+1. **Fomitchev-Zamilov, M.** (2024). Observation of neutron emission during acoustic cavitation of deuterated titanium powder. *Scientific Reports*, 14, 11517.  
+   [https://doi.org/10.1038/s41598-024-62055-6](https://doi.org/10.1038/s41598-024-62055-6)
+
+2. **Naranjo, B., Gimzewski, J.K., & Putterman, S.** (2005). Observation of nuclear fusion driven by a pyroelectric crystal. *Nature*, 434, 1115–1117.
+
+3. **Yin, J., Zhang, Y., & Zhang, Y.** (2019). Numerical study of laser generated cavitation bubble. *IOP Conf. Series: Earth and Environmental Science*, 240, 072021.
+
+4. **Moezzi-Rafie, H., & Nasiri, M.M.** (2018). An investigation on the flow physics of bubble implosion. *Ocean Engineering*, 153, 185–192.
+
+5. **Barber, B.P., & Putterman, S.J.** (1992). Light Scattering Measurements of the Repetitive Supersonic Implosion of a Sonoluminescing Bubble. *Physical Review Letters*, 69(26), 3839-3842.
 
 ---
 

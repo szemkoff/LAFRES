@@ -274,16 +274,38 @@ Maximus Energy Corporation developed the **Automated Nuclear Lab (ANL)** system 
 
 ### Primary Publication
 
-> **Acoustic Cavitation Fusion in Titanium Deuteride Systems**  
-> Nature Scientific Reports, May 2024  
-> DOI: [10.1038/s41598-024-62055-6](https://doi.org/10.1038/s41598-024-62055-6)
+1. **Fomitchev-Zamilov, M.** (2024). Observation of neutron emission during acoustic cavitation of deuterated titanium powder. *Scientific Reports*, 14, 11517.  
+   DOI: [10.1038/s41598-024-62055-6](https://doi.org/10.1038/s41598-024-62055-6)
 
-### Related Work
+### Automated Nuclear Lab System
 
-1. Automated Nuclear Lab system documentation
-2. PulseCounter Pro software documentation
-3. Detailed experimental reports (internal)
-4. Naranjo, Gimzewski, Putterman - Pyroelectric fusion
+2. **Fomitchev-Zamilov, M.** (2023). *Automated Nuclear Lab and PulseCounter Pro Manual*.  
+   [PDF Manual](https://maximus.energy/wp-content/uploads/2023/07/PulseCounter-Pro-Manual.pdf)
+
+3. **Automated Nuclear Lab** - Product page  
+   [https://maximus.energy/index.php/product/automated-nuclear-lab/](https://maximus.energy/index.php/product/automated-nuclear-lab/)
+
+4. **PulseCounter Pro** - Software page  
+   [https://maximus.energy/index.php/product/pulsecounter-pro/](https://maximus.energy/index.php/product/pulsecounter-pro/)
+
+### Background Research
+
+5. **Fomitchev-Zamilov, M.** (2022). Bubble Fusion Status Update.  
+   [https://maximus.energy/index.php/2022/02/13/bubble-fusion-status-update/](https://maximus.energy/index.php/2022/02/13/bubble-fusion-status-update/)
+
+6. **Naranjo, B., Gimzewski, J.K., & Putterman, S.** (2005). Observation of nuclear fusion driven by a pyroelectric crystal. *Nature*, 434, 1115–1117.  
+   DOI: [10.1038/nature03575](https://doi.org/10.1038/nature03575)
+
+### CFD Modeling References
+
+7. **Yin, J., Zhang, Y., & Zhang, Y.** (2019). Numerical study of a laser generated cavitation bubble based on FVM and CLSVOF method. *IOP Conf. Series: Earth and Environmental Science*, 240, 072021.  
+   DOI: [10.1088/1755-1315/240/7/072021](https://doi.org/10.1088/1755-1315/240/7/072021)
+
+8. **Moezzi-Rafie, H., & Nasiri, M.M.** (2018). An investigation on the flow physics of bubble implosion using numerical techniques. *Ocean Engineering*, 153, 185–192.  
+   DOI: [10.1016/j.oceaneng.2018.01.050](https://doi.org/10.1016/j.oceaneng.2018.01.050)
+
+9. **Barber, B.P., & Putterman, S.J.** (1992). Light Scattering Measurements of the Repetitive Supersonic Implosion of a Sonoluminescing Bubble. *Physical Review Letters*, 69(26), 3839-3842.  
+   DOI: [10.1103/PhysRevLett.69.3839](https://doi.org/10.1103/PhysRevLett.69.3839)
 
 ---
 
