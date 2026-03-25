@@ -14,11 +14,10 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://szemkoff.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/LAFRES/',
+  // Canonical production URL: custom domain (GitHub Pages + DNS).
+  // Until DNS is live, use `npm run serve` after build, or GitHub “Enforce HTTPS” once the domain verifies.
+  url: 'https://maximusfusion.com',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'szemkoff', // Your GitHub username
@@ -41,7 +40,8 @@ const config: Config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         docsRouteBasePath: '/docs',
-        indexBlog: false,
+        blogRouteBasePath: '/blog',
+        indexBlog: true,
       },
     ],
   ],
@@ -62,7 +62,22 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: 'docs',
         },
-        blog: false,
+        blog: {
+          path: 'blog',
+          routeBasePath: 'blog',
+          blogTitle: 'Project updates',
+          blogDescription:
+            'Milestones, lab progress, and science news for L.A.F.R.E.S. — not a website changelog.',
+          blogSidebarTitle: 'Recent posts',
+          postsPerPage: 8,
+          showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+            title: 'L.A.F.R.E.S. project updates',
+            description: 'Fusion research program news from MAXIMUS FUSION SYSTEMS / L.A.F.R.E.S.',
+            copyright: `Copyright © ${new Date().getFullYear()} L.A.F.R.E.S.`,
+          },
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -86,12 +101,14 @@ const config: Config = {
         height: 40,
       },
       items: [
+        {to: '/', label: 'Home', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'mainSidebar',
           position: 'left',
           label: 'Documentation',
         },
+        {to: '/blog', label: 'Project updates', position: 'left'},
       ],
     },
     footer: {
@@ -135,12 +152,24 @@ const config: Config = {
           title: 'Project',
           items: [
             {
+              label: 'Project plan',
+              to: '/docs/project-plan',
+            },
+            {
               label: 'Roadmap',
               to: '/docs/roadmap/roadmap-overview',
             },
             {
+              label: 'Diagrams',
+              to: '/docs/diagrams',
+            },
+            {
               label: 'Team',
               to: '/docs/team',
+            },
+            {
+              label: 'Project updates (blog)',
+              to: '/blog',
             },
             {
               label: 'FAQ',

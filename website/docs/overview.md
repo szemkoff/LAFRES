@@ -76,12 +76,15 @@ flowchart LR
 - **Investment Opportunity**: Early-stage breakthrough technology with massive commercial potential
 - **Complete Documentation**: Full technical specifications, safety protocols, and development roadmap
 
-### Current Development Stage
+### Current development stage
 
-- **Proof of Concept**: Achieved and published (Nature Scientific Reports, 2024)
-- **Phase I Focus**: CFD modeling, microfluidic bubble control, high-speed imaging
-- **Next Milestone**: Reproducible, controlled fusion conditions
+- **Proof of concept**: Achieved and published (Nature Scientific Reports, 2024)
+- **Phase I (in progress)**: CFD validation (OpenFOAM), microfluidic bubble control, multi-channel neutron detection, high-speed imaging, reproducibility and scaling roadmap—executed primarily at the Naples laboratory under **MAXIMUS FUSION SYSTEMS, LLC**
+- **Funding mix**: Company operations plus competitive federal R&D opportunities where aligned; **public messaging emphasizes technical results, not pre-award announcements**
+- **Next milestones**: Documented reproducibility, quantitative rate improvements, and peer-reviewed follow-on publications
 - **Seeking**: Strategic partners, investors, and research collaborators
+
+See **[Project plan & pipeline](/docs/project-plan)** for the live technical line of work and **[Team](/docs/team)** for leadership.
 
 ## System Concept
 
@@ -235,7 +238,7 @@ A real-time control system manages all subsystems:
 | Phase II: Reproducible Fusion | 12-18 months | Planned |
 | Phase III: Commercial Scale | 18-24 months | Future |
 
-**Current status**: Proof of concept demonstrated and published. Seeking funding for Phase I optimization.
+**Current status**: Proof of concept demonstrated and published. **Phase I** (optimization, modeling, reproducibility) is the active program—see [Project plan](/docs/project-plan) and [Project updates](/blog).
 
 ## Resource Requirements
 
@@ -254,23 +257,22 @@ A real-time control system manages all subsystems:
 - Lithium handling infrastructure
 - High-power electrical supply
 
-### Budget Estimate
-- Phase 0: $200K - $500K
-- Phase 1: $1M - $2M
-- Phase 2: $2M - $3M
-- Phase 3: $3M - $5M
-- **Total**: $6M - $10M
+### Budget planning (high level)
 
-## Next Steps
+- **Phase I (current program class):** internal multi-year planning on the order of **~$5M** for the full technical pipeline (see [Project plan](/docs/project-plan))  
+- **Long-range integrated system:** multi-phase totals often quoted in the **$6M–$10M+** range over several years — see [Cost estimates](/docs/roadmap/cost-estimates)  
+- Figures are planning tools for partners; they are not an offer of securities.
 
-1. Review detailed technical documentation
-2. Examine component specifications
-3. Study safety protocols
-4. Begin Phase 0 simulation planning
+## Next steps
+
+1. Read the [Project plan & pipeline](/docs/project-plan) and [System diagrams](/docs/diagrams)  
+2. Review [Published results](/docs/research/published-results) and [Team](/docs/team)  
+3. Follow [Project updates](/blog) for milestone posts  
+4. Use [Repository index](/docs/repo-index) if you need files that live only in the GitHub tree  
 
 ---
 
-**Document Version**: 1.0  
-**Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Team
+**Document version:** 1.1  
+**Last updated:** March 2026  
+**Maintained by:** L.A.F.R.E.S. / MAXIMUS FUSION SYSTEMS, LLC
 

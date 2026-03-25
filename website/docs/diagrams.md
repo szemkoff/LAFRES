@@ -2,16 +2,53 @@
 id: diagrams
 title: System Diagrams
 sidebar_label: Diagrams
-sidebar_position: 3
+sidebar_position: 6
 ---
 
 # System Diagrams
 
-Visual representations of the L.A.F.R.E.S. system architecture, components, and data flow.
+Visual representations of the L.A.F.R.E.S. program: **(A)** the **integrated reactor vision** (lithium blanket, full plant-style subsystems), and **(B)** the **acoustic solid-state fusion path** demonstrated in the peer-reviewed baseline (Nature Scientific Reports, 2024).
 
-## System Architecture Overview
+## Diagram version register
 
-This diagram shows the five integrated subsystems and their interconnections:
+| ID | Asset | Version | Date | Scope |
+|----|-------|---------|------|--------|
+| **SYS-ARCH** | [system-architecture-diagram.svg](/img/system-architecture-diagram.svg) | **v2.0** | March 2026 | Full L.A.F.R.E.S. integrated architecture (future system) |
+| **RX-XSEC** | [reactor-cross-section.svg](/img/reactor-cross-section.svg) | **v2.0** | March 2026 | Conceptual vessel / lithium layers (vision) |
+| **DATAFLOW** | [data-flow-diagram.svg](/img/data-flow-diagram.svg) | **v2.0** | March 2026 | Control and safety data flow (vision) |
+| **ORG** | [team-org-chart.svg](/img/team-org-chart.svg) (see [Team](/docs/team)) | **v2.0** | March 2026 | Organization chart (summary) |
+
+**Note:** “Vision” diagrams describe the **long-range integrated concept**. The **demonstrated** program today is centered on **acoustic cavitation + TiD₂** solid-state fusion, detection, and modeling—see [Project plan](/docs/project-plan) and [Published results](/docs/research/published-results).
+
+---
+
+## Demonstrated program (conceptual flow)
+
+What the lab executes today is **not** the full five-subsystem plant below—it is the **left branch** of this high-level map:
+
+```mermaid
+flowchart TB
+  subgraph today["Demonstrated & active (Phase I)"]
+    A[Acoustic drive] --> B[D₂O / emulsion + TiD₂]
+    B --> C[Fusion signatures]
+    C --> D[Neutron detection & imaging]
+    D --> E[CFD validation & scaling models]
+  end
+  subgraph vision["Long-range L.A.F.R.E.S. vision"]
+    F[Liquid lithium blanket]
+    G[Thermal conversion]
+    H[Full plant-style control]
+  end
+  E -.->|Future integration| F
+  style today fill:#ecfdf5,stroke:#059669
+  style vision fill:#f8fafc,stroke:#94a3b8,stroke-dasharray: 5 5
+```
+
+---
+
+## System Architecture Overview (integrated vision)
+
+This diagram shows the five integrated subsystems and their interconnections for the **full conceptual system**:
 
 ![System Architecture Diagram](/img/system-architecture-diagram.svg)
 
@@ -169,11 +206,15 @@ flowchart TD
 
 ---
 
-## Download Diagrams
+## Download diagrams
 
-All diagrams are available in SVG format for high-quality printing and presentations:
+All diagrams are available in SVG format for high-quality printing and presentations (stamped **v2.0 · March 2026** in the figure):
 
-- [System Architecture Diagram](/img/system-architecture-diagram.svg)
-- [Reactor Cross-Section](/img/reactor-cross-section.svg)
-- [Data Flow Diagram](/img/data-flow-diagram.svg)
+- [System Architecture Diagram](/img/system-architecture-diagram.svg) — `SYS-ARCH` v2.0  
+- [Reactor Cross-Section](/img/reactor-cross-section.svg) — `RX-XSEC` v2.0  
+- [Data Flow Diagram](/img/data-flow-diagram.svg) — `DATAFLOW` v2.0  
+
+---
+
+**Page version:** 1.1 · **Last updated:** March 2026
 

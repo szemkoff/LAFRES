@@ -49,8 +49,8 @@ function HomepageHeader() {
             <span className={styles.statLabel}>PSI Achieved</span>
           </div>
           <div className={styles.stat}>
-            <span className={styles.statValue}>$6-10M</span>
-            <span className={styles.statLabel}>To Scale Up</span>
+            <span className={styles.statValue}>Phase I</span>
+            <span className={styles.statLabel}>Optimization pipeline</span>
           </div>
         </div>
         <div className={styles.heroCta}>
@@ -59,6 +59,9 @@ function HomepageHeader() {
           </Link>
           <Link className={styles.ctaSecondary} to="/docs/system-architecture">
             View Architecture
+          </Link>
+          <Link className={styles.ctaSecondary} to="/blog">
+            Project updates
           </Link>
         </div>
       </div>

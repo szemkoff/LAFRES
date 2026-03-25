@@ -1,6 +1,6 @@
 # L.A.F.R.E.S. — Lithium-Acoustic Fusion Research & Engineering System
 
-[![Documentation](https://img.shields.io/badge/docs-online-blue)](https://szemkoff.github.io/LAFRES/)
+[![Documentation](https://img.shields.io/badge/docs-online-blue)](https://maximusfusion.com/)
 [![Published](https://img.shields.io/badge/Nature-Published%202024-green)](https://doi.org/10.1038/s41598-024-62055-6)
 [![Status](https://img.shields.io/badge/status-Net%20Gain%20Achieved-brightgreen)]()
 [![Phase](https://img.shields.io/badge/phase-I%20Optimization-orange)]()
@@ -16,7 +16,7 @@
 | **Peer Review** | Published in Nature Scientific Reports (2024) |
 | **Acoustic Peaks** | &gt;24,000 psi shockwaves enabling fusion |
 
-**Full documentation: [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/)**
+**Full documentation: [maximusfusion.com](https://maximusfusion.com)** (configure DNS + GitHub Pages custom domain; see `website/docs/website-domain.md`)
 
 ---
 
@@ -44,31 +44,33 @@ Our acoustic cavitation fusion results have been **published in Nature Scientifi
 - Sustained operation for hours
 - Acoustic peaks >24,000 psi
 
-See [Published Results](https://szemkoff.github.io/LAFRES/docs/research/published-results) for full details.
+See [Published Results](https://maximusfusion.com/docs/research/published-results) for full details.
 
 ---
 
 ## Laboratory
 
-**Maximus Energy Corporation** operates a fully equipped fusion research laboratory in Naples, FL, featuring:
+**MAXIMUS FUSION SYSTEMS, LLC** operates a fusion research laboratory in Naples, FL, featuring:
 - Experimental fusion reactor
 - Radiation detection systems (NaI, HPGe, 3He neutron counters)
 - Vacuum systems (Varian, Leybold, Pfeiffer turbomolecular pumps)
 - Acoustic/ultrasonic equipment (Branson sonicators)
 - Analytical instruments (SEM, particle analyzers)
 
-See [Laboratory Facilities](https://szemkoff.github.io/LAFRES/docs/lab/facilities) for complete equipment list.
+See [Laboratory Facilities](https://maximusfusion.com/docs/lab/facilities) for complete equipment list.
 
 ---
 
-## Founding Team
+## Leadership & Team
 
 | Role | Name | Background |
 |------|------|------------|
-| **Chief Science Officer** | Max Fomitchev-Zamilov | PhD, Founder Maximus Energy Corp, Quantum Potential Corp |
-| **Chief Operating Officer** | Stan Zemskoff | M.Eng, PMP, Co-Founder Azure Yacht Group |
+| **Principal Investigator / CTO** | Maxim Fomichev, Ph.D. | Nature first author (2024), nuclear instrumentation, ANL detection systems |
+| **CEO / Program management** | Stan Zemskoff | M.Eng., PMP; government and commercial PM experience |
+| **Senior engineers** | Maxim Koshelev (EE), Doug Tinsler (ME) | Detection electronics; reactor fabrication & microfluidics |
+| **Strategic advisor** | Ross Koningstein, Ph.D. | Energy technology, Google engineering leadership (advisory) |
 
-See the full [Team & Organization](https://szemkoff.github.io/LAFRES/docs/team) page for hiring needs and advisory board.
+See [Team & Organization](https://maximusfusion.com/docs/team) and [Project plan & pipeline](https://maximusfusion.com/docs/project-plan).
 
 ---
 
@@ -116,30 +118,33 @@ LAFRES/
 
 ---
 
-## Development Phases
+## Development phases
 
-| Phase | Description | Timeline | Budget |
-|-------|-------------|----------|--------|
-| **Phase 0** | Simulation & Modeling | 6-12 months | $200-500K |
-| **Phase 1** | Lithium Bench System | 12-18 months | $1-2M |
-| **Phase 2** | Neutron-Coupled Testing | 12-18 months | $2-3M |
-| **Phase 3** | Pulsed Micro-Fusion Unit | 18-24 months | $3-5M |
+| Phase | Description | Notes |
+|-------|-------------|--------|
+| **Proof of concept** | Acoustic solid-state D–D fusion in TiD₂ | Published 2024 (Nature Scientific Reports) |
+| **Phase I (current focus)** | CFD validation, microfluidic control, detection, imaging, reproducibility | ~24-month technical pipeline; internal program planning ~**$5.3M** class budget |
+| **Later phases** | Liquid lithium integration, neutron coupling, scaled prototypes | See [Roadmap](https://maximusfusion.com/docs/roadmap/roadmap-overview) |
 
-**Total**: $6-10M over 5-6 years
+Long-range **multi-year** scale-up remains in the **$6–10M+** class over time; see [Cost estimates](https://maximusfusion.com/docs/roadmap/cost-estimates). **Federal R&D:** the company pursues competitive opportunities where aligned; **public updates emphasize results, not pre-award solicitations.**
 
-See [Roadmap](https://szemkoff.github.io/LAFRES/docs/roadmap/roadmap-overview) and [Cost Estimates](https://szemkoff.github.io/LAFRES/docs/roadmap/cost-estimates) for details.
+See [Project plan & pipeline](https://maximusfusion.com/docs/project-plan).
 
 ---
 
 ## Quick Links
 
-- [Project Overview](https://szemkoff.github.io/LAFRES/docs/overview)
-- [System Architecture](https://szemkoff.github.io/LAFRES/docs/system-architecture)
-- [System Diagrams](https://szemkoff.github.io/LAFRES/docs/diagrams)
-- [Component Specs](https://szemkoff.github.io/LAFRES/docs/specs/plasma-core)
-- [Safety Protocols](https://szemkoff.github.io/LAFRES/docs/safety/safety-overview)
-- [FAQ](https://szemkoff.github.io/LAFRES/docs/faq)
-- [Team & Hiring](https://szemkoff.github.io/LAFRES/docs/team)
+- [Project Overview](https://maximusfusion.com/docs/overview)
+- [Project plan & pipeline](https://maximusfusion.com/docs/project-plan)
+- [Website & domain (DNS checklist)](https://maximusfusion.com/docs/website-domain)
+- [Repository index (GitHub tree)](https://maximusfusion.com/docs/repo-index)
+- [Project updates (blog)](https://maximusfusion.com/blog)
+- [System Architecture](https://maximusfusion.com/docs/system-architecture)
+- [System Diagrams](https://maximusfusion.com/docs/diagrams)
+- [Component Specs](https://maximusfusion.com/docs/specs/plasma-core)
+- [Safety Protocols](https://maximusfusion.com/docs/safety/safety-overview)
+- [FAQ](https://maximusfusion.com/docs/faq)
+- [Team & Hiring](https://maximusfusion.com/docs/team)
 
 ---
 
@@ -174,13 +179,15 @@ We have proven the concept. Now we need to scale it:
 | **10,000x** | Neutron imaging systems | Industrial NDT revolution |
 | **1,000,000x** | Portable fusion power | Energy independence |
 
-**Seeking**: Strategic investors, research partners, and government grants for Phase I optimization.
+**Seeking**: Strategic investors and research partners for Phase I optimization and scale-up.
 
-### Current Priorities
-- CFD modeling (OpenFOAM) of bubble dynamics
-- Microfluidic system for precise bubble control
-- High-speed imaging (1M fps) for bubble observation
-- Reproducible fusion conditions
+### Current priorities
+- CFD modeling (OpenFOAM) of bubble dynamics  
+- Microfluidic system for precise bubble control  
+- High-speed imaging (1M fps) for bubble observation  
+- Reproducible fusion conditions and quantitative scaling models  
+
+Repository status: `docs/PROJECT_STATUS.md`.
 
 ---
 
@@ -188,15 +195,17 @@ We have proven the concept. Now we need to scale it:
 
 | Purpose | Contact |
 |---------|---------|
-| General Inquiries | info@lafres.org |
+| General (L.A.F.R.E.S. site) | info@lafres.org |
 | Research Collaboration | research@lafres.org |
 | Partnerships | partnerships@lafres.org |
 | Investment Inquiries | investors@lafres.org |
 | Careers | careers@lafres.org |
+| Maxim Fomichev (PI/CTO) | [founder@maximus.energy](mailto:founder@maximus.energy) |
+| Stan Zemskoff (CEO/PM) | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
 
 ---
 
-**Version**: 0.2.0  
-**Last Updated**: December 2025  
-**Status**: Phase 0 - Simulation & Documentation  
-**Website**: [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/)
+**Version**: 0.3.0  
+**Last Updated**: March 2026  
+**Status**: Phase I — optimization & quantitative modeling (published baseline)  
+**Website**: [maximusfusion.com](https://maximusfusion.com)

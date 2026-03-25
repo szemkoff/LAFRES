@@ -121,5 +121,6 @@
   <text x="130" y="559" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="end">Data/Energy Flow</text>
   <line x1="40" y1="575" x2="70" y2="575" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,3"/>
   <text x="130" y="579" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="end">Control Signal</text>
+  <text x="450" y="592" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">SYS-ARCH v2.0 · March 2026</text>
 </svg>
 

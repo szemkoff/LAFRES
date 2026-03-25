@@ -19,10 +19,14 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Blog (project updates)
+
+The **Project updates** section (`/blog`) is for **program and lab news**—milestones, science, partnerships—not for website or CI mechanics. Posts live in `blog/` with frontmatter `authors` and `tags` from `blog/authors.yml` and `blog/tags.yml`.
 
 ## Deployment
 

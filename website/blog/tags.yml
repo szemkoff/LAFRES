@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+program:
+  label: Program
+  permalink: /program
+  description: Overall program direction and milestones
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+lab:
+  label: Laboratory
+  permalink: /lab
+  description: Naples facility, hardware, and measurements
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+science:
+  label: Science
+  permalink: /science
+  description: Physics, modeling, and experimental results
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+partnerships:
+  label: Partnerships
+  permalink: /partnerships
+  description: Collaborators and strategic relationships
+
+publications:
+  label: Publications
+  permalink: /publications
+  description: Papers, reports, and citations

@@ -131,5 +131,6 @@
   <rect x="30" y="440" width="200" height="50" rx="4" fill="white" stroke="#e2e8f0"/>
   <text x="130" y="458" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#374151" text-anchor="middle">Sampling Rates</text>
   <text x="130" y="475" font-family="Arial, sans-serif" font-size="9" fill="#64748b" text-anchor="middle">Safety: 10kHz | Acoustic: 1-10kHz | Thermal: 1-10Hz</text>
+  <text x="400" y="496" font-family="Arial, sans-serif" font-size="10" fill="#64748b" text-anchor="middle">DATAFLOW v2.0 · March 2026</text>
 </svg>
 

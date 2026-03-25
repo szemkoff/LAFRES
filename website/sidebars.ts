@@ -15,6 +15,9 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 const sidebars: SidebarsConfig = {
   mainSidebar: [
     'overview',
+    'project-plan',
+    'repo-index',
+    'website-domain',
     'system-architecture',
     {
       type: 'category',

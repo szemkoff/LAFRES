@@ -184,4 +184,5 @@
   <rect x="520" y="545" width="310" height="10" rx="2" fill="#e2e8f0"/>
   <rect x="520" y="545" width="78" height="10" rx="2" fill="#22c55e"/>
   <text x="675" y="565" text-anchor="middle" class="legend-text">5 of 20 positions filled (25%)</text>
+  <text x="500" y="688" text-anchor="middle" class="subtitle">ORG v2.0 · March 2026</text>
 </svg>

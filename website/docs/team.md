@@ -7,7 +7,7 @@ sidebar_position: 50
 
 # Team Structure and Expertise Requirements
 
-L.A.F.R.E.S. requires a multidisciplinary team with expertise spanning nuclear engineering, plasma physics, materials science, thermal-fluid systems, and regulatory compliance. This section outlines our founding team, required personnel, and organizational structure.
+L.A.F.R.E.S. is executed by **MAXIMUS FUSION SYSTEMS, LLC** in Naples, FL, with a multidisciplinary team spanning nuclear instrumentation, mechanical and electrical engineering, CFD, microfluidics, and program management. This page summarizes **current leadership and core staff** aligned with the active technical pipeline (CFD, microfluidics, detection, imaging, scaling analysis). See also [Project plan & pipeline](/docs/project-plan).
 
 ---
 
@@ -19,71 +19,72 @@ L.A.F.R.E.S. requires a multidisciplinary team with expertise spanning nuclear e
 
 ## Founding Team
 
-### Max Fomitchev-Zamilov — Chief Science Officer (CSO)
+### Maxim Fomichev, Ph.D. — Principal Investigator / CTO
 
 | | |
 |---|---|
-| **Role** | Chief Science Officer / Principal Investigator |
-| **Focus** | Research leadership, technical vision, physics R&D |
-| **Background** | Founder, Maximus Energy Corporation (2016-present) |
-| **Previous** | President, Quantum Potential Corporation; CEO, Quantum Vortex Inc. |
-| **Education** | PhD, Moscow Institute of Electronic Technology; PhD, University of Tulsa |
-| **Expertise** | Energy Research, R&D Leadership, Quantum Technologies, Advanced Physics |
+| **Role** | Principal Investigator, Chief Technology Officer |
+| **Focus** | Experimental fusion science, reactor operations, CFD, publications |
+| **Background** | MAXIMUS FUSION SYSTEMS, LLC; prior leadership in advanced R&D ventures |
+| **Publication** | First author, Nature Scientific Reports (2024) — acoustic solid-state D–D fusion in titanium deuteride |
+| **Education** | Ph.D., Moscow Institute of Electronic Technology; Ph.D., University of Tulsa |
+| **Expertise** | Nuclear instrumentation, neutron detection, acoustic cavitation, experimental physics |
+| **Phone** | +1 (814) 777-8993 |
+| **Email** | [founder@maximus.energy](mailto:founder@maximus.energy) |
 
 **Responsibilities:**
-- Lead theoretical physics foundation and fusion research strategy
-- Direct IEC fusion core and acoustic coupling R&D
-- Interface with academic and research institutions
-- Author technical publications and white papers
-- Chair Technical Advisory Board
+- Technical direction for the L.A.F.R.E.S. program and Naples laboratory
+- CFD modeling leadership (OpenFOAM), experimental campaigns, data analysis
+- Authorship of technical reports and peer-reviewed publications
+- Interface with research partners and sponsored program requirements
 
 ---
 
-### Stan Zemskoff — Chief Operating Officer (COO)
+### Stan Zemskoff — Chief Executive Officer / Program Management
 
 | | |
 |---|---|
-| **Role** | Chief Operating Officer / VP Program Management |
-| **Focus** | Operations, project management, partnerships, supply chain |
-| **Background** | Co-Founder, Azure Yacht Group (2020-present) |
-| **Previous** | Founder/CEO Pauli; PM at Lamoda, SVEZA; Caterpillar, DHL, PepsiCo |
-| **Education** | M.Eng. Optical Electronic Instruments & Systems, Moscow State University |
+| **Role** | Chief Executive Officer; program management and operations |
+| **Focus** | Schedule, budget, contracting, procurement, stakeholder communications |
+| **Background** | Co-Founder, Azure Yacht Group; prior PM and operations roles (commercial and government sectors) |
+| **Education** | M.Eng., Optical Electronic Instruments & Systems, Moscow State University |
 | **Certifications** | PMP (2016), Prince2 (2009) |
-| **Expertise** | Project Management, Supply Chain, Process Improvement, Business Development |
+| **Expertise** | Program management, FAR/DFAR-aware execution, supply chain, business development |
+| **Phone** | +1 (786) 617-8722 |
+| **Email** | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
 
 **Responsibilities:**
-- Manage day-to-day operations across all project phases
-- Implement project management frameworks (Agile + Prince2 hybrid)
-- Ensure milestone delivery and budget control
-- Build supplier relationships and negotiate partnerships
-- Support investor relations and business development
+- Company operations and milestone tracking for the L.A.F.R.E.S. program
+- Budget control, procurement, and subcontract coordination
+- Investor and partner communications as appropriate
+- Laboratory and vendor interfaces supporting the technical team
 
 ---
 
 ## Leadership Team Skills Matrix
 
-| Capability | Max (CSO) | Stan (COO) | Coverage |
-|------------|-----------|------------|----------|
-| Fusion Physics & Theory | ★★★★★ | ★☆☆☆☆ | CSO leads |
-| R&D Leadership | ★★★★★ | ★★☆☆☆ | CSO leads |
-| Project Management | ★★☆☆☆ | ★★★★★ | COO leads |
-| Supply Chain/Procurement | ★☆☆☆☆ | ★★★★★ | COO leads |
-| Business Development | ★★★☆☆ | ★★★★☆ | Shared |
-| Investor Relations | ★★★☆☆ | ★★★★☆ | Shared |
-| Technical Publications | ★★★★★ | ★★☆☆☆ | CSO leads |
-| Operations/Logistics | ★☆☆☆☆ | ★★★★★ | COO leads |
+| Capability | Maxim (PI/CTO) | Stan (CEO/PM) | Coverage |
+|------------|----------------|---------------|----------|
+| Fusion physics & experiment | ★★★★★ | ★★☆☆☆ | PI leads |
+| R&D leadership | ★★★★★ | ★★★☆☆ | PI leads |
+| Program / schedule / budget | ★★★☆☆ | ★★★★★ | CEO leads |
+| Procurement & supply chain | ★★☆☆☆ | ★★★★★ | CEO leads |
+| Business development | ★★★☆☆ | ★★★★☆ | Shared |
+| Technical publications | ★★★★★ | ★★☆☆☆ | PI leads |
+| Operations & lab logistics | ★★☆☆☆ | ★★★★☆ | Shared |
 
 ---
 
-## Phase I Research Team
+## Core engineering & advisory (Phase I program)
 
-The following team members are engaged for the Phase I research program:
+| Role | Name | Focus area |
+|------|------|------------|
+| **Electrical engineer** | Maxim Koshelev | Neutron detection electronics, multi-channel synchronization, ANL data acquisition |
+| **Mechanical engineer** | Doug Tinsler | Reactor fabrication, microfluidic integration, precision machining |
+| **Strategic advisor** | Ross Koningstein, Ph.D. | Commercialization and independent technical review (advisory; not full-time) |
+| **CFD / specialists** | Subcontractors (as scoped) | OpenFOAM, extreme-pressure bubble dynamics (via subcontract budget) |
 
-| Role | Name | Focus Area | Duration |
-|------|------|------------|----------|
-| **Microfluidics Engineer** | Arnold Hill | D₂O bubble/droplet generation system | 6 months |
-| **Imaging Engineer** | Patrick Clark | High-speed camera / bubble imaging | 6 months |
-| **CFD Consultant** | Ryan Raubenheimer | OpenFOAM modeling & software development | Contract |
+Postdoctoral researchers and laboratory technicians are part of the **full program plan** (~9.5 FTE total technical load in internal planning documents); titles and counts match the company’s cost and staffing spreadsheets.
 
 ---
 
@@ -112,27 +113,27 @@ The following team members are engaged for the Phase I research program:
 
 ## Full Team Structure
 
-### Core Leadership Team
+### Core leadership
 
 | Role | Name | Status | Commitment |
 |------|------|--------|------------|
-| **Chief Science Officer** | Max Fomitchev-Zamilov | Active | Full-time |
-| **Chief Operating Officer** | Stan Zemskoff | Active | Full-time |
-| **Chief Financial Officer** | — | To Be Hired | Part-time → Full-time |
-| **Safety Officer (RSO)** | — | To Be Hired | Consultant (Phase 0-1) |
+| **Principal Investigator / CTO** | Maxim Fomichev, Ph.D. | Active | Full-time (program) |
+| **CEO / Program management** | Stan Zemskoff | Active | Full-time |
+| **Senior electrical engineer** | Maxim Koshelev | Active | Full-time (program) |
+| **Senior mechanical engineer** | Doug Tinsler | Active | Full-time (program) |
+| **Strategic advisor** | Ross Koningstein, Ph.D. | Active | Advisory (quarterly) |
+| **Chief Financial Officer** | — | As needed | Finance support |
+| **Safety / RSO** | — | As needed | Consultant |
 
-### Technical Staff
+### Additional technical roles (hiring & scale-up)
 
-| Discipline | Name | Status | Phase |
-|------------|------|--------|-------|
-| **Nuclear Engineer** | — | To Be Hired | All phases |
-| **Plasma Physicist** | — | To Be Hired | Phase 0, Phase 3 |
-| **Controls Engineer** | — | To Be Hired | Phase 1+ |
-| **Mechanical Engineer** | — | To Be Hired | All phases |
-| **Materials Scientist** | — | To Be Hired | Phase 1+ |
-| **Electrical Engineer** | — | To Be Hired | Phase 1+ |
-| **Acoustic Engineer** | — | To Be Hired | Phase 0-2 |
-| **Software Engineer** | — | To Be Hired | Phase 0+ |
+| Discipline | Status | Notes |
+|------------|--------|-------|
+| Postdoctoral researchers (materials, emulsion, imaging) | Per program plan | Aligned with internal staffing model |
+| Laboratory technicians | Per program plan | Operations and calibration |
+| **Controls / FPGA engineer** | Open | Real-time acquisition and safety interlocks |
+| **CFO / finance lead** | Open | Investor and grant accounting |
+| **Materials / acoustic / software** | Future | Phase 2+ scale-up |
 
 ### Support Personnel
 
@@ -237,9 +238,9 @@ Retired national lab directors, fusion program leaders (ITER, NIF, tokamak proje
 
 ---
 
-## Current Opportunities
+## Current opportunities
 
-**Current Status (Phase 0):** Assembling founding team, seeking seed funding
+**Current status (Phase I):** Active laboratory program—optimization of solid-state fusion rates, quantitative modeling, and reproducibility; see [Project plan & pipeline](/docs/project-plan).
 
 ### Immediate Hiring Needs
 
@@ -258,11 +259,22 @@ Retired national lab directors, fusion program leaders (ITER, NIF, tokamak proje
 
 ---
 
-## Contact the Team
+## Contact the team
 
-| Team Member | Role | Contact |
-|-------------|------|---------|
-| Max Fomitchev-Zamilov | CSO | max@lafres.org |
-| Stan Zemskoff | COO | stan@lafres.org |
-| General Inquiries | — | info@lafres.org |
-| Careers | — | careers@lafres.org |
+Primary contacts match program and administrative records (e.g. federal submissions):
+
+| Team member | Role | Phone | Email |
+|-------------|------|-------|--------|
+| **Maxim Fomichev, Ph.D.** | Principal Investigator / CTO | +1 (814) 777-8993 | [founder@maximus.energy](mailto:founder@maximus.energy) |
+| **Stan Zemskoff** | Chief Executive Officer / program management | +1 (786) 617-8722 | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
+| **Maxim Koshelev** | Senior electrical engineer | — | *(company directory)* |
+| **Doug Tinsler** | Senior mechanical engineer | — | *(company directory)* |
+| **Ross Koningstein, Ph.D.** | Strategic advisor | — | *(advisory channel via company)* |
+
+**Program website:** [maximusfusion.com](https://maximusfusion.com) — documentation and [project updates](/blog).
+
+| Purpose | Contact |
+|---------|---------|
+| General inquiries (L.A.F.R.E.S. program mailbox) | [info@lafres.org](mailto:info@lafres.org) |
+| Research collaboration | [research@lafres.org](mailto:research@lafres.org) |
+| Careers | [careers@lafres.org](mailto:careers@lafres.org) |
