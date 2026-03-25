@@ -16,7 +16,7 @@
 | **Peer Review** | Published in Nature Scientific Reports (2024) |
 | **Acoustic Peaks** | &gt;24,000 psi shockwaves enabling fusion |
 
-**Full documentation: [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/)** (custom domain later: `website/docs/website-domain.md`)
+**Full documentation: [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/)**
 
 ---
 
@@ -136,7 +136,6 @@ See [Project plan & pipeline](https://szemkoff.github.io/LAFRES/docs/project-pla
 
 - [Project Overview](https://szemkoff.github.io/LAFRES/docs/overview)
 - [Project plan & pipeline](https://szemkoff.github.io/LAFRES/docs/project-plan)
-- [Website & domain (DNS checklist)](https://szemkoff.github.io/LAFRES/docs/website-domain)
 - [Repository index (GitHub tree)](https://szemkoff.github.io/LAFRES/docs/repo-index)
 - [Project updates (blog)](https://szemkoff.github.io/LAFRES/blog)
 - [System Architecture](https://szemkoff.github.io/LAFRES/docs/system-architecture)

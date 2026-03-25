@@ -37,7 +37,7 @@ Public alignment rules: [`docs/PUBLIC-WEBSITE-ALIGNMENT.md`](PUBLIC-WEBSITE-ALIG
 | **GitHub Actions** | `.github/workflows/deploy.yml` — builds Docusaurus site on push to `main` |
 | **Website** | `website/` — `npm ci` / `npm run build` |
 | **Blog** | `website/blog/` — **Project updates** at `https://szemkoff.github.io/LAFRES/blog` |
-| **Domain** | Live site: **szemkoff.github.io/LAFRES** — custom domain steps in `website/docs/website-domain.md` |
+| **Site** | Public docs: **szemkoff.github.io/LAFRES** (GitHub Pages from `website/`) |
 
 ## Last reviewed
 

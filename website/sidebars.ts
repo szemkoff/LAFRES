@@ -17,7 +17,6 @@ const sidebars: SidebarsConfig = {
     'overview',
     'project-plan',
     'repo-index',
-    'website-domain',
     'system-architecture',
     {
       type: 'category',

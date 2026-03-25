@@ -45,3 +45,6 @@ server.log
 # Internal grant / solicitation materials (not published on GitHub)
 grant-application/darpa-marrs/
 
+# Internal ops: domain/DNS notes (keep local only; do not publish)
+website/docs/website-domain.md
+
