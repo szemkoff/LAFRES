@@ -40,7 +40,7 @@
   <text x="80" y="465" font-family="Arial, sans-serif" font-size="22" fill="#64748b">Acoustic Stabilization • Liquid Lithium • AI Control</text>
   
   <!-- URL -->
-  <text x="80" y="580" font-family="Arial, sans-serif" font-size="20" fill="#3b82f6">maximusfusion.com</text>
+  <text x="80" y="580" font-family="Arial, sans-serif" font-size="20" fill="#3b82f6">szemkoff.github.io/LAFRES</text>
   
   <!-- Bottom accent line -->
   <rect x="0" y="620" width="1200" height="10" fill="url(#accentGrad)"/>

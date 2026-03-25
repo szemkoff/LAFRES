@@ -14,10 +14,9 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Canonical production URL: custom domain (GitHub Pages + DNS).
-  // Until DNS is live, use `npm run serve` after build, or GitHub “Enforce HTTPS” once the domain verifies.
-  url: 'https://maximusfusion.com',
-  baseUrl: '/',
+  // Production: GitHub Pages project site. Custom domain (maximusfusion.com) can be enabled later in repo Settings + DNS.
+  url: 'https://szemkoff.github.io',
+  baseUrl: '/LAFRES/',
 
   // GitHub pages deployment config.
   organizationName: 'szemkoff', // Your GitHub username

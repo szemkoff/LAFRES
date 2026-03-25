@@ -34,8 +34,8 @@ Internal spreadsheets use a **~$5.28M / 24 months / 9.5 FTE** class total (direc
 |----------|---------|
 | **GitHub Actions** | `.github/workflows/deploy.yml` — builds Docusaurus site on push to `main` |
 | **Website** | `website/` — `npm ci` / `npm run build` |
-| **Blog** | `website/blog/` — **Project updates** (program/lab news), at `https://maximusfusion.com/blog` |
-| **Domain** | Canonical site **maximusfusion.com** — `website/static/CNAME`, see `website/docs/website-domain.md` |
+| **Blog** | `website/blog/` — **Project updates** at `https://szemkoff.github.io/LAFRES/blog` |
+| **Domain** | Live site: **szemkoff.github.io/LAFRES** — custom domain steps in `website/docs/website-domain.md` |
 
 ## Last reviewed
 

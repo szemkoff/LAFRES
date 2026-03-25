@@ -5,32 +5,30 @@ sidebar_label: Website & domain
 sidebar_position: 5
 ---
 
-# Public website and **maximusfusion.com**
+# Public website and domain
 
-The program’s public documentation and **Project updates** blog are published as a static site. The **canonical** URL is:
+## Current live URL (GitHub Pages)
 
-**[https://maximusfusion.com](https://maximusfusion.com)** (HTTPS)
+The site is published at:
+
+**[https://szemkoff.github.io/LAFRES/](https://szemkoff.github.io/LAFRES/)**
 
 Implementation: [Docusaurus](https://docusaurus.io/) in the `website/` folder, deployed with [GitHub Actions](https://github.com/szemkoff/LAFRES/actions) to [GitHub Pages](https://pages.github.com/).
 
-## Enable the custom domain (checklist)
+`docusaurus.config.ts` uses `url: https://szemkoff.github.io` and `baseUrl: /LAFRES/` so asset paths and links match this project-site URL.
 
-1. **DNS (your registrar)**  
-   - **Apex** (`maximusfusion.com`): point to GitHub Pages IPs (see [GitHub: configuring an apex domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain)) — typically the four `185.199.108.x` addresses.  
-   - Or use a **www** subdomain with a **CNAME** to `szemkoff.github.io` if you prefer `www.maximusfusion.com` only.
+---
 
-2. **GitHub repository**  
-   - Repo **Settings → Pages → Custom domain**: enter `maximusfusion.com`.  
-   - Wait for DNS check; enable **Enforce HTTPS** when available.  
-   - The repo includes `website/static/CNAME` so each build copies the domain to the published site.
+## Future: custom domain (e.g. maximusfusion.com)
 
-3. **Verify**  
-   - Open `https://maximusfusion.com/docs/overview` and confirm assets load (logo, CSS).  
-   - Update any bookmarks from the old `github.io/.../LAFRES/` path to the new domain.
+When you are ready to migrate:
 
-## Contact (program)
+1. Add `website/static/CNAME` containing a single line: `maximusfusion.com` (or your chosen hostname).
+2. In **GitHub → Repository → Settings → Pages → Custom domain**, enter the same hostname and wait for DNS verification; enable **Enforce HTTPS**.
+3. At your DNS provider, add the **A** records (apex) or **CNAME** as [documented by GitHub](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+4. Update `docusaurus.config.ts` to `url: 'https://maximusfusion.com'` and `baseUrl: '/'`, then redeploy.
 
-Leadership contacts aligned with company records and program submissions are on **[Team & Expertise](/docs/team)**.
+Until then, keep using **szemkoff.github.io/LAFRES** for all public links.
 
 ---
 

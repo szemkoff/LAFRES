@@ -1,6 +1,6 @@
 # L.A.F.R.E.S. — Lithium-Acoustic Fusion Research & Engineering System
 
-[![Documentation](https://img.shields.io/badge/docs-online-blue)](https://maximusfusion.com/)
+[![Documentation](https://img.shields.io/badge/docs-online-blue)](https://szemkoff.github.io/LAFRES/)
 [![Published](https://img.shields.io/badge/Nature-Published%202024-green)](https://doi.org/10.1038/s41598-024-62055-6)
 [![Status](https://img.shields.io/badge/status-Net%20Gain%20Achieved-brightgreen)]()
 [![Phase](https://img.shields.io/badge/phase-I%20Optimization-orange)]()
@@ -16,7 +16,7 @@
 | **Peer Review** | Published in Nature Scientific Reports (2024) |
 | **Acoustic Peaks** | &gt;24,000 psi shockwaves enabling fusion |
 
-**Full documentation: [maximusfusion.com](https://maximusfusion.com)** (configure DNS + GitHub Pages custom domain; see `website/docs/website-domain.md`)
+**Full documentation: [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/)** (custom domain later: `website/docs/website-domain.md`)
 
 ---
 
@@ -44,7 +44,7 @@ Our acoustic cavitation fusion results have been **published in Nature Scientifi
 - Sustained operation for hours
 - Acoustic peaks >24,000 psi
 
-See [Published Results](https://maximusfusion.com/docs/research/published-results) for full details.
+See [Published Results](https://szemkoff.github.io/LAFRES/docs/research/published-results) for full details.
 
 ---
 
@@ -57,7 +57,7 @@ See [Published Results](https://maximusfusion.com/docs/research/published-result
 - Acoustic/ultrasonic equipment (Branson sonicators)
 - Analytical instruments (SEM, particle analyzers)
 
-See [Laboratory Facilities](https://maximusfusion.com/docs/lab/facilities) for complete equipment list.
+See [Laboratory Facilities](https://szemkoff.github.io/LAFRES/docs/lab/facilities) for complete equipment list.
 
 ---
 
@@ -70,7 +70,7 @@ See [Laboratory Facilities](https://maximusfusion.com/docs/lab/facilities) for c
 | **Senior engineers** | Maxim Koshelev (EE), Doug Tinsler (ME) | Detection electronics; reactor fabrication & microfluidics |
 | **Strategic advisor** | Ross Koningstein, Ph.D. | Energy technology, Google engineering leadership (advisory) |
 
-See [Team & Organization](https://maximusfusion.com/docs/team) and [Project plan & pipeline](https://maximusfusion.com/docs/project-plan).
+See [Team & Organization](https://szemkoff.github.io/LAFRES/docs/team) and [Project plan & pipeline](https://szemkoff.github.io/LAFRES/docs/project-plan).
 
 ---
 
@@ -124,27 +124,27 @@ LAFRES/
 |-------|-------------|--------|
 | **Proof of concept** | Acoustic solid-state D–D fusion in TiD₂ | Published 2024 (Nature Scientific Reports) |
 | **Phase I (current focus)** | CFD validation, microfluidic control, detection, imaging, reproducibility | ~24-month technical pipeline; internal program planning ~**$5.3M** class budget |
-| **Later phases** | Liquid lithium integration, neutron coupling, scaled prototypes | See [Roadmap](https://maximusfusion.com/docs/roadmap/roadmap-overview) |
+| **Later phases** | Liquid lithium integration, neutron coupling, scaled prototypes | See [Roadmap](https://szemkoff.github.io/LAFRES/docs/roadmap/roadmap-overview) |
 
-Long-range **multi-year** scale-up remains in the **$6–10M+** class over time; see [Cost estimates](https://maximusfusion.com/docs/roadmap/cost-estimates). **Federal R&D:** the company pursues competitive opportunities where aligned; **public updates emphasize results, not pre-award solicitations.**
+Long-range **multi-year** scale-up remains in the **$6–10M+** class over time; see [Cost estimates](https://szemkoff.github.io/LAFRES/docs/roadmap/cost-estimates). **Federal R&D:** the company pursues competitive opportunities where aligned; **public updates emphasize results, not pre-award solicitations.**
 
-See [Project plan & pipeline](https://maximusfusion.com/docs/project-plan).
+See [Project plan & pipeline](https://szemkoff.github.io/LAFRES/docs/project-plan).
 
 ---
 
 ## Quick Links
 
-- [Project Overview](https://maximusfusion.com/docs/overview)
-- [Project plan & pipeline](https://maximusfusion.com/docs/project-plan)
-- [Website & domain (DNS checklist)](https://maximusfusion.com/docs/website-domain)
-- [Repository index (GitHub tree)](https://maximusfusion.com/docs/repo-index)
-- [Project updates (blog)](https://maximusfusion.com/blog)
-- [System Architecture](https://maximusfusion.com/docs/system-architecture)
-- [System Diagrams](https://maximusfusion.com/docs/diagrams)
-- [Component Specs](https://maximusfusion.com/docs/specs/plasma-core)
-- [Safety Protocols](https://maximusfusion.com/docs/safety/safety-overview)
-- [FAQ](https://maximusfusion.com/docs/faq)
-- [Team & Hiring](https://maximusfusion.com/docs/team)
+- [Project Overview](https://szemkoff.github.io/LAFRES/docs/overview)
+- [Project plan & pipeline](https://szemkoff.github.io/LAFRES/docs/project-plan)
+- [Website & domain (DNS checklist)](https://szemkoff.github.io/LAFRES/docs/website-domain)
+- [Repository index (GitHub tree)](https://szemkoff.github.io/LAFRES/docs/repo-index)
+- [Project updates (blog)](https://szemkoff.github.io/LAFRES/blog)
+- [System Architecture](https://szemkoff.github.io/LAFRES/docs/system-architecture)
+- [System Diagrams](https://szemkoff.github.io/LAFRES/docs/diagrams)
+- [Component Specs](https://szemkoff.github.io/LAFRES/docs/specs/plasma-core)
+- [Safety Protocols](https://szemkoff.github.io/LAFRES/docs/safety/safety-overview)
+- [FAQ](https://szemkoff.github.io/LAFRES/docs/faq)
+- [Team & Hiring](https://szemkoff.github.io/LAFRES/docs/team)
 
 ---
 
@@ -208,4 +208,4 @@ Repository status: `docs/PROJECT_STATUS.md`.
 **Version**: 0.3.0  
 **Last Updated**: March 2026  
 **Status**: Phase I — optimization & quantitative modeling (published baseline)  
-**Website**: [maximusfusion.com](https://maximusfusion.com)
+**Website**: [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/)

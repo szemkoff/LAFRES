@@ -1,16 +1,16 @@
 lafres:
   name: L.A.F.R.E.S. Program
   title: MAXIMUS FUSION SYSTEMS, LLC — program communications
-  url: https://maximusfusion.com/docs/overview
-  image_url: https://maximusfusion.com/img/favicon.svg
+  url: https://szemkoff.github.io/LAFRES/docs/overview
+  image_url: https://szemkoff.github.io/LAFRES/img/favicon.svg
   page: true
 
 fomichev:
   name: Maxim Fomichev, Ph.D.
   title: Principal Investigator / CTO
-  url: https://maximusfusion.com/docs/team
+  url: https://szemkoff.github.io/LAFRES/docs/team
 
 zemskoff:
   name: Stan Zemskoff
   title: CEO / Program management
-  url: https://maximusfusion.com/docs/team
+  url: https://szemkoff.github.io/LAFRES/docs/team

@@ -271,7 +271,7 @@ Primary contacts match program and administrative records (e.g. federal submissi
 | **Doug Tinsler** | Senior mechanical engineer | — | *(company directory)* |
 | **Ross Koningstein, Ph.D.** | Strategic advisor | — | *(advisory channel via company)* |
 
-**Program website:** [maximusfusion.com](https://maximusfusion.com) — documentation and [project updates](/blog).
+**Program website:** [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/) — documentation and [project updates](/blog). *(Custom domain **maximusfusion.com** can be pointed here later.)*
 
 | Purpose | Contact |
 |---------|---------|

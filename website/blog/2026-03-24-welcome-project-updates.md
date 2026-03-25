@@ -10,7 +10,7 @@ This section is for **L.A.F.R.E.S.** news: what we are doing in the lab, milesto
 
 <!-- truncate -->
 
-It is **not** a changelog for website tooling, repositories, or deployment mechanics. For repository layout and contribution notes, see the [GitHub repository](https://github.com/szemkoff/LAFRES) and the [documentation index](/docs/repo-index). Public site: [maximusfusion.com](https://maximusfusion.com).
+It is **not** a changelog for website tooling, repositories, or deployment mechanics. For repository layout and contribution notes, see the [GitHub repository](https://github.com/szemkoff/LAFRES) and the [documentation index](/docs/repo-index). Public site: [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/).
 
 **What to expect here**
 
