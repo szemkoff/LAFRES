@@ -33,7 +33,7 @@ Additional engineering notes, specs, and research files live **in the repo** out
 | `roadmap/` | Phase markdown | [roadmap/](https://github.com/szemkoff/LAFRES/tree/main/roadmap) |
 | `simulations/` | Simulation write-ups | [simulations/](https://github.com/szemkoff/LAFRES/tree/main/simulations) |
 | `diagrams/` | Diagram sources / exports | [diagrams/](https://github.com/szemkoff/LAFRES/tree/main/diagrams) |
-| `grant-application/` | Internal application materials (not mirrored on the public site) | [grant-application/](https://github.com/szemkoff/LAFRES/tree/main/grant-application) |
+| `grant-application/` | Placeholder only — proprietary application packages are **not** in the public repo ([readme](https://github.com/szemkoff/LAFRES/blob/main/grant-application/README.md)) | [grant-application/](https://github.com/szemkoff/LAFRES/tree/main/grant-application) |
 
 :::info Why two places?
 `website/docs/` is what gets **built and searched** on GitHub Pages. Root-level `docs/` and other folders are **source archives** for engineering and Git history. When something becomes “official” for partners, we surface it under **Documentation** on this site.

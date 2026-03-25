@@ -21,7 +21,9 @@ Detailed bios and hiring: **website** `docs/team.md`.
 
 ## Budget & planning class
 
-Internal spreadsheets use a **~$5.28M / 24 months / 9.5 FTE** class total (direct + indirect) for the full program line—see `grant-application/darpa-marrs/FINAL-SUBMISSION-READY.md` and Excel in `_revised/`. Use those for consistency checks.
+Internal spreadsheets use a **~$5.28M / 24 months / 9.5 FTE** class total (direct + indirect) for the full program line—maintained in **private company storage** (not in this public repo). Use those for consistency checks.
+
+Public alignment rules: [`docs/PUBLIC-WEBSITE-ALIGNMENT.md`](PUBLIC-WEBSITE-ALIGNMENT.md).
 
 ## Federal R&D
 

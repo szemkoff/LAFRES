@@ -42,3 +42,6 @@ __pycache__/
 *.temp
 server.log
 
+# Internal grant / solicitation materials (not published on GitHub)
+grant-application/darpa-marrs/
+

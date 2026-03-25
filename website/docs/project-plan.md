@@ -58,7 +58,7 @@ Internal cost proposals and spreadsheets are built around a **multi-year, ~9.5 F
 |----------|----------|
 | Public site (this site) | [Overview](/docs/overview), [Team](/docs/team), [Published results](/docs/research/published-results) |
 | Repository (GitHub) | Root `README.md`, `docs/` technical notes |
-| Internal grant package | `grant-application/darpa-marrs/` (restricted use; not required reading for the public site) |
+| Internal cost & solicitation materials | Maintained **outside** the public GitHub repository (company storage only) |
 
 ## Revision
 
