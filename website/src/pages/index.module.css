@@ -433,6 +433,134 @@
   color: #f1f5f9;
 }
 
+.investmentDisclaimer {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #64748b;
+  padding: 1rem 1.25rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+  border-left: 4px solid #94a3b8;
+  margin-bottom: 1.25rem;
+}
+
+[data-theme='dark'] .investmentDisclaimer {
+  color: #94a3b8;
+  background: #1e293b;
+  border-left-color: #64748b;
+}
+
+.investmentNote {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #64748b;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+[data-theme='dark'] .investmentNote {
+  color: #94a3b8;
+}
+
+/* ========================================
+   LATEST UPDATES (NEWS) SECTION
+   ======================================== */
+
+.newsSection {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+[data-theme='dark'] .newsSection {
+  background: #0f172a;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.newsCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.75rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-theme='dark'] .newsCard {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.newsCard:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.12);
+  text-decoration: none;
+}
+
+.newsCard h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  color: #1e293b;
+}
+
+[data-theme='dark'] .newsCard h3 {
+  color: #f1f5f9;
+}
+
+.newsCard p {
+  flex: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #64748b;
+}
+
+[data-theme='dark'] .newsCard p {
+  color: #94a3b8;
+}
+
+.newsReadMore {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #3b82f6;
+}
+
+.newsCta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.newsCta .ctaSecondary {
+  color: #475569;
+  border-color: #cbd5e1;
+}
+
+[data-theme='dark'] .newsCta .ctaSecondary {
+  color: #94a3b8;
+  border-color: #475569;
+}
+
+.newsCta .ctaSecondary:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+  border-color: #94a3b8;
+}
+
+[data-theme='dark'] .newsCta .ctaSecondary:hover {
+  background: #334155;
+  color: #f1f5f9;
+}
+
 /* ========================================
    TECHNOLOGY SECTION
    ======================================== */
@@ -520,6 +648,24 @@
 .techCard:hover .techArrow {
   opacity: 1;
   transform: translateX(0);
+}
+
+.techVisionNote {
+  max-width: 720px;
+  margin: -1.5rem auto 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #64748b;
+}
+
+[data-theme='dark'] .techVisionNote {
+  color: #94a3b8;
+}
+
+.techVisionNote a {
+  color: #3b82f6;
+  font-weight: 500;
 }
 
 /* ========================================

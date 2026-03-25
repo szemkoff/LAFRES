@@ -141,16 +141,24 @@ function AudienceSection() {
                   <div className={styles.panelMain}>
                     <h3>Technical Research & Collaboration</h3>
                     <p>
-                      L.A.F.R.E.S. integrates five cutting-edge subsystems: a pulsed IEC micro-fusion core, 
-                      liquid lithium blanket with MHD stabilization, phased-array acoustic transducers, 
-                      advanced thermoelectric conversion, and AI-driven real-time control systems.
+                      The peer-reviewed baseline is <strong>acoustic amplification of solid-state D–D fusion</strong> in titanium
+                      deuteride systems (see{' '}
+                      <Link to="/docs/research/published-results">published results</Link>). Near-term work emphasizes CFD, microfluidics,
+                      neutron detection, and correlated diagnostics—detailed in the{' '}
+                      <Link to="/docs/project-plan">project plan</Link>.
+                    </p>
+                    <p>
+                      The five-subsystem architecture on this site (IEC core, lithium blanket, acoustic stabilization,
+                      thermal conversion, AI control) is the <strong>integrated engineering vision</strong> for a compact
+                      lithium–acoustic program; modeling priorities for neutronics, MHD-stable liquid metal, and control
+                      follow from that roadmap.
                     </p>
                     <h4>Key Technical Challenges</h4>
                     <ul>
-                      <li><strong>Neutron Transport:</strong> MCNP/OpenMC modeling of 2.45 MeV D-D neutrons in liquid lithium</li>
-                      <li><strong>Acoustic Coupling:</strong> Multi-band (10-500 kHz) phased-array stabilization of free liquid metal surfaces</li>
-                      <li><strong>Thermal Management:</strong> Skutterudite/half-Heusler thermoelectric conversion at 400-500°C</li>
-                      <li><strong>Control Systems:</strong> Sub-millisecond FPGA-based feedback for acoustic field optimization</li>
+                      <li><strong>Bubble &amp; cavitation physics:</strong> OpenFOAM and validation against experiment (D₂O collapse, emulsions)</li>
+                      <li><strong>Neutron metrology:</strong> Multi-channel counting, timing, and background control for small rate changes</li>
+                      <li><strong>Integrated neutronics (roadmap):</strong> MCNP/OpenMC-class modeling of D–D neutrons with lithium-bearing systems</li>
+                      <li><strong>Liquid metal &amp; acoustics (roadmap):</strong> Phased-array coupling and surface control for MHD-relevant geometries</li>
                     </ul>
                     <h4>Contribution Opportunities</h4>
                     <p>
@@ -219,49 +227,70 @@ function AudienceSection() {
                 <div className={styles.panelGrid}>
                   <div className={styles.panelMain}>
                     <h3>Investment in Proven Technology</h3>
-                    <p>
-                      <strong>This is not theoretical.</strong> We have demonstrated net-gain fusion 
-                      with peer-reviewed publication in Nature Scientific Reports (2024). 
-                      We are seeking investors to scale this breakthrough technology.
+                    <p className={styles.investmentDisclaimer}>
+                      The information here is for context only. It is <strong>not</strong> an offer to sell securities,
+                      investment advice, or a solicitation. Qualified parties should rely on their own diligence and
+                      direct conversations with the team.
                     </p>
-                    <h4>Why Invest Now?</h4>
+                    <p>
+                      <strong>Peer-reviewed baseline:</strong> D–D fusion results are published in Nature Scientific Reports (2024)—see{' '}
+                      <Link to="/docs/research/published-results">published results</Link>. The program is scaling an{' '}
+                      <strong>optimization pipeline</strong> (CFD, microfluidics, detection, diagnostics) aligned with the{' '}
+                      <Link to="/docs/project-plan">project plan</Link>.
+                    </p>
+                    <h4>Why this program is differentiated</h4>
                     <ul>
-                      <li><strong>Proof of Concept:</strong> Net-gain fusion already demonstrated and published</li>
-                      <li><strong>Simple Technology:</strong> No plasma confinement - orders of magnitude cheaper than ITER/NIF</li>
-                      <li><strong>Scalable:</strong> Path from medical isotopes to power generation</li>
-                      <li><strong>First-Mover:</strong> Unique acoustic cavitation fusion approach</li>
+                      <li><strong>Demonstrated science:</strong> Published neutron results, not a slide-deck hypothesis</li>
+                      <li><strong>Compact path:</strong> Solid-state / acoustic line of research—not a stadium-scale plasma machine</li>
+                      <li><strong>Documented roadmap:</strong> Phased engineering and cost scenarios in the public docs</li>
+                      <li><strong>Clear near-term focus:</strong> Reproducibility, modeling validation, and instrumentation depth</li>
                     </ul>
-                    <h4>Investment Phases</h4>
+                    <h4>Funding picture (from public cost estimates)</h4>
+                    <p className={styles.investmentNote}>
+                      Order-of-magnitude phase bands below follow the{' '}
+                      <Link to="/docs/roadmap/cost-estimates">detailed cost estimates</Link> (multi-year rollout, low–high ranges).
+                    </p>
                     <div className={styles.investmentTable}>
                       <div className={styles.investmentRow}>
                         <span>Phase 0: Simulation</span>
-                        <span>$200K - $500K</span>
+                        <span>$125K – $250K</span>
                       </div>
                       <div className={styles.investmentRow}>
-                        <span>Phase 1: Lithium Testing</span>
-                        <span>$1M - $2M</span>
+                        <span>Phase 1: Lithium bench</span>
+                        <span>$730K – $1.84M</span>
                       </div>
                       <div className={styles.investmentRow}>
-                        <span>Phase 2: Neutron Coupling</span>
-                        <span>$2M - $3M</span>
+                        <span>Phase 2: Neutron coupling</span>
+                        <span>$550K – $1.4M</span>
                       </div>
                       <div className={styles.investmentRow}>
-                        <span>Phase 3: Micro-Fusion Demo</span>
-                        <span>$3M - $5M</span>
+                        <span>Phase 3: Micro-fusion</span>
+                        <span>$700K – $1.27M</span>
+                      </div>
+                      <div className={styles.investmentRow}>
+                        <span>Contingency (20%)</span>
+                        <span>$400K – $950K</span>
                       </div>
                       <div className={clsx(styles.investmentRow, styles.investmentTotal)}>
-                        <span>Total Investment</span>
-                        <span>$6M - $10M</span>
+                        <span>Documented multi-phase total (low–high)</span>
+                        <span>$2.5M – $5.7M</span>
                       </div>
                     </div>
+                    <p className={styles.investmentNote}>
+                      Internal program planning also uses a <strong>~$5.3M</strong> (direct-cost class) framing over ~24 months for a
+                      multi-FTE optimization program—see the budget discussion in the{' '}
+                      <Link to="/docs/project-plan">project plan</Link>. Figures are planning tools, not public fundraising targets.
+                    </p>
                   </div>
                   <div className={styles.panelSidebar}>
                     <div className={styles.quickLinks}>
                       <h4>Due Diligence</h4>
                       <Link to="/docs/overview">Executive Summary</Link>
+                      <Link to="/docs/project-plan">Project Plan &amp; Pipeline</Link>
+                      <Link to="/docs/research/published-results">Published Results</Link>
                       <Link to="/docs/roadmap/roadmap-overview">Development Roadmap</Link>
                       <Link to="/docs/roadmap/cost-estimates">Detailed Cost Estimates</Link>
-                      <Link to="/docs/team">Team & Advisors</Link>
+                      <Link to="/docs/team">Team &amp; Advisors</Link>
                       <Link to="/docs/research/known-limitations">Risk Assessment</Link>
                     </div>
                     <div className={styles.contactBox}>
@@ -273,6 +302,49 @@ function AudienceSection() {
               </div>
             )}
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const LATEST_UPDATES = [
+  {
+    title: 'Phase I technical priorities',
+    description:
+      'CFD, microfluidics, detection, diagnostics, and scaling—aligned with the Naples lab program.',
+    to: '/blog/phase-i-technical-priorities',
+  },
+  {
+    title: 'Welcome to project updates',
+    description: 'What this blog covers and how it differs from repository tooling notes.',
+    to: '/blog/welcome-project-updates',
+  },
+] as const;
+
+function LatestUpdatesSection() {
+  return (
+    <section className={styles.newsSection} aria-labelledby="latest-updates-heading">
+      <div className="container">
+        <Heading as="h2" className={styles.sectionTitle} id="latest-updates-heading">
+          Latest project updates
+        </Heading>
+        <p className={styles.sectionSubtitle}>
+          Short posts on lab milestones, modeling, and the technical pipeline—no website changelog.
+        </p>
+        <div className={styles.newsGrid}>
+          {LATEST_UPDATES.map((post) => (
+            <Link key={post.to} to={post.to} className={styles.newsCard}>
+              <h3>{post.title}</h3>
+              <p>{post.description}</p>
+              <span className={styles.newsReadMore}>Read post →</span>
+            </Link>
+          ))}
+        </div>
+        <div className={styles.newsCta}>
+          <Link to="/blog" className={styles.ctaSecondary}>
+            View all updates
+          </Link>
         </div>
       </div>
     </section>
@@ -321,6 +393,11 @@ function TechnologyOverview() {
         </Heading>
         <p className={styles.sectionSubtitle}>
           A novel multi-physics approach to compact fusion energy
+        </p>
+        <p className={styles.techVisionNote}>
+          These pages describe the <strong>integrated system vision</strong>. Near-term lab work emphasizes CFD, microfluidics,
+          and neutron detection around the peer-reviewed solid-state baseline—see the{' '}
+          <Link to="/docs/project-plan">project plan</Link> and <Link to="/docs/diagrams">diagrams</Link> (vision vs. today).
         </p>
         <div className={styles.techGrid}>
           {systems.map((system, index) => (
@@ -406,6 +483,7 @@ export default function Home(): React.ReactNode {
       <HomepageHeader />
       <main>
         <AudienceSection />
+        <LatestUpdatesSection />
         <TechnologyOverview />
         <RoadmapPreview />
         <CallToAction />
