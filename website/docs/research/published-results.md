@@ -325,7 +325,7 @@ This discovery offers an alternative to traditional multi-billion dollar fusion 
 
 ## Contact
 
-- **Research inquiries:** research@lafres.org
+- **Research inquiries:** [founder@maximus.energy](mailto:founder@maximus.energy)
 - **Laboratory:** Maximus Energy Corporation, Naples, FL
 - **Publication:** [doi:10.1038/s41598-024-62055-6](https://doi.org/10.1038/s41598-024-62055-6)
 

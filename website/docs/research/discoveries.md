@@ -236,6 +236,6 @@ gantt
 ## Contact
 
 For research collaboration inquiries:
-- **Email:** research@lafres.org
+- **Email (research):** [founder@maximus.energy](mailto:founder@maximus.energy)
 - **Laboratory:** Maximus Energy Corporation, Naples, FL
 

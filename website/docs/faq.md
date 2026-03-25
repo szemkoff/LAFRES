@@ -76,7 +76,7 @@ We welcome contributions in:
 - **Experimental design** - Test apparatus proposals
 - **Code development** - Control algorithms, data analysis tools
 
-Contact: **research@lafres.org**
+Contact: **[founder@maximus.energy](mailto:founder@maximus.energy)** (technical / research)
 
 ### Where is the literature review?
 
@@ -121,7 +121,7 @@ We offer flexible arrangements:
 - Technology transfer agreements
 - Collaborative research with publication rights
 
-Contact: **partnerships@lafres.org**
+Contact: **[irnbrue@gmail.com](mailto:irnbrue@gmail.com)** (partnerships / operations)
 
 ---
 
@@ -167,7 +167,7 @@ Potential outcomes:
 3. **Spin-off** into specialized neutron source company
 4. **Continued R&D** with government/institutional funding
 
-Contact: **investors@lafres.org**
+Contact: **[irnbrue@gmail.com](mailto:irnbrue@gmail.com)** (investor inquiries)
 
 ---
 
@@ -227,11 +227,10 @@ Contact: **investors@lafres.org**
 
 ## Contact
 
+We only list **working addresses** for MAXIMUS FUSION SYSTEMS / L.A.F.R.E.S. (no placeholder inboxes).
+
 | Purpose | Email |
-|---------|-------|
-| General inquiries | info@lafres.org |
-| Research collaboration | research@lafres.org |
-| Partnerships | partnerships@lafres.org |
-| Investment inquiries | investors@lafres.org |
-| Career opportunities | careers@lafres.org |
+|---------|--------|
+| Technical / research / collaboration with PI | [founder@maximus.energy](mailto:founder@maximus.energy) |
+| Operations, careers, partnerships, investors, general | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
 

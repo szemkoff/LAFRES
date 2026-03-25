@@ -8,7 +8,7 @@
 2. **Neutral line:** “Competitive federal R&D where aligned” / “results-first public updates.”  
 3. **Entity:** Research operations = **MAXIMUS FUSION SYSTEMS, LLC**; program brand = **L.A.F.R.E.S.**  
 4. **Numbers:** Internal planning class **~$5.28M / 24 months / ~9.5 FTE** — see `FINAL-SUBMISSION-READY.md` and `_revised/Attachment_F_*.xlsx`.  
-5. **Team:** Maxim Fomichev (PI/CTO), Stan Zemskoff (CEO/PM), Koshelev, Tinsler, Koningstein (advisor); emails **founder@maximus.energy**, **irnbrue@gmail.com**. Public site: **https://szemkoff.github.io/LAFRES/** (custom domain later if desired).
+5. **Team / contact:** Use only **founder@maximus.energy** (technical / PI) and **irnbrue@gmail.com** (operations, careers, partnerships, investors). Do not publish placeholder domains like `@lafres.org` unless those mailboxes are live.
 
 ## Files to keep in sync
 

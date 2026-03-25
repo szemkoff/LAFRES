@@ -169,7 +169,7 @@ We are currently seeking **$500K - $1M** for Phase I:
 | Personnel (12-18 mo) | $200K |
 | Facilities & supplies | $100K |
 
-**Contact**: investors@lafres.org
+**Contact (investor / operations):** [irnbrue@gmail.com](mailto:irnbrue@gmail.com)
 
 ## Next Steps
 

@@ -207,7 +207,7 @@ function AudienceSection() {
                     </div>
                     <div className={styles.contactBox}>
                       <h4>Contact Us</h4>
-                      <p>partnerships@lafres.org</p>
+                      <p><a href="mailto:irnbrue@gmail.com">irnbrue@gmail.com</a></p>
                     </div>
                   </div>
                 </div>
@@ -266,7 +266,7 @@ function AudienceSection() {
                     </div>
                     <div className={styles.contactBox}>
                       <h4>Investor Relations</h4>
-                      <p>investors@lafres.org</p>
+                      <p><a href="mailto:irnbrue@gmail.com">irnbrue@gmail.com</a></p>
                     </div>
                   </div>
                 </div>

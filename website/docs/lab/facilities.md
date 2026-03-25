@@ -145,7 +145,7 @@ The laboratory features multiple computer workstations for:
 ## Contact
 
 For laboratory inquiries or collaboration opportunities:
-- **Email:** research@lafres.org
+- **Email (technical):** [founder@maximus.energy](mailto:founder@maximus.energy)
 - **Location:** Naples, FL
 
 ---

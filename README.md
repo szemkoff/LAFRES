@@ -195,13 +195,8 @@ Repository status: `docs/PROJECT_STATUS.md`.
 
 | Purpose | Contact |
 |---------|---------|
-| General (L.A.F.R.E.S. site) | info@lafres.org |
-| Research Collaboration | research@lafres.org |
-| Partnerships | partnerships@lafres.org |
-| Investment Inquiries | investors@lafres.org |
-| Careers | careers@lafres.org |
-| Maxim Fomichev (PI/CTO) | [founder@maximus.energy](mailto:founder@maximus.energy) |
-| Stan Zemskoff (CEO/PM) | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
+| Technical / research / PI | [founder@maximus.energy](mailto:founder@maximus.energy) |
+| Operations, careers, partnerships, investors, general | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
 
 ---
 

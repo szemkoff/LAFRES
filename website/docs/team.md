@@ -251,30 +251,31 @@ Retired national lab directors, fusion program leaders (ITER, NIF, tokamak proje
 | CFO / Finance Lead | Part-time → Full | Remote | Open |
 | Technical Advisors | Advisory | Remote | Rolling |
 
-### To Apply
+### To apply
 
-- **Email:** careers@lafres.org
-- **Include:** CV/resume, statement of interest, relevant publications or project portfolio
-- **Timeline:** Rolling basis, priority consideration for early applicants
+Send materials to **[irnbrue@gmail.com](mailto:irnbrue@gmail.com)** (program management / operations).
+
+**Include:** CV or resume, short statement of interest, and relevant publications or project portfolio where applicable.
+
+**Review:** Rolling; we reply when there is a fit. (There is no separate “careers@” inbox—only the addresses below.)
 
 ---
 
 ## Contact the team
 
-Primary contacts match program and administrative records (e.g. federal submissions):
+Primary contacts match company and program records:
 
 | Team member | Role | Phone | Email |
 |-------------|------|-------|--------|
 | **Maxim Fomichev, Ph.D.** | Principal Investigator / CTO | +1 (814) 777-8993 | [founder@maximus.energy](mailto:founder@maximus.energy) |
 | **Stan Zemskoff** | Chief Executive Officer / program management | +1 (786) 617-8722 | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
-| **Maxim Koshelev** | Senior electrical engineer | — | *(company directory)* |
-| **Doug Tinsler** | Senior mechanical engineer | — | *(company directory)* |
-| **Ross Koningstein, Ph.D.** | Strategic advisor | — | *(advisory channel via company)* |
+| **Maxim Koshelev** | Senior electrical engineer | — | *(via company)* |
+| **Doug Tinsler** | Senior mechanical engineer | — | *(via company)* |
+| **Ross Koningstein, Ph.D.** | Strategic advisor | — | *(via company)* |
 
-**Program website:** [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/) — documentation and [project updates](/blog). *(Custom domain **maximusfusion.com** can be pointed here later.)*
+**Program website:** [szemkoff.github.io/LAFRES](https://szemkoff.github.io/LAFRES/) — documentation and [project updates](/blog).
 
-| Purpose | Contact |
-|---------|---------|
-| General inquiries (L.A.F.R.E.S. program mailbox) | [info@lafres.org](mailto:info@lafres.org) |
-| Research collaboration | [research@lafres.org](mailto:research@lafres.org) |
-| Careers | [careers@lafres.org](mailto:careers@lafres.org) |
+| Topic | Email |
+|-------|--------|
+| **Technical / research / PI** | [founder@maximus.energy](mailto:founder@maximus.energy) |
+| **Operations, careers, partnerships, investors, general** | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
