@@ -126,7 +126,7 @@ LAFRES/
 | **Phase I (current focus)** | CFD validation, microfluidic control, detection, imaging, reproducibility | ~24-month technical pipeline; internal program planning ~**$5.3M** class budget |
 | **Later phases** | Liquid lithium integration, neutron coupling, scaled prototypes | See [Roadmap](https://szemkoff.github.io/LAFRES/docs/roadmap/roadmap-overview) |
 
-Long-range **multi-year** scale-up remains in the **$6–10M+** class over time; see [Cost estimates](https://szemkoff.github.io/LAFRES/docs/roadmap/cost-estimates). **Federal R&D:** the company pursues competitive opportunities where aligned; **public updates emphasize results, not pre-award solicitations.**
+Documented **multi-phase** roadmap bands are **~$2.5M–$5.7M** total (including contingency) over **5–6 years**, with midpoint **~$4M** — see [Cost estimates](https://szemkoff.github.io/LAFRES/docs/roadmap/cost-estimates). **Federal R&D:** the company pursues competitive opportunities where aligned; **public updates emphasize results, not pre-award solicitations.**
 
 See [Project plan & pipeline](https://szemkoff.github.io/LAFRES/docs/project-plan).
 

@@ -57,7 +57,7 @@ timeline
 
 ### Phase I: Optimization (Current Focus)
 **Duration**: 12-18 months  
-**Budget**: $500K - $1M
+**Budget / figures:** Use the public [Cost estimates](cost-estimates) (includes an itemized **~$304K** Phase I example) and the [Project plan](/docs/project-plan) (**~$5.3M** direct-cost class over ~24 months for the full optimization pipeline). Headline “seeking” ranges are not published targets unless restated in a formal offer.
 
 CFD modeling and microfluidic systems for controlled, reproducible fusion conditions.
 
@@ -71,7 +71,7 @@ CFD modeling and microfluidic systems for controlled, reproducible fusion condit
 
 ### Phase II: Reproducibility & Integration
 **Duration**: 12-18 months  
-**Budget**: $1.5M - $2.5M
+**Budget:** Phase-band totals in [Cost estimates](cost-estimates) (Phase 2: neutron coupling).
 
 Achieve consistent fusion triggers and integrate lithium blanket system.
 
@@ -79,7 +79,7 @@ Achieve consistent fusion triggers and integrate lithium blanket system.
 
 ### Phase III: Commercial Scale-Up
 **Duration**: 18-24 months  
-**Budget**: $2M - $4M
+**Budget:** Phase-band totals in [Cost estimates](cost-estimates) (Phase 3: micro-fusion).
 
 Scale technology for commercial applications.
 
@@ -95,17 +95,14 @@ Scale technology for commercial applications.
 
 ```mermaid
 graph LR
-    A["Phase 0 COMPLETE"] --> B["Phase I $500K-$1M"]
-    B --> C["Phase II $1.5M-$2.5M"]
-    C --> D["Phase III $2M-$4M"]
-    D --> E["Total: $4M-$7.5M"]
+    A["Phase 0 COMPLETE"] --> B["Phase I–III + contingency"]
+    B --> E["Documented multi-phase total ~$2.5M–$5.7M"]
     
     style A fill:#22c55e,color:#fff
     style B fill:#f97316,color:#fff
-    style C fill:#3b82f6,color:#fff
-    style D fill:#9d4edd,color:#fff
     style E fill:#e63946,color:#fff
 ```
+*(See [Cost estimates](cost-estimates) for per-phase low–high bands; [Project plan](/docs/project-plan) for the ~$5.3M-class optimization framing.)*
 
 ## Key Milestones
 
@@ -159,15 +156,7 @@ The project's critical path includes:
 
 ## Investment Opportunity
 
-We are currently seeking **$500K - $1M** for Phase I:
-
-| Use of Funds | Amount |
-|--------------|--------|
-| CFD modeling (OpenFOAM) | $150K |
-| Microfluidic system | $200K |
-| High-speed camera (Phantom) | $150K |
-| Personnel (12-18 mo) | $200K |
-| Facilities & supplies | $100K |
+Qualified parties should start from **[Published results](/docs/research/published-results)**, **[Cost estimates](cost-estimates)**, and **[Project plan](/docs/project-plan)**. Example line items for an early Phase I program appear in cost estimates (e.g. **~$304K** total in the detailed Phase I table); the broader **~$5.3M**-class program is described in the project plan.
 
 **Contact (investor / operations):** [irnbrue@gmail.com](mailto:irnbrue@gmail.com)
 
@@ -182,5 +171,5 @@ We are currently seeking **$500K - $1M** for Phase I:
 
 **Proof of Concept**: ✅ Complete (Published 2024)  
 **Current Focus**: Phase I Optimization  
-**Funding Sought**: $500K - $1M
+**Figures**: See [Cost estimates](cost-estimates) and [Project plan](/docs/project-plan)
 

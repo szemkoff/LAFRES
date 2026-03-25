@@ -109,7 +109,7 @@ but creating these conditions reliably requires further research.
 ## 5. Cost and Schedule
 
 ### 5.1 Budget Uncertainty
-**Estimate**: $6M-$10M total (Phase 0 through Phase 3)
+**Estimate**: Multi-phase program **~$2.5M–$5.7M** (low–high bands including contingency) per `website/docs/roadmap/cost_estimates.md`; internal planning also references a **~$5.3M**-class optimization program — see `website/docs/project-plan.md`. (Canonical public copy: [Cost estimates](https://szemkoff.github.io/LAFRES/docs/roadmap/cost-estimates), [Project plan](https://szemkoff.github.io/LAFRES/docs/project-plan).)
 
 **Risk**: Unforeseen challenges (equipment failures, regulatory delays) could increase costs by 50-100%
 

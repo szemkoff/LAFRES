@@ -203,11 +203,15 @@ A real-time control system manages all subsystems:
 - High-power electrical supply
 
 ### Budget Estimate
-- Phase 0: $200K - $500K
-- Phase 1: $1M - $2M
-- Phase 2: $2M - $3M
-- Phase 3: $3M - $5M
-- **Total**: $6M - $10M
+
+**Canonical numbers:** maintain [Cost estimates](https://szemkoff.github.io/LAFRES/docs/roadmap/cost-estimates) and [Project plan](https://szemkoff.github.io/LAFRES/docs/project-plan) in `website/docs/` (this file is a legacy mirror).
+
+- Phase 0 (simulation): **$125K – $250K** (low–high band)
+- Phase 1 (lithium bench): **$730K – $1.84M**
+- Phase 2 (neutron coupling): **$550K – $1.4M**
+- Phase 3 (micro-fusion): **$700K – $1.27M**
+- Contingency (20%): **$400K – $950K**
+- **Multi-phase total (documented bands): ~$2.5M – $5.7M** (midpoint ~$4M); internal **~$5.3M**-class / ~24 month optimization framing in project plan
 
 ## References
 

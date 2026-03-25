@@ -34,7 +34,7 @@ Find answers to common questions about the L.A.F.R.E.S. project, organized by au
 | Feature | Traditional Fusion (ITER/NIF) | L.A.F.R.E.S. |
 |---------|-------------------------------|--------------|
 | Size | Stadium-scale | Tabletop to room-scale |
-| Cost | $20+ billion | $6-10 million to demo |
+| Cost | $20+ billion | Orders of magnitude lower; multi-phase roadmap **~$2.5M–$5.7M** (documented bands) — see [cost estimates](/docs/roadmap/cost-estimates) and [project plan](/docs/project-plan) |
 | Net Gain | Not yet achieved | **Demonstrated (2024)** |
 | Technology | Magnetic/laser confinement | Acoustic cavitation + solid-state |
 | Complexity | Extreme | Remarkably simple |
@@ -129,14 +129,18 @@ Contact: **[irnbrue@gmail.com](mailto:irnbrue@gmail.com)** (partnerships / opera
 
 ### What is the total funding requirement?
 
-| Phase | Investment | Cumulative |
-|-------|------------|------------|
-| Phase 0: Simulation | $200K - $500K | $500K |
-| Phase 1: Lithium Testing | $1M - $2M | $2.5M |
-| Phase 2: Neutron Coupling | $2M - $3M | $5.5M |
-| Phase 3: Micro-Fusion | $3M - $5M | $10M |
+Figures below match the public [cost estimates](/docs/roadmap/cost-estimates) (phase-by-phase low–high bands, including contingency). They are **planning tools**, not an offer of securities. Internal program planning also uses a **~$5.3M** (direct-cost class) framing over ~24 months for the full optimization pipeline — see [project plan](/docs/project-plan).
 
-**Total: $6M - $10M** over 5-6 years
+| Phase | Duration (typical) | Total (low) | Total (high) |
+|-------|---------------------|-------------|--------------|
+| Phase 0: Simulation | 6–12 mo | $125K | $250K |
+| Phase 1: Lithium bench | 12–18 mo | $730K | $1.84M |
+| Phase 2: Neutron coupling | 12–18 mo | $550K | $1.4M |
+| Phase 3: Micro-fusion | 18–24 mo | $700K | $1.27M |
+| Contingency (20%) | — | $400K | $950K |
+| **Multi-phase total** | **5–6 years** | **~$2.5M** | **~$5.7M** |
+
+**Midpoint (from cost estimates):** ~$4M.
 
 ### What are the key milestones?
 

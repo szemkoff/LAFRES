@@ -259,8 +259,8 @@ A real-time control system manages all subsystems:
 
 ### Budget planning (high level)
 
-- **Phase I (current program class):** internal multi-year planning on the order of **~$5M** for the full technical pipeline (see [Project plan](/docs/project-plan))  
-- **Long-range integrated system:** multi-phase totals often quoted in the **$6M–$10M+** range over several years — see [Cost estimates](/docs/roadmap/cost-estimates)  
+- **Phase I (current program class):** internal multi-year planning on the order of **~$5.3M** (direct-cost class) for the full technical pipeline over ~24 months — see [Project plan](/docs/project-plan)  
+- **Documented multi-phase roadmap (public bands):** **~$2.5M–$5.7M** total including contingency over **5–6 years** (midpoint ~$4M) — see [Cost estimates](/docs/roadmap/cost-estimates)  
 - Figures are planning tools for partners; they are not an offer of securities.
 
 ## Next steps
