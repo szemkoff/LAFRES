@@ -57,12 +57,12 @@ sidebar_position: 2
 | Amateur Fusor | 10⁴-10⁷ | 1-10 | $5K-$50K | 4-5 |
 | University IEC | 10⁷-10⁹ | 5-20 | $50K-$500K | 5-6 |
 | Commercial IEC (NSD) | 10⁹-10¹¹ | 10-50 | $100K-$500K | 8-9 |
-| **L.A.F.R.E.S. (Target)** | **10⁶-10⁹** | **1-10** | **$500K-$2M** | **3-5** |
+| **Maximus Fusion (Target)** | **10⁶-10⁹** | **1-10** | **$500K-$2M** | **3-5** |
 
-**L.A.F.R.E.S. Positioning**: Mid-range neutron yield, unique integration with lithium and acoustic control.
+**Maximus Fusion Positioning**: Mid-range neutron yield, unique integration with lithium and acoustic control.
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Benchmarking Team
+**Prepared by**: Maximus Fusion Benchmarking Team
 
 

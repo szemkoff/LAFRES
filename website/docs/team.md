@@ -7,7 +7,7 @@ sidebar_position: 50
 
 # Team Structure and Expertise Requirements
 
-L.A.F.R.E.S. is executed by **MAXIMUS FUSION SYSTEMS, LLC** in Naples, FL, with a multidisciplinary team spanning nuclear instrumentation, mechanical and electrical engineering, CFD, microfluidics, and program management. This page summarizes **current leadership and core staff** aligned with the active technical pipeline (CFD, microfluidics, detection, imaging, scaling analysis). See also [Project plan & pipeline](/docs/project-plan).
+Maximus Fusion is executed by **MAXIMUS FUSION SYSTEMS, LLC** in Naples, FL, with a multidisciplinary team spanning nuclear instrumentation, mechanical and electrical engineering, CFD, microfluidics, and program management. This page summarizes **current leadership and core staff** aligned with the active technical pipeline (CFD, microfluidics, detection, imaging, scaling analysis). See also [Project plan & pipeline](/docs/project-plan).
 
 ---
 
@@ -33,7 +33,7 @@ L.A.F.R.E.S. is executed by **MAXIMUS FUSION SYSTEMS, LLC** in Naples, FL, with 
 | **Email** | [founder@maximus.energy](mailto:founder@maximus.energy) |
 
 **Responsibilities:**
-- Technical direction for the L.A.F.R.E.S. program and Naples laboratory
+- Technical direction for the Maximus Fusion program and Naples laboratory
 - CFD modeling leadership (OpenFOAM), experimental campaigns, data analysis
 - Authorship of technical reports and peer-reviewed publications
 - Interface with research partners and sponsored program requirements
@@ -54,7 +54,7 @@ L.A.F.R.E.S. is executed by **MAXIMUS FUSION SYSTEMS, LLC** in Naples, FL, with 
 | **Email** | [irnbrue@gmail.com](mailto:irnbrue@gmail.com) |
 
 **Responsibilities:**
-- Company operations and milestone tracking for the L.A.F.R.E.S. program
+- Company operations and milestone tracking for the Maximus Fusion program
 - Budget control, procurement, and subcontract coordination
 - Investor and partner communications as appropriate
 - Laboratory and vendor interfaces supporting the technical team

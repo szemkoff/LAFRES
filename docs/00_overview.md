@@ -1,8 +1,8 @@
-# L.A.F.R.E.S. Project Overview
+# Maximus Fusion Project Overview
 
 ## Executive Summary
 
-The **Lithium Acoustic Fusion Reactor for Energy Sustainability (L.A.F.R.E.S.)** represents a breakthrough in fusion energy. We have demonstrated **net-gain nuclear fusion** using a remarkably simple acoustic cavitation approach—no plasma confinement, no billion-dollar facilities.
+**Maximus Fusion** represents a breakthrough in compact fusion energy. We have demonstrated **net-gain nuclear fusion** using a remarkably simple acoustic cavitation approach—no plasma confinement, no billion-dollar facilities. Technical documents may use **L.A.F.R.E.S.** (Lithium-Acoustic Fusion Research & Engineering System) as the formal engineering designation.
 
 **Key Achievement:** Our results are peer-reviewed and published in **Nature Scientific Reports (May 2024)**.
 - DOI: [10.1038/s41598-024-62055-6](https://doi.org/10.1038/s41598-024-62055-6)
@@ -34,7 +34,7 @@ The **Lithium Acoustic Fusion Reactor for Energy Sustainability (L.A.F.R.E.S.)**
 
 ## System Concept
 
-L.A.F.R.E.S. integrates five primary subsystems:
+Maximus Fusion integrates five primary subsystems:
 
 ### 1. Micro-Fusion Core
 A compact, pulsed plasma device designed to generate controlled bursts of neutrons through deuterium-deuterium (D-D) or deuterium-tritium (D-T) fusion reactions at microscale.
@@ -228,7 +228,7 @@ See `/research/literature_review.md` for comprehensive references.
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Team  
+**Author**: Maximus Fusion Team  
 **Status**: Initial Draft
 
 

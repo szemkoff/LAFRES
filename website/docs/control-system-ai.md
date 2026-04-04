@@ -9,7 +9,7 @@ sidebar_position: 8
 
 ## 1. Overview
 
-The AI control system provides real-time monitoring, adaptive control, predictive maintenance, and autonomous safety responses for all L.A.F.R.E.S. subsystems.
+The AI control system provides real-time monitoring, adaptive control, predictive maintenance, and autonomous safety responses for all Maximus Fusion subsystems.
 
 ## 2. System Architecture
 
@@ -244,7 +244,7 @@ Where A_if, φ_if are amplitude and phase for frequency f, calculated by:
 
 **Reinforcement Learning** (advanced, Phase 3+):
 
-**Environment**: L.A.F.R.E.S. system (simulated or real)
+**Environment**: Maximus Fusion system (simulated or real)
 
 **State**: All sensor readings (50-100 dimensional vector)
 
@@ -270,7 +270,7 @@ Where A_if, φ_if are amplitude and phase for frequency f, calculated by:
 
 **Concept**: Neural networks that embed physical laws (PDEs) as constraints
 
-**Application in L.A.F.R.E.S.**:
+**Application in Maximus Fusion**:
 - Fast surrogate models for CFD (lithium flow)
 - Acoustic field prediction (wave equation)
 - Neutron transport (Boltzmann equation, simplified)
@@ -545,6 +545,6 @@ Where A_if, φ_if are amplitude and phase for frequency f, calculated by:
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Control Systems Team
+**Author**: Maximus Fusion Control Systems Team
 
 

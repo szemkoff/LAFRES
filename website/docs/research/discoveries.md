@@ -9,7 +9,7 @@ sidebar_position: 0
 
 ## Overview
 
-Maximus Energy Corporation has discovered a novel approach to nuclear fusion that is remarkably simple compared to traditional plasma-based methods. This page documents the key findings that form the foundation of the L.A.F.R.E.S. project.
+Maximus Energy Corporation has discovered a novel approach to nuclear fusion that is remarkably simple compared to traditional plasma-based methods. This page documents the key findings that form the foundation of the Maximus Fusion project.
 
 ---
 

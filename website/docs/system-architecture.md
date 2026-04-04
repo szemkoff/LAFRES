@@ -8,12 +8,12 @@ sidebar_position: 2
 # System Architecture
 
 :::info From Experiment to System
-This architecture represents the full L.A.F.R.E.S. vision. Current experimental work focuses on acoustic cavitation fusion validation. See [Key Discoveries](/docs/research/discoveries) for foundational research and [Laboratory Facilities](/docs/lab/facilities) for current capabilities.
+This architecture represents the full Maximus Fusion vision. Current experimental work focuses on acoustic cavitation fusion validation. See [Key Discoveries](/docs/research/discoveries) for foundational research and [Laboratory Facilities](/docs/lab/facilities) for current capabilities.
 :::
 
 ## 1. High-Level Architecture
 
-L.A.F.R.E.S. is organized as a multi-layered system integrating five primary subsystems with a centralized AI control system.
+Maximus Fusion is organized as a multi-layered system integrating five primary subsystems with a centralized AI control system.
 
 ### 1.1 System Block Diagram
 
@@ -206,7 +206,7 @@ For D-T operation or ⁶Li breeding:
 - Storage vessels (requires licensing)
 - Monitoring and accountability
 
-**L.A.F.R.E.S. baseline**: Use enriched ⁷Li to minimize tritium production
+**Maximus Fusion baseline**: Use enriched ⁷Li to minimize tritium production
 
 ## 4. Acoustic Field Matrix Architecture
 
@@ -591,7 +591,7 @@ stateDiagram-v2
 
 ```mermaid
 timeline
-    title L.A.F.R.E.S. Scaling Roadmap
+    title Maximus Fusion Scaling Roadmap
     Phase 1 : Lab-scale
            : 50 liters lithium
            : 10⁶ n/s
@@ -612,5 +612,5 @@ Key challenges in scaling:
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Systems Engineering Team
+**Author**: Maximus Fusion Systems Engineering Team
 

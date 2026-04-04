@@ -7,7 +7,7 @@ sidebar_position: 4
 
 # Repository and extended documentation
 
-The **website** you are reading is built from the `website/` folder in the [LAFRES GitHub repository](https://github.com/szemkoff/LAFRES) and published at **[https://szemkoff.github.io/LAFRES/](https://szemkoff.github.io/LAFRES/)** (GitHub Pages). This is the **primary, easy-to-navigate** view of the program: sidebar, search, and diagrams.
+The **website** you are reading is built from the `website/` folder in the **[Maximus Fusion](https://github.com/szemkoff/LAFRES)** GitHub repository (`szemkoff/LAFRES`) and published at **[https://szemkoff.github.io/LAFRES/](https://szemkoff.github.io/LAFRES/)** (GitHub Pages). This is the **primary, easy-to-navigate** view of the program: sidebar, search, and diagrams.
 
 Additional engineering notes, specs, and research files live **in the repo** outside Docusaurus. Use the links below to browse them on GitHub when you need the full tree.
 

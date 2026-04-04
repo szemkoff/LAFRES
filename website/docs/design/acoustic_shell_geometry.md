@@ -39,6 +39,6 @@ sidebar_position: 2
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Acoustics Design Team
+**Prepared by**: Maximus Fusion Acoustics Design Team
 
 

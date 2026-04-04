@@ -84,6 +84,6 @@ sidebar_position: 6
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Control Systems Team
+**Prepared by**: Maximus Fusion Control Systems Team
 
 

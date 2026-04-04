@@ -103,6 +103,6 @@ Integrated thermal model from fusion neutrons → lithium → heat exchangers �
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Thermal Systems Team
+**Prepared by**: Maximus Fusion Thermal Systems Team
 
 

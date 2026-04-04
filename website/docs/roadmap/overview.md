@@ -14,13 +14,13 @@ We are now seeking funding for **Phase I: Optimization**.
 
 ## Introduction
 
-L.A.F.R.E.S. has successfully demonstrated acoustic cavitation fusion with **10,000x neutron flux above background**. The development roadmap now focuses on optimization, reproducibility, and scale-up toward commercial applications.
+Maximus Fusion has successfully demonstrated acoustic cavitation fusion with **10,000x neutron flux above background**. The development roadmap now focuses on optimization, reproducibility, and scale-up toward commercial applications.
 
 ## Phase Overview
 
 ```mermaid
 timeline
-    title L.A.F.R.E.S. Development Timeline
+    title Maximus Fusion Development Timeline
     section Phase 0 - COMPLETE
         Proof of Concept : 2024
                         : Net-gain fusion demonstrated

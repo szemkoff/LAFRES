@@ -139,7 +139,7 @@ Where:
 **Tritium handling** (optional, for D-T):
 - Requires NRC license (USA) or equivalent
 - Specialized containment, monitoring, waste management
-- **L.A.F.R.E.S. baseline**: D-D only (avoid tritium complexity for Phase 1-2)
+- **Maximus Fusion baseline**: D-D only (avoid tritium complexity for Phase 1-2)
 
 ## 4. Performance Characteristics
 
@@ -325,7 +325,7 @@ P = V × I (averaged over pulse)
 - Pump oil changes (if oil-sealed pumps used)
 - Turbomolecular pump bearing inspection
 
-## 8. Integration with L.A.F.R.E.S. System
+## 8. Integration with Maximus Fusion System
 
 ### 8.1 Mechanical Interface
 
@@ -400,7 +400,7 @@ Fusion core → Vacuum gap → Inner wall → Lithium blanket
 
 **Status**: Early research stage
 
-**L.A.F.R.E.S. relevance**: Conceptually aligned (acoustic compression), but far from implementation
+**Maximus Fusion relevance**: Conceptually aligned (acoustic compression), but far from implementation
 
 ## 10. Simulation and Modeling
 
@@ -443,6 +443,6 @@ Fusion core → Vacuum gap → Inner wall → Lithium blanket
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Fusion Core Team
+**Author**: Maximus Fusion Fusion Core Team
 
 

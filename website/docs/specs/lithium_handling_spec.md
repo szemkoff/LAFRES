@@ -90,6 +90,6 @@ MSDS: Lithium (Sigma-Aldrich, FMC)
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Materials Team
+**Prepared by**: Maximus Fusion Materials Team
 
 

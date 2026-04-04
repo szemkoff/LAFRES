@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Project Plan & Pipeline
 
-This page describes how **L.A.F.R.E.S.** (the research and engineering program) is organized today: technical priorities, milestones, and how work is funded—without tying public messaging to any single solicitation outcome.
+This page describes how **Maximus Fusion** (the research and engineering program) is organized today: technical priorities, milestones, and how work is funded—without tying public messaging to any single solicitation outcome.
 
 ## Operating context
 
@@ -16,7 +16,8 @@ This page describes how **L.A.F.R.E.S.** (the research and engineering program) 
 | **Research operator** | MAXIMUS FUSION SYSTEMS, LLC (Naples, FL) |
 | **Unique Entity ID (UEI)** | JTLAZ8P26MV9 |
 | **CAGE / NCAGE** | 1ALZ7 |
-| **Program name** | L.A.F.R.E.S. — Lithium-Acoustic Fusion Research & Engineering System |
+| **Program name (public)** | **Maximus Fusion** |
+| **Technical designation** | **L.A.F.R.E.S.** — Lithium-Acoustic Fusion Research & Engineering System |
 | **Primary site** | 4646 Domestic Ave, Suite 105, Naples, FL 34104 |
 | **Peer-reviewed baseline** | Nature Scientific Reports, 2024 — [10.1038/s41598-024-62055-6](https://doi.org/10.1038/s41598-024-62055-6) |
 

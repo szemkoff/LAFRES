@@ -1,4 +1,4 @@
-# CAD Requirements for L.A.F.R.E.S.
+# CAD Requirements for Maximus Fusion
 
 ## 1. Software Platform
 
@@ -43,6 +43,6 @@
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Mechanical Design Team
+**Prepared by**: Maximus Fusion Mechanical Design Team
 
 

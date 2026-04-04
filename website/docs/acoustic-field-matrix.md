@@ -25,7 +25,7 @@ flowchart TB
         A3 --> A4[Fusion in TiD]
     end
     
-    subgraph LAFRES["Future L.A.F.R.E.S. System"]
+    subgraph MF["Future Maximus Fusion system"]
         B1[Phased Array Transducers] --> B2[Acoustic Field in Liquid Li]
         B2 --> B3[Surface Stabilization]
         B2 --> B4[MHD Damping]
@@ -488,7 +488,7 @@ At high amplitude (&gt;1 MPa):
 
 **Note**: "Bubble fusion" or "sonofusion" claims (Taleyarkhan et al., 2002) were controversial and not reproduced reliably.
 
-**L.A.F.R.E.S. stance**: Not relying on acoustic cavitation for fusion, but may investigate as supplemental neutron source in Phase 3+ if scientifically sound.
+**Maximus Fusion stance**: Not relying on acoustic cavitation for fusion, but may investigate as supplemental neutron source in Phase 3+ if scientifically sound.
 
 ## 13. References
 
@@ -501,6 +501,6 @@ At high amplitude (&gt;1 MPa):
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Acoustics Team
+**Author**: Maximus Fusion Acoustics Team
 
 

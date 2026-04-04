@@ -81,7 +81,7 @@ sidebar_position: 4
 
 ### Key Findings
 - Radiation damage: Displacement per atom (dpa) scales with neutron fluence
-- For L.A.F.R.E.S. low flux (10⁸-10⁹ n/s): negligible radiation damage in Phase 1-2
+- For Maximus Fusion low flux (10⁸-10⁹ n/s): negligible radiation damage in Phase 1-2
 - Long-term (Phase 3+): Monitor for embrittlement
 
 ## 7. Regulatory Framework
@@ -106,7 +106,7 @@ sidebar_position: 4
 3. **IECF at University of Illinois** (Miley group): Research fusors
 4. **Liquid metal MHD experiments**: ALEX (FZK), MaPLE (UCLA)
 
-### Novelty of L.A.F.R.E.S.
+### Novelty of Maximus Fusion
 - **Demonstrated Net Gain**: Published proof of D-D fusion via acoustic cavitation (Nature Sci. Rep. 2024)
 - **Solid-State Fusion**: No plasma confinement required—fusion occurs in titanium lattice
 - **Simple & Scalable**: Tabletop apparatus achieving &gt;10,000x background neutron flux
@@ -132,6 +132,6 @@ sidebar_position: 4
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Compiled by**: L.A.F.R.E.S. Research Team
+**Compiled by**: Maximus Fusion Research Team
 
 

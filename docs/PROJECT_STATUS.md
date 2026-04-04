@@ -1,4 +1,4 @@
-# LAFRES — Project status (repository)
+# Maximus Fusion — project status (repository)
 
 Single-page alignment between the **GitHub repo**, **website** (`website/`), and **internal program** documentation.
 

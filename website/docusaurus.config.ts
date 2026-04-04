@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'L.A.F.R.E.S.',
+  title: 'Maximus Fusion',
   tagline: 'Net-Gain Fusion Demonstrated - Published in Nature Scientific Reports 2024',
   favicon: 'img/favicon.svg',
 
@@ -66,15 +66,15 @@ const config: Config = {
           routeBasePath: 'blog',
           blogTitle: 'Project updates',
           blogDescription:
-            'Milestones, lab progress, and science news for L.A.F.R.E.S. — not a website changelog.',
+            'Milestones, lab progress, and science news for Maximus Fusion — not a website changelog.',
           blogSidebarTitle: 'Recent posts',
           postsPerPage: 8,
           showReadingTime: true,
           feedOptions: {
             type: 'all',
-            title: 'L.A.F.R.E.S. project updates',
-            description: 'Fusion research program news from MAXIMUS FUSION SYSTEMS / L.A.F.R.E.S.',
-            copyright: `Copyright © ${new Date().getFullYear()} L.A.F.R.E.S.`,
+            title: 'Maximus Fusion project updates',
+            description: 'Fusion research program news from MAXIMUS FUSION SYSTEMS / Maximus Fusion.',
+            copyright: `Copyright © ${new Date().getFullYear()} Maximus Fusion`,
           },
         },
         theme: {
@@ -91,9 +91,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'L.A.F.R.E.S.',
+      title: 'Maximus Fusion',
       logo: {
-        alt: 'LAFRES Logo',
+        alt: 'Maximus Fusion logo',
         src: 'img/logo.svg',
         srcDark: 'img/logo-dark.svg',
         width: 40,
@@ -177,7 +177,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} L.A.F.R.E.S. Research Team. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Maximus Fusion / MAXIMUS FUSION SYSTEMS, LLC. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -1,4 +1,6 @@
-# L.A.F.R.E.S. — Lithium-Acoustic Fusion Research & Engineering System
+# Maximus Fusion
+
+**MAXIMUS FUSION SYSTEMS, LLC** — lithium–acoustic fusion research & engineering (**L.A.F.R.E.S.** is the formal technical designation in archival docs).
 
 [![Documentation](https://img.shields.io/badge/docs-online-blue)](https://szemkoff.github.io/LAFRES/)
 [![Published](https://img.shields.io/badge/Nature-Published%202024-green)](https://doi.org/10.1038/s41598-024-62055-6)
@@ -7,7 +9,7 @@
 
 ## We Have Achieved Net-Gain Fusion
 
-**L.A.F.R.E.S. is not a concept—it's a working technology.** Our experiments have demonstrated:
+**Maximus Fusion is not a concept—it's a working technology.** Our experiments have demonstrated:
 
 | Achievement | Result |
 |-------------|--------|
@@ -76,7 +78,7 @@ See [Team & Organization](https://szemkoff.github.io/LAFRES/docs/team) and [Proj
 
 ## Project Overview
 
-L.A.F.R.E.S. is a fully documented, research-grade conceptual design for a lithium-acoustic micro-fusion system. The project aims to create a comprehensive technical blueprint that explores the theoretical integration of multiple advanced technologies for controlled neutron generation and thermal management.
+Maximus Fusion is a fully documented, research-grade program for a lithium-acoustic micro-fusion system. The project aims to create a comprehensive technical blueprint that explores the theoretical integration of multiple advanced technologies for controlled neutron generation and thermal management.
 
 ### Key Objectives
 

@@ -5,11 +5,11 @@ sidebar_label: Overview
 sidebar_position: 1
 ---
 
-# L.A.F.R.E.S. Project Overview
+# Maximus Fusion Project Overview
 
 ## Executive Summary
 
-The **Lithium Acoustic Fusion Reactor for Energy Sustainability (L.A.F.R.E.S.)** represents a breakthrough in fusion energy research. Unlike multi-billion dollar plasma containment facilities, we have demonstrated **net-gain nuclear fusion** using a remarkably simple approach: acoustic cavitation in a solid-state system.
+**Maximus Fusion** is the public name of our fusion research and engineering program. Unlike multi-billion dollar plasma containment facilities, we have demonstrated **net-gain nuclear fusion** using a remarkably simple approach: acoustic cavitation in a solid-state system. Technical documents may still use the formal designation **L.A.F.R.E.S.** (Lithium-Acoustic Fusion Research & Engineering System).
 
 :::success Peer-Reviewed Net-Gain Fusion
 **Published in Nature Scientific Reports (May 2024)**  
@@ -20,7 +20,7 @@ See [Published Results](/docs/research/published-results) for full experimental 
 
 ## The Breakthrough
 
-L.A.F.R.E.S. is built on **experimentally verified fusion reactions**:
+Maximus Fusion is built on **experimentally verified fusion reactions**:
 
 | Achievement | Result | Significance |
 |-------------|--------|--------------|
@@ -56,7 +56,7 @@ flowchart LR
         F --> G[Acoustic Stabilization]
     end
     
-    subgraph Future["Future: L.A.F.R.E.S."]
+    subgraph Future["Future: Maximus Fusion"]
         G --> H[Full System Integration]
         H --> I[Sustained Neutron Source]
     end
@@ -88,7 +88,7 @@ See **[Project plan & pipeline](/docs/project-plan)** for the live technical lin
 
 ## System Concept
 
-L.A.F.R.E.S. integrates five primary subsystems:
+Maximus Fusion integrates five primary subsystems:
 
 ### 1. Micro-Fusion Core
 A compact, pulsed plasma device designed to generate controlled bursts of neutrons through deuterium-deuterium (D-D) or deuterium-tritium (D-T) fusion reactions at microscale.
@@ -274,5 +274,5 @@ A real-time control system manages all subsystems:
 
 **Document version:** 1.1  
 **Last updated:** March 2026  
-**Maintained by:** L.A.F.R.E.S. / MAXIMUS FUSION SYSTEMS, LLC
+**Maintained by:** Maximus Fusion / MAXIMUS FUSION SYSTEMS, LLC
 

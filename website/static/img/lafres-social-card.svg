@@ -28,11 +28,11 @@
   <text x="120" y="110" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#f97316" text-anchor="middle">Li</text>
   
   <!-- Title -->
-  <text x="80" y="220" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white">L.A.F.R.E.S.</text>
+  <text x="80" y="210" font-family="Arial, sans-serif" font-size="56" font-weight="bold" fill="white">Maximus Fusion</text>
   
   <!-- Subtitle -->
-  <text x="80" y="290" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8">Lithium-Acoustic Fusion Research</text>
-  <text x="80" y="330" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8">&amp; Engineering System</text>
+  <text x="80" y="275" font-family="Arial, sans-serif" font-size="26" fill="#94a3b8">MAXIMUS FUSION SYSTEMS, LLC</text>
+  <text x="80" y="315" font-family="Arial, sans-serif" font-size="22" fill="#64748b">Lithium–acoustic fusion research &amp; engineering</text>
   
   <!-- Tagline -->
   <rect x="80" y="380" width="500" height="4" rx="2" fill="url(#accentGrad)"/>

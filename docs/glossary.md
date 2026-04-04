@@ -14,7 +14,7 @@
 
 **Blanket** - In fusion context, material surrounding plasma core to absorb neutrons, breed tritium, and/or extract heat.
 
-**Break-even** - Condition where fusion energy output equals energy input (L.A.F.R.E.S. operates far below this).
+**Break-even** - Condition where fusion energy output equals energy input (Maximus Fusion operates far below this).
 
 **Breeding Ratio (TBR)** - Ratio of tritium atoms produced to neutrons consumed; >1 needed for self-sustaining D-T fusion.
 
@@ -222,6 +222,6 @@
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Compiled by**: L.A.F.R.E.S. Documentation Team
+**Compiled by**: Maximus Fusion Documentation Team
 
 

@@ -77,6 +77,6 @@ sidebar_position: 4
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Instrumentation Team
+**Prepared by**: Maximus Fusion Instrumentation Team
 
 

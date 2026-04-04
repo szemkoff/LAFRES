@@ -9,7 +9,7 @@
 ## 2. Regulatory Requirements (USA)
 
 **License**: NRC or state, required for >1 Ci (37 GBq)  
-**L.A.F.R.E.S. Estimate**: 1-10 Ci inventory (if D-T mode) → requires license
+**Maximus Fusion Estimate**: 1-10 Ci inventory (if D-T mode) → requires license
 
 ## 3. Containment
 
@@ -41,13 +41,13 @@
 5. Survey and decontaminate
 6. Notify regulatory authority if release >reportable quantity
 
-## 8. L.A.F.R.E.S. Baseline
+## 8. Maximus Fusion Baseline
 
 **Phase 1-2**: D-D only (no tritium) → simpler regulatory path  
 **Phase 3 (optional)**: D-T mode if higher neutron yield needed
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Tritium Safety Team
+**Prepared by**: Maximus Fusion Tritium Safety Team
 
 

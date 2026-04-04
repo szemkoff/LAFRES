@@ -11,7 +11,7 @@ sidebar_position: 1
 
 **Device Type**: Pulsed Inertial Electrostatic Confinement (IEC) Fusor  
 **Primary Function**: Controlled neutron generation via D-D fusion  
-**Application**: Research neutron source for L.A.F.R.E.S. system
+**Application**: Research neutron source for Maximus Fusion system
 
 ## 2. Performance Specifications
 
@@ -221,7 +221,7 @@ sidebar_position: 1
 - Measure neutron rate vs. voltage, pressure
 
 **Phase 5: Integration**:
-- Connect to L.A.F.R.E.S. control system
+- Connect to Maximus Fusion control system
 - Verify safety interlocks
 - Test pulsed operation modes
 
@@ -280,6 +280,6 @@ sidebar_position: 1
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Prepared by**: L.A.F.R.E.S. Fusion Engineering Team
+**Prepared by**: Maximus Fusion Fusion Engineering Team
 
 

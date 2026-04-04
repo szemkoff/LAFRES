@@ -1,6 +1,6 @@
 # Incoming Content
 
-Drop files here for processing into the L.A.F.R.E.S. documentation.
+Drop files here for processing into the Maximus Fusion documentation.
 
 ## Folder Structure
 

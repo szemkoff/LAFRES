@@ -1,12 +1,12 @@
 ---
 slug: welcome-project-updates
 title: "Welcome to project updates"
-authors: [lafres]
+authors: [program]
 tags: [program]
 date: 2026-03-24
 ---
 
-This section is for **L.A.F.R.E.S.** news: what we are doing in the lab, milestones on the technical pipeline, publications, and partnerships.
+This section is for **Maximus Fusion** news: what we are doing in the lab, milestones on the technical pipeline, publications, and partnerships.
 
 <!-- truncate -->
 

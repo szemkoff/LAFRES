@@ -4,7 +4,7 @@
 
 **Device Type**: Piezoelectric ultrasonic transducers in phased array configuration  
 **Primary Function**: Generate controlled acoustic fields in liquid lithium for surface stabilization and diagnostics  
-**Application**: Active control system for L.A.F.R.E.S. liquid blanket
+**Application**: Active control system for Maximus Fusion liquid blanket
 
 ## 2. Array Configuration
 
@@ -271,7 +271,7 @@ FPGA → DAC (per channel) → Amplifier → Matching network → Transducer
 - Multi-transducer phasing (verify constructive/destructive interference)
 
 **Phase 3: Cold Lithium Test**:
-- Install in L.A.F.R.E.S. vessel (lithium solid, ~room temperature)
+- Install in Maximus Fusion vessel (lithium solid, ~room temperature)
 - Acoustic field mapping (embedded sensors)
 
 **Phase 4: Hot Lithium Test**:
@@ -328,6 +328,6 @@ FPGA → DAC (per channel) → Amplifier → Matching network → Transducer
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Prepared by**: L.A.F.R.E.S. Acoustics Engineering Team
+**Prepared by**: Maximus Fusion Acoustics Engineering Team
 
 

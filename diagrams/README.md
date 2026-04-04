@@ -1,6 +1,6 @@
 # Diagrams and Visual Documentation
 
-This directory contains system diagrams, schematics, and visual aids for the L.A.F.R.E.S. project.
+This directory contains system diagrams, schematics, and visual aids for the Maximus Fusion project.
 
 ## Planned Diagrams
 
@@ -83,6 +83,6 @@ All diagrams should be referenced in the main documentation (docs/, specs/, etc.
 
 **Note**: This folder currently contains placeholder documentation. Actual diagrams will be generated during project execution.
 
-**Prepared by**: L.A.F.R.E.S. Documentation Team
+**Prepared by**: Maximus Fusion Documentation Team
 
 

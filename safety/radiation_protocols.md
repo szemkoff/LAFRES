@@ -34,7 +34,7 @@
 **Occupational**: 20 mSv/year (averaged over 5 years, max 50 mSv in single year) - ICRP  
 **Public**: 1 mSv/year (at facility boundary)
 
-**L.A.F.R.E.S. Target**: <5 mSv/year for workers, <0.1 mSv/year at boundary
+**Maximus Fusion Target**: <5 mSv/year for workers, <0.1 mSv/year at boundary
 
 ## 6. Access Control
 
@@ -65,6 +65,6 @@ ICRP Publication 103
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Radiation Safety Officer
+**Prepared by**: Maximus Fusion Radiation Safety Officer
 
 

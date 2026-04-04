@@ -69,6 +69,6 @@ MQTT Protocol (ISO/IEC 20922)
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Software Team
+**Prepared by**: Maximus Fusion Software Team
 
 

@@ -9,7 +9,7 @@ sidebar_position: 0
 
 ## Introduction
 
-Safety is the **highest priority** in the L.A.F.R.E.S. project. This section provides comprehensive safety protocols, hazard analyses, and emergency procedures for all aspects of the system.
+Safety is the **highest priority** in the Maximus Fusion project. This section provides comprehensive safety protocols, hazard analyses, and emergency procedures for all aspects of the system.
 
 ## Primary Hazard Categories
 
@@ -39,7 +39,7 @@ Safety is the **highest priority** in the L.A.F.R.E.S. project. This section pro
 
 ## Safety Philosophy
 
-L.A.F.R.E.S. employs a **defense-in-depth** approach:
+Maximus Fusion employs a **defense-in-depth** approach:
 
 1. **Prevention**: Design features that minimize hazard probability
 2. **Mitigation**: Engineered safety systems to limit consequences
@@ -72,7 +72,7 @@ All personnel must complete:
 
 ## Regulatory Framework
 
-L.A.F.R.E.S. operations require:
+Maximus Fusion operations require:
 - Nuclear Regulatory Commission (NRC) licensing for neutron source
 - DOE approval for research activities
 - State and local permits for radioactive materials

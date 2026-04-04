@@ -83,7 +83,7 @@ function AudienceSection() {
     <section className={styles.audienceSection}>
       <div className="container">
         <Heading as="h2" className={styles.sectionTitle}>
-          Discover L.A.F.R.E.S.
+          Discover Maximus Fusion
         </Heading>
         <p className={styles.sectionSubtitle}>
           Select your perspective to explore what matters most to you
@@ -110,7 +110,7 @@ function AudienceSection() {
                   <div className={styles.panelMain}>
                     <h3>We Made Fusion Work - For Real</h3>
                     <p>
-                      L.A.F.R.E.S. (Lithium-Acoustic Fusion Research & Engineering System) has achieved 
+                      Maximus Fusion has achieved 
                       what billion-dollar projects have struggled with: <strong>net-gain nuclear fusion</strong>. 
                       Our results are peer-reviewed and published in Nature Scientific Reports (2024).
                     </p>
@@ -188,7 +188,7 @@ function AudienceSection() {
                   <div className={styles.panelMain}>
                     <h3>Partnership Opportunities</h3>
                     <p>
-                      L.A.F.R.E.S. seeks strategic partnerships with academic institutions, 
+                      Maximus Fusion seeks strategic partnerships with academic institutions, 
                       national laboratories, and industry leaders to accelerate development 
                       and ensure the highest standards of scientific rigor.
                     </p>
@@ -479,7 +479,7 @@ export default function Home(): React.ReactNode {
   return (
     <Layout
       title="Home"
-      description="L.A.F.R.E.S. - Lithium-Acoustic Fusion Research & Engineering System. Pioneering compact fusion energy through acoustic resonance and liquid lithium technology.">
+      description="Maximus Fusion — compact fusion research by MAXIMUS FUSION SYSTEMS, LLC. Peer-reviewed solid-state D–D results; lithium–acoustic engineering vision.">
       <HomepageHeader />
       <main>
         <AudienceSection />

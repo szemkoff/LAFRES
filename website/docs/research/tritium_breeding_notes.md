@@ -34,11 +34,11 @@ Tritium (³H) is required fuel for D-T fusion. It does not occur naturally (shor
 
 **Required for self-sustaining D-T**: TBR > 1.05 (accounting for losses, decay)
 
-**L.A.F.R.E.S. Estimate**:
+**Maximus Fusion Estimate**:
 - With natural lithium (7.5% ⁶Li): TBR ~ 0.1-0.3 (thin blanket, insufficient coverage)
 - With enriched ⁷Li (&gt;99% ⁷Li): TBR ~ 0.01 (minimal tritium)
 
-**Implication**: L.A.F.R.E.S. cannot sustain D-T operation; must supply external tritium (if D-T mode used)
+**Implication**: Maximus Fusion cannot sustain D-T operation; must supply external tritium (if D-T mode used)
 
 ## 4. Tritium Handling
 
@@ -62,7 +62,7 @@ Tritium (³H) is required fuel for D-T fusion. It does not occur naturally (shor
 - Contaminated materials: Low-level radioactive waste (LLRW)
 - Disposal: Licensed facility or decay-in-storage (>100 years to negligible activity)
 
-## 5. L.A.F.R.E.S. Decision: D-D Baseline
+## 5. Maximus Fusion Decision: D-D Baseline
 
 **Phase 1-2**: D-D only (no tritium)
 - Neutron energy: 2.45 MeV
@@ -84,20 +84,20 @@ Tritium (³H) is required fuel for D-T fusion. It does not occur naturally (shor
 
 **Purpose**: Even with enriched ⁷Li, some residual ⁶Li exists → small tritium production → must quantify for safety
 
-## 7. Long-Term Vision (Beyond L.A.F.R.E.S.)
+## 7. Long-Term Vision (Beyond Maximus Fusion)
 
 For fusion power plant:
 - TBR ~ 1.1-1.3 (required)
 - Thick blanket (&gt;50 cm lithium + neutron multipliers like beryllium)
 - Tritium extraction and fuel cycle (continuous processing)
 
-L.A.F.R.E.S. can inform:
+Maximus Fusion can inform:
 - Tritium transport in lithium
 - Extraction efficiency
 - Inventory control
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Fuel Cycle Team
+**Prepared by**: Maximus Fusion Fuel Cycle Team
 
 

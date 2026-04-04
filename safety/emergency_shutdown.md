@@ -68,6 +68,6 @@
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Emergency Response Team
+**Prepared by**: Maximus Fusion Emergency Response Team
 
 

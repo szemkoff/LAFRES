@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-The liquid lithium module serves as the primary neutron moderator, heat absorption medium, and thermal energy storage component of L.A.F.R.E.S.
+The liquid lithium module serves as the primary neutron moderator, heat absorption medium, and thermal energy storage component of Maximus Fusion
 
 ## 2. Functional Requirements
 
@@ -195,7 +195,7 @@ If using natural lithium:
 TBR = (Number of tritium atoms produced) / (Number of neutrons from fusion)
 ```
 
-For L.A.F.R.E.S. with thin blanket: TBR ~ 0.1-0.3 (insufficient for self-sustaining D-T)
+For Maximus Fusion with thin blanket: TBR ~ 0.1-0.3 (insufficient for self-sustaining D-T)
 
 With enriched ⁷Li: TBR ~ 0.01 (minimal tritium production)
 
@@ -403,6 +403,6 @@ With enriched ⁷Li: TBR ~ 0.01 (minimal tritium production)
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Lithium Systems Team
+**Author**: Maximus Fusion Lithium Systems Team
 
 

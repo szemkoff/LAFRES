@@ -93,6 +93,6 @@ Model natural convection flow and heat transfer in liquid lithium blanket under 
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Thermal-Hydraulics Team
+**Prepared by**: Maximus Fusion Thermal-Hydraulics Team
 
 

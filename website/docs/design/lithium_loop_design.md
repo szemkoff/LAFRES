@@ -55,6 +55,6 @@ sidebar_position: 3
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Thermal-Hydraulics Team
+**Prepared by**: Maximus Fusion Thermal-Hydraulics Team
 
 

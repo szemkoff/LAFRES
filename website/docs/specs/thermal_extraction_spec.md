@@ -110,6 +110,6 @@ Snyder & Toberer, "Complex thermoelectric materials," Nature Mater. (2008)
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Energy Systems Team
+**Prepared by**: Maximus Fusion Energy Systems Team
 
 

@@ -90,6 +90,6 @@ Model ion dynamics and fusion reactions in pulsed IEC device to predict neutron 
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Plasma Physics Team
+**Prepared by**: Maximus Fusion Plasma Physics Team
 
 

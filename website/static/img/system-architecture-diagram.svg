@@ -33,7 +33,7 @@
   <rect width="900" height="600" fill="#f8fafc"/>
   
   <!-- Title -->
-  <text x="450" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b" text-anchor="middle">L.A.F.R.E.S. System Architecture</text>
+  <text x="450" y="40" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b" text-anchor="middle">Maximus Fusion — system architecture</text>
   
   <!-- AI Control System (Top) -->
   <rect x="250" y="70" width="400" height="60" rx="8" fill="url(#blueGrad)" filter="url(#shadow)"/>

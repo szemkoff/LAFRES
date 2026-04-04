@@ -2,7 +2,7 @@
 
 ## 1. Hazard Overview
 
-L.A.F.R.E.S. presents multiple significant hazards that require comprehensive safety protocols:
+Maximus Fusion presents multiple significant hazards that require comprehensive safety protocols:
 
 ### 1.1 Primary Hazards
 
@@ -212,7 +212,7 @@ L.A.F.R.E.S. presents multiple significant hazards that require comprehensive sa
 - Arc-rated protective clothing (if working on energized equipment >50V, >5 kA available fault current)
 - Barriers and shields
 
-**Risk**: Low for L.A.F.R.E.S. (pulsed operation, moderate currents), but awareness required
+**Risk**: Low for Maximus Fusion (pulsed operation, moderate currents), but awareness required
 
 ## 5. Thermal Safety
 
@@ -277,7 +277,7 @@ L.A.F.R.E.S. presents multiple significant hazards that require comprehensive sa
 - USA: NRC license required for >1 Curie (37 GBq) of tritium
 - Facility requirements (contamination control, monitoring, waste handling)
 
-**L.A.F.R.E.S. baseline**: D-D operation only (avoids tritium complexity for Phase 1-2)
+**Maximus Fusion baseline**: D-D operation only (avoids tritium complexity for Phase 1-2)
 
 **If D-T operation pursued** (Phase 3+):
 
@@ -412,7 +412,7 @@ L.A.F.R.E.S. presents multiple significant hazards that require comprehensive sa
 
 **Operators**:
 - All of the above, plus:
-- System-specific training (L.A.F.R.E.S. operations, 8 hours classroom + 40 hours supervised)
+- System-specific training (Maximus Fusion operations, 8 hours classroom + 40 hours supervised)
 - Qualification exam (written + practical)
 
 **Maintenance personnel**:
@@ -537,6 +537,6 @@ L.A.F.R.E.S. presents multiple significant hazards that require comprehensive sa
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Safety Team
+**Author**: Maximus Fusion Safety Team
 
 

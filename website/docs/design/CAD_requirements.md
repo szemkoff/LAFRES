@@ -5,7 +5,7 @@ sidebar_label: CAD Requirements
 sidebar_position: 1
 ---
 
-# CAD Requirements for L.A.F.R.E.S.
+# CAD Requirements for Maximus Fusion
 
 ## 1. Software Platform
 
@@ -50,6 +50,6 @@ sidebar_position: 1
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Mechanical Design Team
+**Prepared by**: Maximus Fusion Mechanical Design Team
 
 

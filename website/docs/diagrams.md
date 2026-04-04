@@ -7,13 +7,13 @@ sidebar_position: 6
 
 # System Diagrams
 
-Visual representations of the L.A.F.R.E.S. program: **(A)** the **integrated reactor vision** (lithium blanket, full plant-style subsystems), and **(B)** the **acoustic solid-state fusion path** demonstrated in the peer-reviewed baseline (Nature Scientific Reports, 2024).
+Visual representations of the Maximus Fusion program: **(A)** the **integrated reactor vision** (lithium blanket, full plant-style subsystems), and **(B)** the **acoustic solid-state fusion path** demonstrated in the peer-reviewed baseline (Nature Scientific Reports, 2024).
 
 ## Diagram version register
 
 | ID | Asset | Version | Date | Scope |
 |----|-------|---------|------|--------|
-| **SYS-ARCH** | [system-architecture-diagram.svg](/img/system-architecture-diagram.svg) | **v2.0** | March 2026 | Full L.A.F.R.E.S. integrated architecture (future system) |
+| **SYS-ARCH** | [system-architecture-diagram.svg](/img/system-architecture-diagram.svg) | **v2.0** | March 2026 | Full Maximus Fusion integrated architecture (future system) |
 | **RX-XSEC** | [reactor-cross-section.svg](/img/reactor-cross-section.svg) | **v2.0** | March 2026 | Conceptual vessel / lithium layers (vision) |
 | **DATAFLOW** | [data-flow-diagram.svg](/img/data-flow-diagram.svg) | **v2.0** | March 2026 | Control and safety data flow (vision) |
 | **ORG** | [team-org-chart.svg](/img/team-org-chart.svg) (see [Team](/docs/team)) | **v2.0** | March 2026 | Organization chart (summary) |
@@ -34,7 +34,7 @@ flowchart TB
     C --> D[Neutron detection & imaging]
     D --> E[CFD validation & scaling models]
   end
-  subgraph vision["Long-range L.A.F.R.E.S. vision"]
+  subgraph vision["Long-range Maximus Fusion vision"]
     F[Liquid lithium blanket]
     G[Thermal conversion]
     H[Full plant-style control]

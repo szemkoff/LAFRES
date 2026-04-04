@@ -55,6 +55,6 @@ MSDS: Lithium metal (Sigma-Aldrich, FMC)
 ---
 
 **Document Version**: 1.0  
-**Prepared by**: L.A.F.R.E.S. Safety Team
+**Prepared by**: Maximus Fusion Safety Team
 
 

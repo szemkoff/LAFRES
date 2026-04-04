@@ -32,6 +32,6 @@
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Energy Conversion Design Team
+**Prepared by**: Maximus Fusion Energy Conversion Design Team
 
 

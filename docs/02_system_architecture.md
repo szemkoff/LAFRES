@@ -2,7 +2,7 @@
 
 ## 1. High-Level Architecture
 
-L.A.F.R.E.S. is organized as a multi-layered system integrating five primary subsystems with a centralized AI control system.
+Maximus Fusion is organized as a multi-layered system integrating five primary subsystems with a centralized AI control system.
 
 ### 1.1 System Block Diagram
 
@@ -161,7 +161,7 @@ For D-T operation or ⁶Li breeding:
 - Storage vessels (requires licensing)
 - Monitoring and accountability
 
-**L.A.F.R.E.S. baseline**: Use enriched ⁷Li to minimize tritium production
+**Maximus Fusion baseline**: Use enriched ⁷Li to minimize tritium production
 
 ## 4. Acoustic Field Matrix Architecture
 
@@ -504,6 +504,6 @@ See individual component specification documents in `/specs/` for detailed desig
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Systems Engineering Team
+**Author**: Maximus Fusion Systems Engineering Team
 
 

@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-Operating a neutron-generating fusion device with radioactive materials handling requires compliance with multiple regulatory frameworks. This document outlines key regulatory requirements and pathways for L.A.F.R.E.S. development and operation.
+Operating a neutron-generating fusion device with radioactive materials handling requires compliance with multiple regulatory frameworks. This document outlines key regulatory requirements and pathways for Maximus Fusion development and operation.
 
 ## 2. Radiation Regulations
 
@@ -83,7 +83,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 - Exemption levels vary by country (typically 10⁸-10⁹ Bq for gaseous tritium)
 - Above exemption: Authorization required
 
-**L.A.F.R.E.S. estimate**:
+**Maximus Fusion estimate**:
 - If D-T: Inventory ~1-10 Ci (37-370 GBq) in system
 - Exceeds basic license thresholds → requires specific license with stringent controls
 
@@ -101,7 +101,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 - Air sampling (continuous if >10 Ci)
 - Bioassay (urine tritium) for workers handling >1 Ci
 
-**Decision for L.A.F.R.E.S.**: 
+**Decision for Maximus Fusion**: 
 - **Avoid tritium in Phase 1-2** (use D-D only)
 - If Phase 3+ requires D-T, pursue tritium license (adds 1-2 years regulatory effort)
 
@@ -137,7 +137,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 - Design, fabrication, inspection of pressure vessels
 - Certification by authorized inspector (AI)
 
-**L.A.F.R.E.S.**:
+**Maximus Fusion**:
 - Lithium containment vessel: Likely qualifies as unfired pressure vessel (Section VIII)
 - Vacuum chamber: May fall under Section VIII or exemption if pressure <15 psig (1 bar) and volume <5 ft³ (0.14 m³)
 
@@ -152,7 +152,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 - Radionuclide emissions: Regulated by EPA (40 CFR Part 61, Subpart H - NESHAPs)
 - Dose limit to public from air pathway: 0.1 mSv/year (more stringent than general 1 mSv/year)
 
-**L.A.F.R.E.S.**:
+**Maximus Fusion**:
 - Argon cover gas venting: No radioactivity expected (short-lived activation products decay rapidly)
 - If tritium: HTO vapor could be released, requires monitoring and HEPA + desiccant traps
 
@@ -165,7 +165,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 **Clean Water Act (CWA)** (USA):
 - Cooling water discharge: If to sewer or surface water, must meet local limits (temperature, radioactivity)
 
-**L.A.F.R.E.S.**:
+**Maximus Fusion**:
 - Closed-loop cooling (no discharge) preferred
 - If discharge: Likely negligible radioactivity (no direct contact with activated materials)
 
@@ -233,7 +233,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 - Sharing technology with foreign nationals (even in USA) can be considered export
 - Requires license or exemption
 
-### 7.2 L.A.F.R.E.S. Considerations
+### 7.2 Maximus Fusion Considerations
 
 **If team includes foreign nationals**:
 - Determine if technology is controlled (likely yes for fusion neutron source)
@@ -266,7 +266,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 - Advantages: IP protection for future commercialization
 - Disadvantages: Costs ($10K-$50K per patent including prosecution), delays publication
 
-**L.A.F.R.E.S. recommendation**: 
+**Maximus Fusion recommendation**: 
 - Decide early (before public disclosure)
 - If commercialization is goal, file provisional patents (lower cost, 1-year grace period)
 
@@ -275,7 +275,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 ### 9.1 University Settings
 
 **Institutional Review Boards (IRB)**: 
-- Not applicable (L.A.F.R.E.S. does not involve human subjects)
+- Not applicable (Maximus Fusion does not involve human subjects)
 
 **Institutional Biosafety Committee (IBC)**:
 - Not applicable (no biological agents)
@@ -308,7 +308,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 
 **Treaty on the Non-Proliferation of Nuclear Weapons (NPT)**:
 - Relevant if technology could contribute to nuclear weapons development
-- L.A.F.R.E.S.: Very low relevance (neutron source is far from weapons-usable)
+- Maximus Fusion: Very low relevance (neutron source is far from weapons-usable)
 
 **IAEA Safeguards**:
 - Not applicable for small research devices
@@ -317,7 +317,7 @@ Operating a neutron-generating fusion device with radioactive materials handling
 
 **ITER and beyond**: 
 - Large-scale fusion has bespoke regulatory frameworks (ITER: French nuclear regulator ASN)
-- L.A.F.R.E.S.: Too small for fusion-specific regulations, falls under general radiation device rules
+- Maximus Fusion: Too small for fusion-specific regulations, falls under general radiation device rules
 
 ## 11. Timeline for Regulatory Approval
 
@@ -417,6 +417,6 @@ Operating a neutron-generating fusion device with radioactive materials handling
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Regulatory Affairs Team
+**Author**: Maximus Fusion Regulatory Affairs Team
 
 

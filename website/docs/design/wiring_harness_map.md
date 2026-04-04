@@ -61,6 +61,6 @@ sidebar_position: 6
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Electrical Design Team
+**Prepared by**: Maximus Fusion Electrical Design Team
 
 

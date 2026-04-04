@@ -52,7 +52,7 @@ flowchart TD
 ### 2.1 Ultrasonic Cavitation in Liquid Metals
 - **Eskin & Eskin (2015)**: *Ultrasonic Treatment of Light Alloy Melts*
 - **Application**: Grain refinement, degassing in aluminum casting
-- **Frequency**: 15-25 kHz (lower than L.A.F.R.E.S.)
+- **Frequency**: 15-25 kHz (lower than Maximus Fusion)
 - **Finding**: Cavitation threshold in liquid aluminum ~1-2 MPa
 
 ### 2.2 Acoustic Levitation
@@ -64,7 +64,7 @@ flowchart TD
 - **Literature Gap**: Very few studies on acoustic waves in electrically conducting fluids with magnetic fields
 - **Theory**: Alfvén waves (magnetoacoustic) may couple to ultrasonic modes
 
-## 3. Expected Phenomena in L.A.F.R.E.S.
+## 3. Expected Phenomena in Maximus Fusion
 
 ### 3.1 Radiation Pressure
 - Formula: P_rad = E_acoustic / c_sound
@@ -94,13 +94,13 @@ flowchart TD
 
 ## 5. Novel Contributions
 
-L.A.F.R.E.S. will be first system to:
+Maximus Fusion will be first system to:
 - Integrate high-power ultrasonic array (kW-scale) with liquid lithium at 400°C
 - Demonstrate active acoustic stabilization in fusion-relevant environment
 - Publish data on acoustic properties of liquid lithium at temperature
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Acoustics Research Team
+**Prepared by**: Maximus Fusion Acoustics Research Team
 
 

@@ -60,7 +60,7 @@ For T_h=500°C (773K), T_c=200°C (473K), ZT=1.0:
 **Bismuth Telluride (Bi₂Te₃)**:
 - ZT ~ 1.0 at room temperature
 - Max temperature: ~250°C
-- Not suitable for L.A.F.R.E.S. (too low T)
+- Not suitable for Maximus Fusion (too low T)
 
 **Lead Telluride (PbTe)**:
 - ZT ~ 0.8-1.2 at 400-600°C
@@ -70,7 +70,7 @@ For T_h=500°C (773K), T_c=200°C (473K), ZT=1.0:
 **Skutterudites (CoSb₃-based)**:
 - ZT ~ 1.0-1.3 at 500°C
 - Good mechanical properties
-- Baseline choice for L.A.F.R.E.S.
+- Baseline choice for Maximus Fusion
 
 **Half-Heusler Alloys**:
 - ZT ~ 0.8-1.0 at 500°C
@@ -444,7 +444,7 @@ Where Q_heat is calculated from coolant flow rate and temperature rise
 
 **Status**: Early commercialization (>$10K per kW_e)
 
-**L.A.F.R.E.S. application**: Phase 3+ if TPV costs decrease
+**Maximus Fusion application**: Phase 3+ if TPV costs decrease
 
 ### 12.3 Alkali Metal Thermal-to-Electric Converter (AMTEC)
 
@@ -466,6 +466,6 @@ Where Q_heat is calculated from coolant flow rate and temperature rise
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Energy Conversion Team
+**Author**: Maximus Fusion Energy Conversion Team
 
 

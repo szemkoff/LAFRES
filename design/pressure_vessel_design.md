@@ -38,6 +38,6 @@
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Pressure Vessel Engineering
+**Prepared by**: Maximus Fusion Pressure Vessel Engineering
 
 

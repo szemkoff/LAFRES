@@ -7,15 +7,15 @@ sidebar_position: 98
 
 # Frequently Asked Questions
 
-Find answers to common questions about the L.A.F.R.E.S. project, organized by audience.
+Find answers to common questions about the Maximus Fusion project, organized by audience.
 
 ---
 
 ## General Questions
 
-### What is L.A.F.R.E.S.?
+### What is Maximus Fusion?
 
-**L.A.F.R.E.S.** stands for **Lithium-Acoustic Fusion Research & Engineering System**. It's a research project developing a compact, laboratory-scale fusion device that combines:
+**Maximus Fusion** is the public name of the fusion research and engineering program led by **MAXIMUS FUSION SYSTEMS, LLC**. The formal technical designation is **L.A.F.R.E.S.** — **Lithium-Acoustic Fusion Research & Engineering System** — used in archival and technical references. The program develops a compact, laboratory-scale fusion approach that combines:
 - Pulsed micro-fusion neutron source
 - Liquid lithium blanket for neutron moderation
 - Acoustic stabilization technology
@@ -29,9 +29,9 @@ Find answers to common questions about the L.A.F.R.E.S. project, organized by au
 - **10,000x scale-up**: Neutron imaging systems
 - **1,000,000x scale-up**: Portable fusion power generators
 
-### What makes L.A.F.R.E.S. different from other fusion projects?
+### What makes Maximus Fusion different from other fusion projects?
 
-| Feature | Traditional Fusion (ITER/NIF) | L.A.F.R.E.S. |
+| Feature | Traditional Fusion (ITER/NIF) | Maximus Fusion |
 |---------|-------------------------------|--------------|
 | Size | Stadium-scale | Tabletop to room-scale |
 | Cost | $20+ billion | Orders of magnitude lower; multi-phase roadmap **~$2.5M–$5.7M** (documented bands) — see [cost estimates](/docs/roadmap/cost-estimates) and [project plan](/docs/project-plan) |
@@ -231,7 +231,7 @@ Contact: **[irnbrue@gmail.com](mailto:irnbrue@gmail.com)** (investor inquiries)
 
 ## Contact
 
-We only list **working addresses** for MAXIMUS FUSION SYSTEMS / L.A.F.R.E.S. (no placeholder inboxes).
+We only list **working addresses** for MAXIMUS FUSION SYSTEMS / Maximus Fusion (no placeholder inboxes).
 
 | Purpose | Email |
 |---------|--------|

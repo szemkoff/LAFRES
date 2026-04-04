@@ -5,21 +5,21 @@ sidebar_label: Physics Background
 sidebar_position: 3
 ---
 
-# Physics Background for L.A.F.R.E.S.
+# Physics Background for Maximus Fusion
 
 ## Introduction
 
-This document provides the fundamental physics principles underlying the L.A.F.R.E.S. concept, including fusion reactions, neutron transport, liquid metal physics, acoustics, and thermal-electric conversion.
+This document provides the fundamental physics principles underlying the Maximus Fusion concept, including fusion reactions, neutron transport, liquid metal physics, acoustics, and thermal-electric conversion.
 
 :::info Experimental Foundation
-L.A.F.R.E.S. builds upon demonstrated acoustic cavitation fusion in TiD/D₂O systems. See [Key Discoveries](/docs/research/discoveries) for experimental results.
+Maximus Fusion builds upon demonstrated acoustic cavitation fusion in TiD/D₂O systems. See [Key Discoveries](/docs/research/discoveries) for experimental results.
 :::
 
 ## 1. Fusion Reactions
 
 ### 1.0 Acoustic Cavitation Fusion (Experimental Basis)
 
-The L.A.F.R.E.S. project is grounded in experimental observations of fusion in solid-state titanium deuteride under acoustic cavitation:
+The Maximus Fusion project is grounded in experimental observations of fusion in solid-state titanium deuteride under acoustic cavitation:
 
 ```mermaid
 flowchart LR
@@ -93,13 +93,13 @@ Where:
 
 ### 1.4 Lawson Criterion and Break-Even
 
-For net energy gain (not the goal of L.A.F.R.E.S.):
+For net energy gain (not the goal of Maximus Fusion):
 
 ```
 n τ T > 3 × 10²¹ keV·s·m⁻³  (D-T fusion)
 ```
 
-**L.A.F.R.E.S. operates far below break-even:**
+**Maximus Fusion operates far below break-even:**
 - Target: Controlled neutron source only
 - Expected n·τ·T: 10¹⁵ - 10¹⁸ keV·s·m⁻³
 - This is 3-6 orders of magnitude below break-even
@@ -209,7 +209,7 @@ F = J × B = σ(E + v × B) × B
 Ha = B L √(σ/μ)
 ```
 
-For L.A.F.R.E.S.:
+For Maximus Fusion:
 - Expected B fields: &lt;1 Tesla (from plasma device)
 - Ha ~ 10-100 (moderate MHD coupling)
 
@@ -454,6 +454,6 @@ Major sources of uncertainty:
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Physics Team
+**Author**: Maximus Fusion Physics Team
 
 

@@ -74,7 +74,7 @@
 
 ### Key Findings
 - Radiation damage: Displacement per atom (dpa) scales with neutron fluence
-- For L.A.F.R.E.S. low flux (10⁸-10⁹ n/s): negligible radiation damage in Phase 1-2
+- For Maximus Fusion low flux (10⁸-10⁹ n/s): negligible radiation damage in Phase 1-2
 - Long-term (Phase 3+): Monitor for embrittlement
 
 ## 7. Regulatory Framework
@@ -99,7 +99,7 @@
 3. **IECF at University of Illinois** (Miley group): Research fusors
 4. **Liquid metal MHD experiments**: ALEX (FZK), MaPLE (UCLA)
 
-### Novelty of L.A.F.R.E.S.
+### Novelty of Maximus Fusion
 - **Integration**: Combining IEC + lithium blanket + acoustic control + TE conversion (no prior integrated system)
 - **Acoustic stabilization**: Novel application to liquid metal fusion blankets
 - **Achievement**: Net-gain fusion demonstrated and published (Nature Sci. Rep. 2024)
@@ -124,6 +124,6 @@
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Compiled by**: L.A.F.R.E.S. Research Team
+**Compiled by**: Maximus Fusion Research Team
 
 

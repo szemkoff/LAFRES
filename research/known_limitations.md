@@ -134,7 +134,7 @@ but creating these conditions reliably requires further research.
 ### 6.1 Neutron Flux Ceiling
 **IEC Limitation**: Difficult to exceed ~10¹⁰ n/s without major design changes (larger cathode, higher power)
 
-**Implication**: L.A.F.R.E.S. suitable for research, not industrial-scale neutron production
+**Implication**: Maximus Fusion suitable for research, not industrial-scale neutron production
 
 **Acceptance**: Sufficient for intended applications (materials testing, concept validation).
 
@@ -150,7 +150,7 @@ but creating these conditions reliably requires further research.
 ### 7.1 Why Not Tokamak or Stellarator?
 **Reason**: Orders of magnitude more complex and expensive ($100M+, decades-long projects)
 
-**L.A.F.R.E.S. Philosophy**: Modest, achievable goals with limited resources.
+**Maximus Fusion Philosophy**: Modest, achievable goals with limited resources.
 
 ### 7.2 Why Not External Neutron Source?
 **Phase 2 Option**: Could use commercial D-T neutron generator (e.g., Thermo Fisher P385)
@@ -164,7 +164,7 @@ but creating these conditions reliably requires further research.
 ### 7.3 Why Not Pure Simulation?
 **Answer**: Simulations are valuable but cannot capture all real-world phenomena (material behavior, control challenges, human factors)
 
-**L.A.F.R.E.S. Commitment**: Validate with experiments (Phase 1+).
+**Maximus Fusion Commitment**: Validate with experiments (Phase 1+).
 
 ## 8. Acknowledging Unknowns
 
@@ -201,6 +201,6 @@ but creating these conditions reliably requires further research.
 
 **Document Version**: 1.0  
 **Last Updated**: December 2025  
-**Author**: L.A.F.R.E.S. Project Leadership
+**Author**: Maximus Fusion Project Leadership
 
 

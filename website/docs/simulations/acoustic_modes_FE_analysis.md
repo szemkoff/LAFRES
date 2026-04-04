@@ -87,6 +87,6 @@ Determine resonant acoustic modes in liquid lithium cavity and design transducer
 
 ---
 
-**Prepared by**: L.A.F.R.E.S. Acoustics Simulation Team
+**Prepared by**: Maximus Fusion Acoustics Simulation Team
 
 
